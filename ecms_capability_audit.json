@@ -1,0 +1,7849 @@
+{
+  "menuStructure": [
+    {
+      "title": "Overview",
+      "href": "/ecms/index.php?r=userDashboard/index",
+      "sublinks": [
+        {
+          "text": "Overview",
+          "href": "/ecms/index.php?r=userDashboard/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=userDashboard/index"
+        }
+      ]
+    },
+    {
+      "title": "Dashboard",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Dashboard",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Workflow Dashboard",
+          "href": "/ecms/index.php?r=dashboard/workOrder",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=dashboard/workOrder"
+        },
+        {
+          "text": "Status Dashboard",
+          "href": "/ecms/index.php?r=dashboard/escalation",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=dashboard/escalation"
+        },
+        {
+          "text": "Resource Utilization",
+          "href": "/ecms/index.php?r=dashboard/resourcePerformance",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=dashboard/resourcePerformance"
+        }
+      ]
+    },
+    {
+      "title": "Request",
+      "href": "/ecms/index.php?r=request",
+      "sublinks": [
+        {
+          "text": "Request",
+          "href": "/ecms/index.php?r=request",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=request"
+        }
+      ]
+    },
+    {
+      "title": "Tasks",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Tasks",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Create Task",
+          "href": "/ecms/index.php?r=workOrder/create",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=workOrder/create"
+        },
+        {
+          "text": "View All Tasks",
+          "href": "/ecms/index.php?r=workOrder/index&new=true",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=workOrder/index&new=true"
+        },
+        {
+          "text": "View Task Approvals",
+          "href": "/ecms/index.php?r=workOrder/ticketApproval",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=workOrder/ticketApproval"
+        }
+      ]
+    },
+    {
+      "title": "Workflows",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Workflows",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Create Workflow",
+          "href": "/ecms/index.php?r=workflows/create",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=workflows/create"
+        },
+        {
+          "text": "My Workflows",
+          "href": "/ecms/index.php?r=workflows/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=workflows/index"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Forms",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Create Form",
+          "href": "/ecms/index.php?r=webForm/create",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=webForm/create"
+        },
+        {
+          "text": "All Forms",
+          "href": "/ecms/index.php?r=webForm/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=webForm/index"
+        }
+      ]
+    },
+    {
+      "title": "Contacts",
+      "href": "/ecms/index.php?r=contacts/index",
+      "sublinks": [
+        {
+          "text": "Contacts",
+          "href": "/ecms/index.php?r=contacts/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=contacts/index"
+        }
+      ]
+    },
+    {
+      "title": "Users",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Users",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Department",
+          "href": "/ecms/index.php?r=team/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=team/index"
+        },
+        {
+          "text": "Roles",
+          "href": "/ecms/index.php?r=rightTemplate/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=rightTemplate/index"
+        },
+        {
+          "text": "Users",
+          "href": "/ecms/index.php?r=users/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=users/index"
+        }
+      ]
+    },
+    {
+      "title": "Resource",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Resource",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Resource Type",
+          "href": "/ecms/index.php?r=engineerType/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineerType/index"
+        },
+        {
+          "text": "Resource Level",
+          "href": "/ecms/index.php?r=engineerLevel/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineerLevel/index"
+        },
+        {
+          "text": "Resource Shift",
+          "href": "/ecms/index.php?r=engineerShift/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineerShift/index"
+        },
+        {
+          "text": "Resource Schedule",
+          "href": "/ecms/index.php?r=engineerSchedule/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineerSchedule/index"
+        },
+        {
+          "text": "Resource",
+          "href": "/ecms/index.php?r=engineer/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineer/index"
+        }
+      ]
+    },
+    {
+      "title": "Reports",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Reports",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Reports",
+          "href": "/ecms/index.php?r=reports/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=reports/index"
+        },
+        {
+          "text": "Audit Log",
+          "href": "/ecms/index.php?r=auditLog/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=auditLog/index"
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "href": "javascript:;",
+      "sublinks": [
+        {
+          "text": "Settings",
+          "href": "javascript:;",
+          "fullHref": "javascript:;"
+        },
+        {
+          "text": "Manage Call Drivers",
+          "href": "/ecms/index.php?r=callDrivers/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=callDrivers/index"
+        },
+        {
+          "text": "Email Integration",
+          "href": "/ecms/index.php?r=emailIntegration/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=emailIntegration/index"
+        },
+        {
+          "text": "Setup Wizard",
+          "href": "/ecms/index.php?r=setupWizard/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=setupWizard/index"
+        },
+        {
+          "text": "Task Routing",
+          "href": "/ecms/index.php?r=businessRegionLocations/index",
+          "fullHref": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=businessRegionLocations/index"
+        }
+      ]
+    },
+    {
+      "title": "Get Help and Support",
+      "href": "https://support.1gov.ng/#/product/2/Workflow-Manager/productArticle",
+      "sublinks": [
+        {
+          "text": "Get Help and Support",
+          "href": "https://support.1gov.ng/#/product/2/Workflow-Manager/productArticle",
+          "fullHref": "https://support.1gov.ng/#/product/2/Workflow-Manager/productArticle"
+        }
+      ]
+    }
+  ],
+  "pages": {
+    "workflow_dashboard": {
+      "title": "Dashboard | WorkOrder- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=dashboard/workOrder",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "ticketStatusSpan",
+          "type": "radio",
+          "placeholder": "",
+          "id": "ticketStatusRadioDay"
+        },
+        {
+          "name": "ticketStatusSpan",
+          "type": "radio",
+          "placeholder": "",
+          "id": "ticketStatusRadioWeek"
+        },
+        {
+          "name": "ticketStatusSpan",
+          "type": "radio",
+          "placeholder": "",
+          "id": "ticketStatusRadioMonth"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "DD/MM/YYYY - DD/MM/YYYY",
+          "id": "ticketStatusDateRange"
+        },
+        {
+          "name": "workflowTicketSummarySpan",
+          "type": "radio",
+          "placeholder": "",
+          "id": "workflowTicketSummaryRadioDay"
+        },
+        {
+          "name": "workflowTicketSummarySpan",
+          "type": "radio",
+          "placeholder": "",
+          "id": "workflowTicketSummaryRadioWeek"
+        },
+        {
+          "name": "workflowTicketSummarySpan",
+          "type": "radio",
+          "placeholder": "",
+          "id": "workflowTicketSummaryRadioMonth"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1_search"
+        },
+        {
+          "name": "queue-select",
+          "type": "select-one",
+          "id": "queue-select"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Workflow Dashboard Help Tips Start Tour Task Status Today Week Month Date 0 New Task Total Task Created: 50 0 Open 0 In Progess 0 Closed Workflow Task Summary Today Week Month Top queues with task REGISTRATION VALIDATION OPEN: 34 IN PROGRESS: 0 CLOSED: 0 34 TES AUTOMATION OPEN: 4 IN PROGRESS: 3 CLOSED: 0 7 PLANNING AND SCHEDULING OPEN: 5 IN PROGRESS: 0 CLOSED: 0 5 Complaints OPEN: 3 IN PROGRESS: 0 CLOSED: 0 3 Resource Allocation OPEN: 0 IN PROGRESS: 0 CLOSED: 1 1 Workflow Summary Queue Complaints Select Queue Complaints Finance Human Resources Onboarding Order Fulfilment PLANNING AND SCHEDULING Project Management QA TEST REGISTRATION VALIDATION Resource Allocation TES AUTOMATION UAT Dept Link Queue 61363 UAT Test Queue 90355 Complaints 3 Total task Workflow Total Tasks Billing Issue 1 UAT Address Signature Queue Type 2"
+    },
+    "status_dashboard": {
+      "title": "Site | Error- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=dashboard/status",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Back Help Tips Start Tour Oops! Something went wrong. We are fixing it! Please come back in a while. "
+    },
+    "resource_dashboard": {
+      "title": "Dashboard | Resource- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=dashboard/resource",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Name",
+        "Schedules",
+        "Scheduled Utilization",
+        "Actual Utilization"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "district",
+          "type": "select-one",
+          "id": "queue"
+        },
+        {
+          "name": "engineer_type",
+          "type": "select-one",
+          "id": "queue"
+        },
+        {
+          "name": "engineer_level",
+          "type": "select-one",
+          "id": "queue"
+        },
+        {
+          "name": "end_date",
+          "type": "text",
+          "placeholder": "to",
+          "id": "enddate"
+        },
+        {
+          "name": "start_date",
+          "type": "text",
+          "placeholder": "from",
+          "id": "startdate"
+        },
+        {
+          "name": "start_date",
+          "type": "text",
+          "placeholder": "from",
+          "id": "startdate1"
+        },
+        {
+          "name": "period",
+          "type": "select-one",
+          "id": "period"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Quick Setup Wizard Help Tips Start Tour Filter UNKNOWN Dispatch Rider Logistics Manager Delivery Manager Warehouse Manager Customer Service Representative Sales Manager Sales Representative Account Manager Junior Senior Officer Regional Supervisor Executive Lead ACTIVITY 0 Active Resources 0 Abscent Resources 0 Scheduled Resources 0 Planned Holidays RESOURCE FOR THE DAY MORNING AFTERNOON NIGHT Name Schedules Scheduled Utilization Actual Utilization"
+    },
+    "tasks_index": {
+      "title": "Work Order | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=workOrder",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "Apply",
+        "Apply",
+        "Apply",
+        "Apply",
+        "Apply",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out",
+        "Assigned To Me",
+        "Assigned By Me",
+        "Created By Me",
+        "All Tasks",
+        "Inactive Tasks"
+      ],
+      "tableHeaders": [
+        "Starred",
+        "Task Id",
+        "Title",
+        "Date Created",
+        "Queue",
+        "Queue Type",
+        "Assigned To",
+        "Date Assigned",
+        "Email",
+        "Created By",
+        "Contact Name",
+        "Organization Name",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Awaiting Approval",
+        "Approval Status",
+        "Task State",
+        "Action"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "ticket-search-toggler"
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Quick Search",
+          "id": "table-quick_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1_search"
+        },
+        {
+          "name": "queue_id",
+          "type": "select-one",
+          "id": "filterByQueue"
+        },
+        {
+          "name": "queue_type_id",
+          "type": "select-one",
+          "id": "filterByQueueType"
+        },
+        {
+          "name": "current_status",
+          "type": "select-one",
+          "id": "filterByStatus"
+        },
+        {
+          "name": "priority",
+          "type": "select-one",
+          "id": "filterByPriority"
+        },
+        {
+          "name": "is_active",
+          "type": "select-one",
+          "id": "filterByIsActive"
+        },
+        {
+          "name": "create_time",
+          "type": "date",
+          "placeholder": "",
+          "id": "filterByDateCreated"
+        },
+        {
+          "name": "assigned_by",
+          "type": "select-one",
+          "id": "filterByWork"
+        },
+        {
+          "name": "is_starred",
+          "type": "select-one",
+          "id": "filterByIsStarred"
+        },
+        {
+          "name": "date_range",
+          "type": "text",
+          "placeholder": "Start date - End date",
+          "id": "date-range"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "ticket-search-toggler"
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Quick Search",
+          "id": "table-quick_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "queue_id",
+          "type": "select-one",
+          "id": "filterByQueue"
+        },
+        {
+          "name": "queue_type_id",
+          "type": "select-one",
+          "id": "filterByQueueType"
+        },
+        {
+          "name": "current_status",
+          "type": "select-one",
+          "id": "filterByStatus"
+        },
+        {
+          "name": "priority",
+          "type": "select-one",
+          "id": "filterByPriority"
+        },
+        {
+          "name": "is_active",
+          "type": "select-one",
+          "id": "filterByIsActive"
+        },
+        {
+          "name": "create_time",
+          "type": "date",
+          "placeholder": "",
+          "id": "filterByDateCreated"
+        },
+        {
+          "name": "assigned_by",
+          "type": "select-one",
+          "id": "filterByWork"
+        },
+        {
+          "name": "is_starred",
+          "type": "select-one",
+          "id": "filterByIsStarred"
+        },
+        {
+          "name": "date_range",
+          "type": "text",
+          "placeholder": "Start date - End date",
+          "id": "date-range"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "ticket-search-toggler"
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Quick Search",
+          "id": "table-quick_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "queue_id",
+          "type": "select-one",
+          "id": "filterByQueue"
+        },
+        {
+          "name": "queue_type_id",
+          "type": "select-one",
+          "id": "filterByQueueType"
+        },
+        {
+          "name": "current_status",
+          "type": "select-one",
+          "id": "filterByStatus"
+        },
+        {
+          "name": "priority",
+          "type": "select-one",
+          "id": "filterByPriority"
+        },
+        {
+          "name": "is_active",
+          "type": "select-one",
+          "id": "filterByIsActive"
+        },
+        {
+          "name": "create_time",
+          "type": "date",
+          "placeholder": "",
+          "id": "filterByDateCreated"
+        },
+        {
+          "name": "is_starred",
+          "type": "select-one",
+          "id": "filterByIsStarred"
+        },
+        {
+          "name": "date_range",
+          "type": "text",
+          "placeholder": "Start date - End date",
+          "id": "date-range"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "ticket-search-toggler"
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Quick Search",
+          "id": "table-quick_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "queue_id",
+          "type": "select-one",
+          "id": "filterByQueue"
+        },
+        {
+          "name": "queue_type_id",
+          "type": "select-one",
+          "id": "filterByQueueType"
+        },
+        {
+          "name": "current_status",
+          "type": "select-one",
+          "id": "filterByStatus"
+        },
+        {
+          "name": "priority",
+          "type": "select-one",
+          "id": "filterByPriority"
+        },
+        {
+          "name": "is_active",
+          "type": "select-one",
+          "id": "filterByIsActive"
+        },
+        {
+          "name": "create_time",
+          "type": "date",
+          "placeholder": "",
+          "id": "filterByDateCreated"
+        },
+        {
+          "name": "created_by",
+          "type": "select-one",
+          "id": "filterByCreatedBy"
+        },
+        {
+          "name": "assigned_to",
+          "type": "select-one",
+          "id": "filterByAssignedTo"
+        },
+        {
+          "name": "is_starred",
+          "type": "select-one",
+          "id": "filterByIsStarred"
+        },
+        {
+          "name": "date_range",
+          "type": "text",
+          "placeholder": "Start date - End date",
+          "id": "date-range"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "ticket-search-toggler"
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "search_cat",
+          "type": "radio",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Quick Search",
+          "id": "table-quick_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "queue_id",
+          "type": "select-one",
+          "id": "filterByQueue"
+        },
+        {
+          "name": "queue_type_id",
+          "type": "select-one",
+          "id": "filterByQueueType"
+        },
+        {
+          "name": "current_status",
+          "type": "select-one",
+          "id": "filterByStatus"
+        },
+        {
+          "name": "priority",
+          "type": "select-one",
+          "id": "filterByPriority"
+        },
+        {
+          "name": "is_active",
+          "type": "select-one",
+          "id": "filterByIsActive"
+        },
+        {
+          "name": "create_time",
+          "type": "date",
+          "placeholder": "",
+          "id": "filterByDateCreated"
+        },
+        {
+          "name": "is_starred",
+          "type": "select-one",
+          "id": "filterByIsStarred"
+        },
+        {
+          "name": "date_range",
+          "type": "text",
+          "placeholder": "Start date - End date",
+          "id": "date-range"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "ticketList"
+        },
+        {
+          "name": "created_by",
+          "type": "select-one",
+          "id": "filterByCreatedBy"
+        },
+        {
+          "name": "assigned_to",
+          "type": "select-one",
+          "id": "filterByAssignedTo"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Create Task View All Tasks View Task Approvals Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Tasks Help Tips Start Tour Assigned To Me Assigned By Me Created By Me All Tasks Inactive Tasks Create My Workflow All Tasks Search By Custom View Filter TOTAL TASKS 1 TASKS OPENED 1 TASKS IN PROGRESS 0 CLOSED TASKS See Inactive Tasks Starred Task Id Title Date Created Queue Queue Type Assigned To Date Assigned Status Awaiting Approval Approval Status Action 1041 R testing Raissa Boyomo 2026-09-17 12:56:41 PLANNING AND SCHEDULING WORK BREADOWN STURCTURE Raissa Boyomo 2026-09-17 12:56:44 OPEN N/A N/A Rows Per Page 20 1 of 1"
+    },
+    "workflows_index": {
+      "title": "Site | Error- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=process/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Back Help Tips Start Tour Oops! Something went wrong. We are fixing it! Please come back in a while. "
+    },
+    "workflow_create": {
+      "title": "Site | Error- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=process/create",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Back Help Tips Start Tour Oops! Something went wrong. We are fixing it! Please come back in a while. "
+    },
+    "forms_index": {
+      "title": "Web Form | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=webForm",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "×",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out",
+        "My Forms",
+        "Internal Forms",
+        "External Forms",
+        "Inter MDA Forms",
+        "Status Forms"
+      ],
+      "tableHeaders": [
+        "Form Name",
+        "Description",
+        "Queue",
+        "Queue Type",
+        "Form Type",
+        "Display Period",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions",
+        "Form Name",
+        "Description",
+        "Queue",
+        "Queue Type",
+        "Form Type",
+        "Display Period",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions",
+        "Form Name",
+        "Description",
+        "Queue",
+        "Queue Type",
+        "Form Type",
+        "Display Period",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions",
+        "Form Name",
+        "Description",
+        "Queue",
+        "Queue Type",
+        "Form Type",
+        "Display Period",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions",
+        "Form Name",
+        "Description",
+        "Queue",
+        "Queue Type",
+        "Form Type",
+        "Display Period",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "search",
+          "placeholder": "Search",
+          "id": "search-forms"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-forms-internal"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-forms-external"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-forms-mda"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-status-forms"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Create Form All Forms Contacts Users Resource Reports Settings Get Help and Support Forms Help Tips Start Tour My Forms Internal Forms External Forms Inter MDA Forms Status Forms Create Form Custom View Form Name Queue Queue Type Form Type Display Period Status Actions UAT Internal Form 48736 Created 2026-09-17 Complaints Billing Issue External SUSPENDED Go Live Created 2026-09-17 REGISTRATION VALIDATION Business Partner Registration External ACTIVE Testing Created 2026-09-17 Human Resources Employee Onboarding External ACTIVE Leave Request Form Created 2026-09-17 Human Resources Leave Management External ACTIVE Test Form Created 2026-09-17 PLANNING AND SCHEDULING WORK BREADOWN STURCTURE External ACTIVE Raissa Boyomo Created 2026-09-17 Human Resources Leave Management External ACTIVE External Request Created 2026-07-14 Internal ACTIVE CICOD Form Created 2026-07-08 External ACTIVE Rows Per Page 20 1 of 1"
+    },
+    "form_create": {
+      "title": "Web Form | Create- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=webForm/create",
+      "h1": [
+        "You are being redirected to the workflow creation page to create a new workflow."
+      ],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "ordered",
+        "bullet",
+        "[object Object]",
+        "Create",
+        "Select Queue",
+        "Text Field",
+        "Text Area",
+        "Contact",
+        "Address",
+        "Organization",
+        "Dropdown",
+        "Check Box",
+        "Radio Button",
+        "Attach File",
+        "Date",
+        "Number",
+        "Currency",
+        "Divider",
+        "Body",
+        "Section Title",
+        "Distance",
+        "Dimension",
+        "Weight",
+        "Star Rating",
+        "Scale Rating",
+        "Add Image",
+        "Business Sector",
+        "ordered",
+        "bullet",
+        "Save",
+        "Cancel",
+        "Save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Enter Name of Form",
+          "id": "name"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "form-upload__input"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "internal"
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "external"
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "inter_mda"
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "status"
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "status"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search List",
+          "id": "mda_list_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "select_all_mda"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search List",
+          "id": "grade_level_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "select_all_levels"
+        },
+        {
+          "name": "Level 1",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 2",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 3",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 4",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 5",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 6",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 7",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 8",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 9",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 10",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 11",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 12",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 13",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 14",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 15",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 16",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 17",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Consolidated",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "form_reason",
+          "type": "radio",
+          "placeholder": "",
+          "id": "data_capture"
+        },
+        {
+          "name": "form_reason",
+          "type": "radio",
+          "placeholder": "",
+          "id": "workflow_status"
+        },
+        {
+          "name": "existing_fields",
+          "type": "radio",
+          "placeholder": "",
+          "id": "existing_fields_yes"
+        },
+        {
+          "name": "existing_fields",
+          "type": "radio",
+          "placeholder": "",
+          "id": "existing_fields_yes"
+        },
+        {
+          "name": "new_old_wrkflw",
+          "type": "radio",
+          "placeholder": "",
+          "id": "existing_wrkflw"
+        },
+        {
+          "name": "new_old_wrkflw",
+          "type": "radio",
+          "placeholder": "",
+          "id": "new_wrkflw"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "extend-form-fields"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "queue",
+          "type": "select-one",
+          "id": "extend-form-fields-queue-select"
+        },
+        {
+          "name": "queuetype",
+          "type": "select-one",
+          "id": "extend-form-fields-queue-type-select"
+        },
+        {
+          "name": "status",
+          "type": "select-one",
+          "id": "extend-form-fields-status-select"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "add-display-period"
+        },
+        {
+          "name": "start-date",
+          "type": "date",
+          "placeholder": "",
+          "id": "display-period-start"
+        },
+        {
+          "name": "end-date",
+          "type": "date",
+          "placeholder": "",
+          "id": "display-period-end"
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "update-internal"
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "update-external"
+        },
+        {
+          "name": "form-type",
+          "type": "radio",
+          "placeholder": "",
+          "id": "update-inter-mda"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search List",
+          "id": "mda_list_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "select_all_mda"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search List",
+          "id": "grade_level_search"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "select_all_levels"
+        },
+        {
+          "name": "Level 1",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 2",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 3",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 4",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 5",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 6",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 7",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 8",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 9",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 10",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 11",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 12",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 13",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 14",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 15",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 16",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Level 17",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "Consolidated",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "grade__levels"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Create Form All Forms Contacts Users Resource Reports Settings Get Help and Support Forms Help Tips Start Tour New Form Name of Form * Upload Banner (recommended height: 159px, width: 748px) OPTIONAL Add file or drop files here Description * ⓘ 0/1500 Form Type * ⓘ Internal External Inter MDA Status Data Capture Cancel Create"
+    },
+    "requests_index": {
+      "title": "Request | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=request",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "×",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search For a Form",
+          "id": "search-el"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Request Help Tips Start Tour Click on any form to view or share Internal External No Records..."
+    },
+    "contacts_index": {
+      "title": "Site | Error- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=customer/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Back Help Tips Start Tour Oops! Something went wrong. We are fixing it! Please come back in a while. "
+    },
+    "users_index": {
+      "title": "Users | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=users/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out",
+        "Standard User"
+      ],
+      "tableHeaders": [
+        "Staff Code",
+        "Name",
+        "Email",
+        "Phone",
+        "Department",
+        "Region",
+        "Last Actioned",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Last Logged On",
+        "Actions",
+        "Staff Code",
+        "Name",
+        "Email",
+        "Phone",
+        "Department",
+        "Region",
+        "Last Actioned",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Last Logged On",
+        "Actions"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-standard-users"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-resourse-users"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Department Roles Users Resource Reports Settings Get Help and Support Users Help Tips Start Tour Standard User Download Create Custom View TOTAL RECORDS 12 TOTAL ACTIVE 11 TOTAL SUSPENDED 1 Name Email Phone Department Status Actions ! !stUSer LastUser Created 2026-09-18 test@cicod.com 0809444 ACTIVE A Adeola Egodo Created 2026-05-29 adeola.adesina@crowninteractive.com 08084673103 Customer Service ACTIVE B Babatunde Adenrele Created 2026-09-07 babatunde.adenrele@cicod.com 07061276649 ACTIVE D Dorcas Ajuzieogu Created 2026-09-07 dorcas.ajuzieogu@cicod.com 09033864190 ACTIVE E Eyitayo Abidogun Created 2026-09-17 eyitayo.abidogun@cicod.com 080000000000 ACTIVE H Henry Okwarajiaku Created 2026-09-15 henry.okwarajiaku@cicod.com 080000000000 Customer Service Finance +5 ACTIVE P Prince Ekpenyong Created 2026-09-15 prince.ekpenyong@cicod.com 080000000000 ACTIVE R Raissa Boyomo Created 2026-09-07 raissa.boyomo@crowninteractive.com 07049518547 ACTIVE R Reb Saku Created 2026-09-07 rebeccamauyan@gmail.com 07030054297 ACTIVE R Rebecca Saku Created 2026-09-07 rebecca.saku@crown"
+    },
+    "resource_schedule": {
+      "title": "Resource Schedule | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineerSchedule/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Name",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Resource Type Resource Level Resource Shift Resource Schedule Resource Reports Settings Get Help and Support Resource Help Tips Start Tour Resource Schedule Create Custom View TOTAL RECORDS 0 TOTAL ACTIVE 0 TOTAL SUSPENDED 0 Name Monday Tuesday Wednesday Thursday Friday Saturday Sunday Date Created Created By Date Updated Updated By Status Actions Rows Per Page 20 1 of 0"
+    },
+    "resource_engineers": {
+      "title": "Resource | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineer/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Staff Code",
+        "Name",
+        "Email",
+        "Phone",
+        "Department",
+        "Region",
+        "Last Actioned",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Last Logged On",
+        "Actions"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-resourse-users"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Resource Type Resource Level Resource Shift Resource Schedule Resource Reports Settings Get Help and Support Resource Help Tips Start Tour Resource Create Custom View TOTAL RECORDS 2 TOTAL ACTIVE 2 TOTAL SUSPENDED 0 Name Email Phone Department Status Actions C Chinwuba Okafor Created 2026-09-07 chinwuba.okafor@cicod.com 08137638481 ACTIVE Rows Per Page 20 1 of 1"
+    },
+    "resource_shift": {
+      "title": "Resource Shift | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=engineerShift/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Shift Color",
+        "Name",
+        "Start Time",
+        "End Time",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Resource Type Resource Level Resource Shift Resource Schedule Resource Reports Settings Get Help and Support Resource Help Tips Start Tour Resource Shift Create Custom View TOTAL RECORDS 0 TOTAL ACTIVE 0 TOTAL SUSPENDED 0 Shift Color Name Start Time End Time Created By Date Updated Updated By Status Actions Rows Per Page 20 1 of 0"
+    },
+    "reports_index": {
+      "title": "Reports | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=reports/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "Clear all",
+        "Search",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "Update",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Task ID",
+        "Title",
+        "Queue",
+        "Queue Type",
+        "Assigned to",
+        "Email",
+        "Date Created",
+        "Priority",
+        "Task State",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1_search"
+        },
+        {
+          "name": "queue_id",
+          "type": "select-one",
+          "id": "queue_id"
+        },
+        {
+          "name": "queue_type_id",
+          "type": "select-one",
+          "id": "queue_type_id"
+        },
+        {
+          "name": "current_status",
+          "type": "select-one",
+          "id": "status_id"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "searchStatuses"
+        },
+        {
+          "name": "priority",
+          "type": "select-one",
+          "id": "filterByPriority"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Select date range",
+          "id": "reportDateRnge"
+        },
+        {
+          "name": "is_active",
+          "type": "select-one",
+          "id": "filterByIsActive"
+        },
+        {
+          "name": "created_by",
+          "type": "select-one",
+          "id": "created_by"
+        },
+        {
+          "name": "assigned_to",
+          "type": "select-one",
+          "id": "assigned_to"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-standard-users"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "searchUser"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": "checkAll"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "web-form-page"
+        },
+        {
+          "name": "work_order_status",
+          "type": "select-one",
+          "id": "work_order_status"
+        },
+        {
+          "name": "sendEmail",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Reports Audit Log Settings Get Help and Support Reports Help Tips Start Tour Generate Report Queue * Select Queue Select Queue Complaints Finance Human Resources Onboarding Order Fulfilment PLANNING AND SCHEDULING Project Management QA TEST REGISTRATION VALIDATION Resource Allocation TES AUTOMATION UAT Dept Link Queue 61363 UAT Test Queue 90355 Queue Type (Select Queue first) Select Queue Type Status (Select Queue Type first) Select Status Priority Select Prority High Medium Low Date Task State Select Task State Active Suspended Created By Select Created By !stUSer LastUser Adeola Egodo Babatunde Adenrele Dorcas Ajuzieogu Eyitayo Abidogun Henry Okwarajiaku Prince Ekpenyong Raissa Boyomo Reb Saku Rebecca Saku system toyin Adenrele Assigned To Select Assigned To !stUSer LastUser Adeola Egodo Babatunde Adenrele Dorcas Ajuzieogu Eyitayo Abidogun Henry Okwarajiaku Prince Ekpenyong Raissa Boyomo Reb Saku Rebecca Saku system toyin Adenrele Clear all Search"
+    },
+    "audit_log": {
+      "title": "Audit Log | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=auditLog/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "Apply",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Date/Time",
+        "User",
+        "IP Address",
+        "Feature",
+        "Action",
+        "Description"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "create_time",
+          "type": "date",
+          "placeholder": "",
+          "id": "filterByDateCreated"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search By Feature",
+          "id": "search-table-audit"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "s2id_autogen1_search"
+        },
+        {
+          "name": "created_by",
+          "type": "select-one",
+          "id": "created_by"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "DD/MM/YYYY - DD/MM/YYYY",
+          "id": "auditDateRange"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number-audit"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support AuditLog Help Tips Start Tour Audit Log Download Filter Date Created Search By Feature User All All !stUSer LastUser Adeola Egodo Babatunde Adenrele Dorcas Ajuzieogu Eyitayo Abidogun Henry Okwarajiaku Prince Ekpenyong Raissa Boyomo Reb Saku Rebecca Saku system toyin Adenrele Date Range Reset Apply Date/Time User IP Address Feature Action Description 2026-09-18 00:47:24 system 102.88.167.67 Tickets Create Ticket Ticket was created with ID: 1049 2026-09-17 21:22:15 Raissa Boyomo 102.88.169.110 Resource Suspend Resource Type Resource Type UAT Resource Type was Suspended 2026-09-17 21:21:34 Raissa Boyomo 102.88.169.110 Resource Create Resource Type Resource Type UAT Resource Type Created! 2026-09-17 21:09:51 Raissa Boyomo 102.88.169.110 Users Un-suspend Role Role UAT Test Role was Un-suspended 2026-09-17 21:09:22 Raissa Boyomo 102.88.169.110 Users Suspend Role Role UAT Test Role was suspended 2026-09-17 21:08:31 Raissa Boyomo 102.88.169.110 Users Update Role Role UAT Test Role Updated! 2026-09-17 21:06:01 Raissa Boyomo "
+    },
+    "task_routing": {
+      "title": "Business Region Locations | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=businessRegionLocations/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Business Region",
+        "Countries",
+        "States",
+        "Date Created",
+        "Created By",
+        "Date Updated",
+        "Updated By",
+        "Status",
+        "Actions"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search",
+          "id": "search-table"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations1"
+        },
+        {
+          "name": "escalations",
+          "type": "radio",
+          "placeholder": "",
+          "id": "escalations2"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals1"
+        },
+        {
+          "name": "approvals",
+          "type": "radio",
+          "placeholder": "",
+          "id": "approvals2"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Task Routing Help Tips Start Tour Task Routing Create Custom View TOTAL RECORDS 1 TOTAL ACTIVE 1 TOTAL SUSPENDED 0 Business Region Countries States Created By Date Updated Updated By Status Actions 45b,admiralty road,Eti Osa Created 2026-06-09 Angola,Cameroon,Congo,Ethopia,Nigeria,South Africa,United Kingdom null Adeola Egodo ACTIVE Rows Per Page 20 1 of 1"
+    },
+    "call_drivers": {
+      "title": "Call Drivers | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=callDrivers/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "Cancel",
+        "save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Name",
+        "Description",
+        "Create Time",
+        "Created by",
+        "Update Time",
+        "Updated By",
+        "Status",
+        "Action"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": "call_driver_name"
+        },
+        {
+          "name": "",
+          "type": "textarea",
+          "placeholder": "",
+          "id": "call_driver_description"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": "submit_btn"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Call Drivers Help Tips Start Tour Manage Call Drivers Add Call Driver Name Description Create Time Created by Update Time Updated By Status Action Walk-in Walk-in 2023-07-17 11:50:03 system N/A N/A ACTIVE Social media Social media 2023-07-17 11:50:03 system N/A N/A ACTIVE Letter Letter 2023-07-17 11:50:03 system N/A N/A ACTIVE E-mail E-mail 2023-07-17 11:50:03 system N/A N/A ACTIVE Call Call 2023-07-17 11:50:03 system N/A N/A ACTIVE Rows Per Page 20 1 of 1"
+    },
+    "email_integration": {
+      "title": "Email Integration | Index- Workforce Manager",
+      "url": "https://cicodecms.cicodsaasstaging.com/ecms/index.php?r=emailIntegration/index",
+      "h1": [],
+      "buttons": [
+        "ordered",
+        "bullet",
+        "Save Note",
+        "Cancel",
+        "Cancel",
+        "ordered",
+        "bullet",
+        "Cancel",
+        "save",
+        "OK",
+        "OK"
+      ],
+      "tabs": [
+        "Paperless Service Portal",
+        "View All",
+        "CICOD Drive",
+        "Cicod Admin",
+        "R Raissa Boyomo",
+        "Settings",
+        "Log Out"
+      ],
+      "tableHeaders": [
+        "Email Address",
+        "Queue",
+        "Queue Type",
+        "Workflow Status",
+        "Created by",
+        "Created Time",
+        "Updated By",
+        "Updated Time",
+        "Status",
+        "Action"
+      ],
+      "formInputs": [
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_ec_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Search by name or email",
+          "id": "search_existing_contact"
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": "notes_quick_action_contacts_image"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Mr, Mrs, Miss...",
+          "id": "qa_contacts_prefix"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "First Name",
+          "id": "first_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Middle Name",
+          "id": "contacts_middle_name"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Last Name",
+          "id": "last_name"
+        },
+        {
+          "name": "",
+          "type": "email",
+          "placeholder": "Enter Email Address",
+          "id": "email_address"
+        },
+        {
+          "name": "",
+          "type": "tel",
+          "placeholder": "+2340XXXXXXX",
+          "id": "phone_number"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 1",
+          "id": "address_one"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "Address 2",
+          "id": "address_two"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_country"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa__contacts_state"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "City...",
+          "id": "contacts_city"
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "contacts_lifecycle_stage"
+        },
+        {
+          "name": "",
+          "type": "date",
+          "placeholder": "Select date",
+          "id": "birthday"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "linkedIn link",
+          "id": "linkedin"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Twitter link",
+          "id": "twitter"
+        },
+        {
+          "name": "",
+          "type": "url",
+          "placeholder": "Website",
+          "id": "website"
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "checkbox",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "text",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": "qa_nc_call_driver_options"
+        },
+        {
+          "name": "",
+          "type": "submit",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "select-one",
+          "id": ""
+        },
+        {
+          "name": "page",
+          "type": "text",
+          "placeholder": "",
+          "id": "page-number"
+        }
+      ],
+      "textSnippet": " Quick Actions Paperless Service Portal 0 R Raissa Boyomo Overview Dashboard Request Tasks Workflows Forms Contacts Users Resource Reports Settings Get Help and Support Email Integration Help Tips Start Tour Email Integration: Home Add Account Email Address Queue Queue Type Workflow Status Created by Created Time Updated By Updated Time Status Action Rows Per Page 20 1 of 0"
+    },
+    "drive_mydocuments": {
+      "title": "",
+      "url": "https://cicodecms.cicodsaasstaging.com/cde/my-documents",
+      "h1": [
+        "Gov Drive",
+        "Gov Drive",
+        "My Documents",
+        "Folders (8)",
+        "Files (5)",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties"
+      ],
+      "buttons": [
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "Search",
+        "0",
+        "R\n\nRaissa Boyomo",
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "NEW",
+        "Grid View",
+        "S/N",
+        "FOLDER NAME",
+        "Grid View",
+        "FILE TYPE",
+        "FILE NAME",
+        "OWNER",
+        "DATE"
+      ],
+      "tabs": [],
+      "tableHeaders": [
+        "S/N",
+        "FOLDER NAME",
+        "OWNER",
+        "DATE",
+        "FILE NAME",
+        "OWNER",
+        "FILE SIZE",
+        "DATE"
+      ],
+      "formInputs": [
+        {
+          "name": "searchString",
+          "type": "text",
+          "placeholder": "Search file",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "file",
+          "placeholder": "",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "number",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": "Gov Drive Search 0 R Raissa Boyomo My Documents TESTING MOBILE testFolder e-sign UAT_MyDocument_1789706849335 UAT_MyDocExt_1789712698652 UAT_Starred_Folder_1789713123458 UatStarFol516617 UAT_Collab_1789726433830 Collaborations Departments Historic Files General Documents Application Documents ECMS Documents WFM Documents Recent Starred Trash Audit Log Storage My Documents NEW Folders (8) Grid View S/N FOLDER NAME OWNER DATE 1 TESTING MOBILE RB Raissa Boyomo ME Sep 15, 2026 1:17:52 PM 2 testFolder RB Raissa Boyomo ME Sep 15, 2026 2:29:23 PM 3 e-sign RB Raissa Boyomo ME Sep 17, 2026 8:51:19 AM 4 UAT_MyDocument_1789706849335 RB Raissa Boyomo ME Sep 18, 2026 4:47:32 AM 5 UAT_MyDocExt_1789712698652 RB Raissa Boyomo ME Sep 18, 2026 6:25:05 AM 6 UAT_Starred_Folder_1789713123458 RB Raissa Boyomo ME Sep 18, 2026 6:32:56 AM 7 UatStarFol516617 RB Raissa Boyomo ME Sep 18, 2026 9:59:03 AM 8 UAT_Collab_1789726433830 RB Raissa Boyomo ME Sep 18, 2026 10:14:16 AM Files (5) Grid View FILE TYPE FILE NAME OWNER FILE SIZE DATE uat_starred_fileA_1789713123458 RB Raissa Boyomo ME 62 bytes Sep 18, 2026 6:33:15 AM uat_starred_fileB_1789713123458 RB Raissa Boyomo ME 62 bytes Sep 18, 2026 6:33:15 AM uat_star"
+    },
+    "drive_collaborations": {
+      "title": "404: This page could not be found",
+      "url": "https://cicodecms.cicodsaasstaging.com/cde/collaborations",
+      "h1": [
+        "404",
+        "This page could not be found."
+      ],
+      "buttons": [],
+      "tabs": [],
+      "tableHeaders": [],
+      "formInputs": [],
+      "textSnippet": "404 This page could not be found."
+    },
+    "drive_app_documents": {
+      "title": "404: This page could not be found",
+      "url": "https://cicodecms.cicodsaasstaging.com/cde/application-documents/queue",
+      "h1": [
+        "404",
+        "This page could not be found."
+      ],
+      "buttons": [],
+      "tabs": [],
+      "tableHeaders": [],
+      "formInputs": [],
+      "textSnippet": "404 This page could not be found."
+    },
+    "drive_recent": {
+      "title": "",
+      "url": "https://cicodecms.cicodsaasstaging.com/cde/recent",
+      "h1": [
+        "Gov Drive",
+        "Gov Drive",
+        "Recent",
+        "Properties"
+      ],
+      "buttons": [
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "Search",
+        "0",
+        "R\n\nRaissa Boyomo",
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "Grid View",
+        "FILE TYPE",
+        "FILE NAME"
+      ],
+      "tabs": [],
+      "tableHeaders": [
+        "FILE NAME",
+        "OWNER",
+        "FILE SIZE",
+        "DATE"
+      ],
+      "formInputs": [
+        {
+          "name": "searchString",
+          "type": "text",
+          "placeholder": "Search file",
+          "id": ""
+        }
+      ],
+      "textSnippet": "Gov Drive Search 0 R Raissa Boyomo My Documents TESTING MOBILE testFolder e-sign UAT_MyDocument_1789706849335 UAT_MyDocExt_1789712698652 UAT_Starred_Folder_1789713123458 UatStarFol516617 UAT_Collab_1789726433830 Collaborations Departments Historic Files General Documents Application Documents ECMS Documents WFM Documents Recent Starred Trash Audit Log Storage Recent Grid View FILE TYPE FILE NAME OWNER FILE SIZE DATE Earlier This Month (9) uat_starred_filea_1789713123458-2059201112 RB Raissa Boyomo ME 23.27 KB Sep 18, 2026 11:40:43 AM test RB Raissa Boyomo ME 186.30 KB Sep 17, 2026 3:47:08 PM test RB Raissa Boyomo ME 186.30 KB Sep 17, 2026 3:02:47 PM e01f710e-dffb-40f9-862e-e8d187adc6b7_Screenshot_20260730_103052_1Gov Mobile RB Raissa Boyomo ME 131.66 KB Sep 17, 2026 12:25:04 PM Gov Calendar PRD RB Raissa Boyomo ME 26.79 KB Sep 17, 2026 9:25:35 AM user_drawn_signature RB Raissa Boyomo ME 12.09 KB Sep 17, 2026 8:52:43 AM testing RB Raissa Boyomo ME 126.05 KB Sep 16, 2026 11:35:57 AM GOV MAIL RB Raissa Boyomo ME 228.92 KB Sep 15, 2026 1:23:05 PM AEDC FILE RB Raissa Boyomo ME 38.03 KB Sep 15, 2026 1:15:09 PM Properties There is no file selected"
+    },
+    "drive_starred": {
+      "title": "",
+      "url": "https://cicodecms.cicodsaasstaging.com/cde/starred",
+      "h1": [
+        "Gov Drive",
+        "Gov Drive",
+        "Starred",
+        "Starred Folders (1)",
+        "Properties",
+        "Starred Files (10)",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties",
+        "Properties"
+      ],
+      "buttons": [
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "Search",
+        "0",
+        "R\n\nRaissa Boyomo",
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "Grid View",
+        "FILE TYPE",
+        "FILE NAME",
+        "OWNER",
+        "DATE"
+      ],
+      "tabs": [],
+      "tableHeaders": [
+        "FILE NAME",
+        "OWNER",
+        "FILE SIZE",
+        "DATE"
+      ],
+      "formInputs": [
+        {
+          "name": "searchString",
+          "type": "text",
+          "placeholder": "Search file",
+          "id": ""
+        }
+      ],
+      "textSnippet": "Gov Drive Search 0 R Raissa Boyomo My Documents TESTING MOBILE testFolder e-sign UAT_MyDocument_1789706849335 UAT_MyDocExt_1789712698652 UAT_Starred_Folder_1789713123458 UatStarFol516617 UAT_Collab_1789726433830 Collaborations Departments Historic Files General Documents Application Documents ECMS Documents WFM Documents Recent Starred Trash Audit Log Storage Starred Starred Folders (1) UAT ADDRESS SIGNATURE QUEUE TYPE Sep 18, 2026 10:13:24 AM Details and Activity Properties There is no file selected Starred Files (10) Grid View FILE TYPE FILE NAME OWNER FILE SIZE DATE asset-management_download RB Raissa Boyomo ME 27.00 KB Sep 17, 2026 12:19:56 PM e01f710e-dffb-40f9-862e-e8d187adc6b7_Screenshot_20260730_103052_1Gov Mobile RB Raissa Boyomo ME 131.66 KB Sep 17, 2026 12:25:04 PM Gov Calendar PRD RB Raissa Boyomo ME 26.79 KB Sep 17, 2026 9:25:35 AM test RB Raissa Boyomo ME 186.30 KB Sep 17, 2026 3:02:47 PM uat_ext_testfile_1789725427199 RB Raissa Boyomo ME 67 bytes Sep 18, 2026 9:57:24 AM uat_starred_filea_1789713123458-2059201112 RB Raissa Boyomo ME 23.27 KB Sep 18, 2026 11:40:43 AM Windows limits total file paths (including the folder location and file name) to 260 characters by defa"
+    },
+    "drive_trash": {
+      "title": "",
+      "url": "https://cicodecms.cicodsaasstaging.com/cde/trash",
+      "h1": [
+        "Gov Drive",
+        "Gov Drive",
+        "Trash",
+        "Trashed Files",
+        "Properties"
+      ],
+      "buttons": [
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "Search",
+        "0",
+        "R\n\nRaissa Boyomo",
+        "My Documents",
+        "Collaborations",
+        "Departments",
+        "Historic Files",
+        "General Documents",
+        "Application Documents",
+        "List View",
+        "File Type",
+        "FILE NAME"
+      ],
+      "tabs": [],
+      "tableHeaders": [
+        "FILE NAME",
+        "OWNER",
+        "FILE SIZE",
+        "DATE"
+      ],
+      "formInputs": [
+        {
+          "name": "searchString",
+          "type": "text",
+          "placeholder": "Search file",
+          "id": ""
+        },
+        {
+          "name": "",
+          "type": "number",
+          "placeholder": "",
+          "id": ""
+        }
+      ],
+      "textSnippet": "Gov Drive Search 0 R Raissa Boyomo My Documents TESTING MOBILE testFolder e-sign UAT_MyDocument_1789706849335 UAT_MyDocExt_1789712698652 UAT_Starred_Folder_1789713123458 UatStarFol516617 UAT_Collab_1789726433830 Collaborations Departments Historic Files General Documents Application Documents ECMS Documents WFM Documents Recent Starred Trash Audit Log Storage Trash Documents in trash are emptied every 30days... Trashed Files List View File Type FILE NAME OWNER FILE SIZE DATE UAT_Trash_DeletePerm_1789710577 RB Raissa Boyomo ME 94 bytes Sep 18, 2026 5:54:30 AM uat_mydoc_testfile325759867 RB Raissa Boyomo ME 3.46 KB Sep 18, 2026 5:03:02 AM uat_mydoc_testfile RB Raissa Boyomo ME 63 bytes Sep 18, 2026 5:03:32 AM GOV MAIL RB Raissa Boyomo ME 228.92 KB Sep 15, 2026 1:23:04 PM Pages 1 of 1 Properties There is no file selected"
+    }
+  }
+}

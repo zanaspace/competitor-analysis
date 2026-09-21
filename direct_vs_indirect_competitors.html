@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direct vs. Indirect Competitor Teardowns | ECMS Intelligence</title>
+  
+  <!-- Executive Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #060913;
+      --surface: #0f172a;
+      --surface-card: #141f36;
+      --border: #1e293b;
+      --border-light: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --cyan: #38bdf8;
+      --emerald: #10b981;
+      --amber: #f59e0b;
+      --purple: #a855f7;
+      --rose: #f43f5e;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      padding: 32px 0 64px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .btn-back:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    .header-box {
+      margin-bottom: 40px;
+    }
+    .header-box h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #fff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header-box p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 900px;
+    }
+
+    /* Section Tabs */
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .filter-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--surface-card);
+      color: #fff;
+      border-color: var(--cyan);
+    }
+    .filter-btn.active {
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+    }
+
+    /* Grid of Battlecards */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .comp-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+    .comp-card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-3px);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-title h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .card-title span {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+    }
+    .comp-badge {
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-direct { background: rgba(244, 63, 94, 0.15); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
+    .badge-indirect { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+
+    .card-body p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+    .box-adv {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+    .box-adv strong {
+      color: #34d399;
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 2px;
+    }
+    .box-adv p {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      margin-bottom: 0;
+      line-height: 1.45;
+    }
+
+    .box-gap {
+      background: rgba(244, 63, 94, 0.08);
+      border: 1px solid rgba(244, 63, 94, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      margin-bottom: 14px;
+    }
+    .box-gap strong {
+      color: #fb7185;
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 2px;
+    }
+    .box-gap p {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      margin-bottom: 0;
+      line-height: 1.45;
+    }
+
+    .card-footer {
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+    .foot-label { color: var(--text-dim); }
+    .foot-val { font-family: 'JetBrains Mono', monospace; font-weight: 700; color: #fff; }
+
+    @media (max-width: 960px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      .header-box h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Navigation -->
+    <div class="top-bar">
+      <a href="index.html" class="badge-nav">
+        <span>← Competitive Intelligence Home</span>
+      </a>
+      <a href="index.html" class="btn-back">
+        <span>Back to Master Dashboard</span>
+      </a>
+    </div>
+
+    <!-- Header -->
+    <div class="header-box">
+      <h1>Direct vs. Indirect Competitor Teardowns</h1>
+      <p>
+        Rigorous market categorization distinguishing direct enterprise workflow contenders from indirect platform suites, clarifying where CICOD ECMS holds undisputed operational advantages.
+      </p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards('all')">All Competitors (8)</button>
+      <button class="filter-btn" onclick="filterCards('direct')">Direct Competitors (4)</button>
+      <button class="filter-btn" onclick="filterCards('indirect')">Indirect Competitors (4)</button>
+    </div>
+
+    <!-- Competitor Cards Grid -->
+    <div class="cards-grid">
+
+      <!-- Competitor 1: ServiceNow (Direct) -->
+      <div class="comp-card" data-cat="direct">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>ServiceNow</h3>
+              <span>Enterprise Service &amp; Field Ops</span>
+            </div>
+            <span class="comp-badge badge-direct">Direct</span>
+          </div>
+          <div class="card-body">
+            <p>The global enterprise heavyweight for IT service management, customer workflows, and field technician dispatch.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Massive enterprise credibility, endless customization, and enterprise ITIL standardization.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>Exorbitant licensing ($120–$250/user/mo), lengthy 6–18 month rollouts, and lack of built-in sovereign drive storage.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--emerald);">80% Lower TCO + 3-Week Go-Live</span>
+        </div>
+      </div>
+
+      <!-- Competitor 2: Jira Service Management (Direct) -->
+      <div class="comp-card" data-cat="direct">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>Jira Service Management</h3>
+              <span>Atlassian IT &amp; Work Mgmt</span>
+            </div>
+            <span class="comp-badge badge-direct">Direct</span>
+          </div>
+          <div class="card-body">
+            <p>Atlassian’s ticketing platform designed for developer, DevOps, and IT operations collaboration.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Rapid self-serve setup, developer integration, and low base entry cost for small IT teams.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>Ticketing paradigm does not support formal executive memorandums, corporate delegation of authority, physical shift rosters, or field resource matching.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--cyan);">Native Minuting + Shift Rostering</span>
+        </div>
+      </div>
+
+      <!-- Competitor 3: Kissflow / Pipefy (Direct) -->
+      <div class="comp-card" data-cat="direct">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>Kissflow / Pipefy</h3>
+              <span>Low-Code Workflow Portals</span>
+            </div>
+            <span class="comp-badge badge-direct">Direct</span>
+          </div>
+          <div class="card-body">
+            <p>SaaS form builders and lightweight approval pipeline management for mid-market business operations.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Intuitive drag-and-drop form building and clean visual kanban pipelines for simple approvals.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>Shallow operational execution. Form approvals end at the screen—no concept of field dispatch, technician certification matching, or statutory SLA timers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--emerald);">Closed-Loop Field Work Orders</span>
+        </div>
+      </div>
+
+      <!-- Competitor 4: Zoho Creator / One (Direct) -->
+      <div class="comp-card" data-cat="direct">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>Zoho One</h3>
+              <span>All-In-One Business Suite</span>
+            </div>
+            <span class="comp-badge badge-direct">Direct</span>
+          </div>
+          <div class="card-body">
+            <p>Inexpensive, multi-application business operating system geared towards small and medium-sized enterprises.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Extremely broad application suite at low cost; covers CRM, forms, accounting, and basic desks.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>Jack of all trades, master of none. Fragmented data across apps, lacking legal-grade corporate governance, official minuting dossiers, or enterprise SLA watchdogs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--cyan);">Enterprise-Grade Audit &amp; Governance</span>
+        </div>
+      </div>
+
+      <!-- Competitor 5: Microsoft Power Platform (Indirect) -->
+      <div class="comp-card" data-cat="indirect">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>MS Power Platform</h3>
+              <span>Power Automate + Dynamics 365</span>
+            </div>
+            <span class="comp-badge badge-indirect">Indirect</span>
+          </div>
+          <div class="card-body">
+            <p>Microsoft’s low-code suite combining Power Apps, SharePoint, Dataverse, and Dynamics 365 Field Service.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Universal presence in Microsoft 365 enterprise tenants; deep Office/Teams synergy.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>Extreme architectural sprawl. Requires assembling 4 separate tools; punitive Dataverse storage expansion fees and unpredictable API throttling.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--emerald);">Turnkey Out-of-the-Box Engine</span>
+        </div>
+      </div>
+
+      <!-- Competitor 6: Salesforce Service Cloud (Indirect) -->
+      <div class="comp-card" data-cat="indirect">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>Salesforce Service Cloud</h3>
+              <span>CRM &amp; Contact Center</span>
+            </div>
+            <span class="comp-badge badge-indirect">Indirect</span>
+          </div>
+          <div class="card-body">
+            <p>The market leader in customer relationship management, contact center ticketing, and omni-channel support.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Gold-standard customer relationship database, rich integration ecosystem, and mature analytics.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>Engineered for external customer support, not internal operational governance, CapEx approvals, or internal departmental tasks. Astronomical license costs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--purple);">Purpose-Built for Internal Operations</span>
+        </div>
+      </div>
+
+      <!-- Competitor 7: Camunda 8 (Indirect) -->
+      <div class="comp-card" data-cat="indirect">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>Camunda 8</h3>
+              <span>BPMN 2.0 Process Orchestration</span>
+            </div>
+            <span class="comp-badge badge-indirect">Indirect</span>
+          </div>
+          <div class="card-body">
+            <p>High-throughput, developer-centric workflow orchestration engine for enterprise microservices and human tasks.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Unmatched developer flexibility, high-volume transaction execution, and strict BPMN 2.0 adherence.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>It is an engine, not an application. Delivers zero out-of-the-box user interfaces for business managers; requires complete custom frontend development.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--cyan);">Ready-to-Use Executive &amp; Field UI</span>
+        </div>
+      </div>
+
+      <!-- Competitor 8: Monday.com / Asana Enterprise (Indirect) -->
+      <div class="comp-card" data-cat="indirect">
+        <div>
+          <div class="card-top">
+            <div class="card-title">
+              <h3>Monday.com / Asana</h3>
+              <span>Collaborative Work Management</span>
+            </div>
+            <span class="comp-badge badge-indirect">Indirect</span>
+          </div>
+          <div class="card-body">
+            <p>Modern visual project and task management suites designed for creative, marketing, and cross-functional teams.</p>
+            <div class="box-adv">
+              <strong>Incumbent Strengths</strong>
+              <p>Delightful, intuitive user interfaces and rapid ad-hoc team board customization.</p>
+            </div>
+            <div class="box-gap">
+              <strong>Critical Enterprise Vulnerability</strong>
+              <p>Lack formal delegation of authority, official corporate minuting, compliance-grade document custody, and technician shift capacity balancing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="foot-label">Why ECMS Wins:</span>
+          <span class="foot-val" style="color: var(--emerald);">Forensic Governance &amp; DOA Enforced</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function filterCards(cat) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      document.querySelectorAll('.comp-card').forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

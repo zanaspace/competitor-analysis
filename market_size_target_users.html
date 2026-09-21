@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Market Size &amp; Target Personas | ECMS Intelligence</title>
+  
+  <!-- Executive Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #060913;
+      --surface: #0f172a;
+      --surface-card: #141f36;
+      --border: #1e293b;
+      --border-light: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --cyan: #38bdf8;
+      --emerald: #10b981;
+      --amber: #f59e0b;
+      --purple: #a855f7;
+      --rose: #f43f5e;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      padding: 32px 0 64px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .btn-back:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    .header-box {
+      margin-bottom: 40px;
+    }
+    .header-box h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #fff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header-box p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 900px;
+    }
+
+    /* TAM / SAM / SOM Grid */
+    .market-size-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+    .size-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .size-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+    }
+    .size-card.tam::before { background: var(--purple); }
+    .size-card.sam::before { background: var(--cyan); }
+    .size-card.som::before { background: var(--emerald); }
+
+    .size-type {
+      font-size: 0.74rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .size-num {
+      font-size: 2.5rem;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .size-label {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 10px;
+    }
+    .size-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Personas Section */
+    .personas-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .persona-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      transition: var(--transition);
+    }
+    .persona-card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      background: var(--surface-card);
+    }
+    .persona-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .persona-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: var(--cyan);
+      flex-shrink: 0;
+    }
+    .persona-meta h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .persona-meta span {
+      font-size: 0.76rem;
+      color: var(--text-dim);
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+    }
+
+    .pain-gain-box {
+      margin-bottom: 12px;
+    }
+    .pain-box {
+      background: rgba(244, 63, 94, 0.08);
+      border: 1px solid rgba(244, 63, 94, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      margin-bottom: 10px;
+      font-size: 0.82rem;
+    }
+    .pain-box strong { color: #fb7185; display: block; margin-bottom: 2px; text-transform: uppercase; font-size: 0.74rem; }
+    .pain-box p { color: #cbd5e1; margin-bottom: 0; line-height: 1.45; }
+
+    .gain-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      font-size: 0.82rem;
+    }
+    .gain-box strong { color: #34d399; display: block; margin-bottom: 2px; text-transform: uppercase; font-size: 0.74rem; }
+    .gain-box p { color: #cbd5e1; margin-bottom: 0; line-height: 1.45; }
+
+    @media (max-width: 960px) {
+      .market-size-grid, .personas-grid { grid-template-columns: 1fr; }
+      .header-box h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Navigation -->
+    <div class="top-bar">
+      <a href="index.html" class="badge-nav">
+        <span>← Competitive Intelligence Home</span>
+      </a>
+      <a href="index.html" class="btn-back">
+        <span>Back to Master Dashboard</span>
+      </a>
+    </div>
+
+    <!-- Header -->
+    <div class="header-box">
+      <h1>Enterprise Market Size &amp; Target User Personas</h1>
+      <p>
+        Addressable commercial market opportunity (TAM, SAM, SOM) and deep operational profiling of the enterprise buyer personas driving workflow modernization.
+      </p>
+    </div>
+
+    <!-- TAM / SAM / SOM Market Sizing -->
+    <div class="market-size-grid">
+      <div class="size-card tam">
+        <div class="size-type">Total Addressable Market (TAM)</div>
+        <div class="size-num">$ 26.8 B</div>
+        <div class="size-label">Global Enterprise Workflow Automation</div>
+        <p class="size-desc">
+          The worldwide commercial market for case management, process orchestration, and field service management software (14.2% CAGR through 2028).
+        </p>
+      </div>
+
+      <div class="size-card sam">
+        <div class="size-type">Serviceable Available Market (SAM)</div>
+        <div class="size-num">$ 3.4 B</div>
+        <div class="size-label">Emerging Market &amp; MEA Enterprise Operations</div>
+        <p class="size-desc">
+          Commercial enterprises across Africa and emerging regions requiring unified case approvals, multi-location logistics, and field capacity management.
+        </p>
+      </div>
+
+      <div class="size-card som">
+        <div class="size-type">Serviceable Obtainable Market (SOM)</div>
+        <div class="size-num">$ 280 M</div>
+        <div class="size-label">Initial Commercial Target (West Africa Cohort)</div>
+        <p class="size-desc">
+          Financial institutions, telco infrastructure operators, engineering contractors, and industrial conglomerates in Nigeria, Ghana, and regional hubs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Enterprise Personas -->
+    <div style="margin-bottom: 48px;">
+      <h2 style="font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 8px;">
+        Target Enterprise Buyer &amp; User Personas
+      </h2>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 24px;">
+        The key operational decision-makers who evaluate, authorize, and utilize ECMS across corporate directorates.
+      </p>
+
+      <div class="personas-grid">
+        
+        <!-- Persona 1: COO -->
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-icon">⚙️</div>
+            <div class="persona-meta">
+              <h3>Chief Operating Officer (COO)</h3>
+              <span>Executive Buyer &bull; Operations Oversight</span>
+            </div>
+          </div>
+          <div class="pain-gain-box">
+            <div class="pain-box">
+              <strong>Core Operational Friction</strong>
+              <p>Sluggish cycle times across regional offices; no visibility into where multi-million-naira expenditure requests and capital requisitions are stalled.</p>
+            </div>
+            <div class="gain-box">
+              <strong>ECMS Strategic Value</strong>
+              <p>Real-time command center dashboard, 48h/96h automated SLA timers, and an 80% reduction in end-to-end turnaround time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Persona 2: CIO / CTO -->
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-icon">💻</div>
+            <div class="persona-meta">
+              <h3>Chief Information Officer (CIO)</h3>
+              <span>Technical Buyer &bull; IT Architecture</span>
+            </div>
+          </div>
+          <div class="pain-gain-box">
+            <div class="pain-box">
+              <strong>Core Operational Friction</strong>
+              <p>SaaS license sprawl across ticketing, form builders, and cloud storage (SharePoint, AWS); vulnerability to dollar-exchange-rate devaluations.</p>
+            </div>
+            <div class="gain-box">
+              <strong>ECMS Strategic Value</strong>
+              <p>Unified architecture combining workflow, shift rostering, and sovereign drive storage (cDrive) in local currency at 80% lower TCO.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Persona 3: Head of Audit & Risk -->
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-icon">⚖️</div>
+            <div class="persona-meta">
+              <h3>Chief Risk Officer / Head of Audit</h3>
+              <span>Governance &bull; Regulatory Compliance</span>
+            </div>
+          </div>
+          <div class="pain-gain-box">
+            <div class="pain-box">
+              <strong>Core Operational Friction</strong>
+              <p>Approvals occurring over unmonitored WhatsApp and email threads; missing physical paperwork; severe risk during statutory and ISO audits.</p>
+            </div>
+            <div class="gain-box">
+              <strong>ECMS Strategic Value</strong>
+              <p>Immutable digital file jackets, unalterable chronological minute trails, and tamper-proof forensic audit logs capturing user IP and timestamps.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Persona 4: Field Operations Director -->
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-icon">📍</div>
+            <div class="persona-meta">
+              <h3>Field Operations Director</h3>
+              <span>Tactical Execution &bull; Workforce Management</span>
+            </div>
+          </div>
+          <div class="pain-gain-box">
+            <div class="pain-box">
+              <strong>Core Operational Friction</strong>
+              <p>Technicians assigned tasks blindly without skill verification; unmonitored shift rosters; no verified photographic evidence of completed site work.</p>
+            </div>
+            <div class="gain-box">
+              <strong>ECMS Strategic Value</strong>
+              <p>Skill-based dispatch (e.g. COREN engineer certification), working shift windows (8h rotational), and mandatory mobile photo checklists with GPS tags.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
