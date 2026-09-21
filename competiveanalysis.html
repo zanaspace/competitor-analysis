@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CICOD ECMS Commercial Intelligence &amp; Competitive Analysis</title>
+  
+  <!-- Modern Executive Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #060913;
+      --bg-alt: #0a0f1d;
+      --surface: #0f172a;
+      --surface-card: #141f36;
+      --surface-hover: #1c2b4a;
+      --border: #1e293b;
+      --border-light: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --cyan: #38bdf8;
+      --cyan-glow: rgba(56, 189, 248, 0.18);
+      --emerald: #10b981;
+      --emerald-glow: rgba(16, 185, 129, 0.18);
+      --amber: #f59e0b;
+      --amber-glow: rgba(245, 158, 11, 0.18);
+      --purple: #a855f7;
+      --purple-glow: rgba(168, 85, 247, 0.18);
+      --rose: #f43f5e;
+      --rose-glow: rgba(244, 63, 94, 0.18);
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Ambient Glows */
+    .ambient-glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(140px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.12;
+    }
+    .glow-1 { top: -100px; left: -100px; background: var(--cyan); }
+    .glow-2 { top: 40%; right: -150px; background: var(--purple); }
+    .glow-3 { bottom: -100px; left: 35%; background: var(--emerald); }
+
+    /* Top Bar */
+    header.top-header {
+      background: rgba(10, 15, 29, 0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 50;
+      flex-shrink: 0;
+      backdrop-filter: blur(16px);
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .sidebar-toggle-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--cyan);
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .sidebar-toggle-btn:hover {
+      border-color: var(--cyan);
+      background: var(--surface-card);
+    }
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #0284c7, #38bdf8);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #060913;
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+    .brand-title h1 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    .brand-title p {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--emerald);
+      font-size: 0.74rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .status-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 8px var(--emerald);
+    }
+    .btn-portal-back {
+      padding: 6px 14px;
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .btn-portal-back:hover {
+      color: #fff;
+      border-color: var(--cyan);
+    }
+
+    /* Main App Layout */
+    .app-layout {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Left Sidebar */
+    aside.sidebar {
+      width: 290px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      transition: var(--transition);
+      z-index: 40;
+      overflow-y: auto;
+    }
+    aside.sidebar.collapsed {
+      margin-left: -290px;
+    }
+    .sidebar-section-title {
+      font-size: 0.68rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 16px 20px 8px;
+    }
+    .sidebar-nav {
+      list-style: none;
+      padding: 0 10px 20px;
+    }
+    .nav-tab-btn {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-bottom: 4px;
+      text-decoration: none;
+    }
+    .nav-tab-btn:hover {
+      background: rgba(255, 255, 255, 0.03);
+      color: #fff;
+    }
+    .nav-tab-btn.active {
+      background: var(--surface-card);
+      border-color: var(--border);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .nav-tab-btn.active .tab-icon {
+      color: var(--cyan);
+    }
+    .nav-tab-btn .tab-icon {
+      font-size: 1.1rem;
+      width: 24px;
+      text-align: center;
+      color: var(--text-dim);
+      transition: var(--transition);
+    }
+    .nav-tab-btn .tab-badge {
+      margin-left: auto;
+      font-size: 0.68rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-dim);
+    }
+
+    /* Main View Area */
+    main.content-view {
+      flex: 1;
+      overflow-y: auto;
+      padding: 36px 40px 80px;
+      position: relative;
+    }
+    .tab-pane {
+      display: none;
+      animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .tab-pane.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Common Typography & Card Styles */
+    .pane-header {
+      margin-bottom: 32px;
+    }
+    .pane-tag {
+      font-size: 0.74rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .pane-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .pane-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 880px;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+    .card-highlight {
+      background: linear-gradient(135deg, var(--surface-card) 0%, var(--surface) 100%);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+
+    /* Table Styles */
+    .table-container {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      margin-bottom: 28px;
+    }
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+      text-align: left;
+      min-width: 900px;
+    }
+    table.data-table th {
+      background: rgba(10, 15, 29, 0.95);
+      padding: 16px 14px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 2px solid var(--border);
+    }
+    table.data-table th.col-ecms {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--cyan);
+      border-bottom: 2px solid var(--cyan);
+    }
+    table.data-table td {
+      padding: 16px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      color: #cbd5e1;
+    }
+    table.data-table td.col-ecms {
+      background: rgba(56, 189, 248, 0.04);
+      border-left: 1px solid rgba(56, 189, 248, 0.2);
+      border-right: 1px solid rgba(56, 189, 248, 0.2);
+      font-weight: 600;
+      color: #fff;
+    }
+    table.data-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    table.data-table tr:hover td.col-ecms {
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .badge-green { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-blue { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .badge-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-red { background: rgba(244, 63, 94, 0.15); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
+    .badge-purple { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+
+    /* 5-Step Process Bar */
+    .five-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin: 24px 0 36px;
+    }
+    .five-step-box {
+      background: rgba(6, 9, 19, 0.6);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px 14px;
+      position: relative;
+    }
+    .five-step-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: var(--cyan);
+    }
+    .step-num-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--cyan);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .five-step-box h4 {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .five-step-box p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Grids */
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+
+    /* TCO Range Sliders */
+    .tco-box {
+      background: linear-gradient(135deg, var(--surface-card) 0%, var(--surface) 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .slider-group { margin-bottom: 22px; }
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin-bottom: 8px;
+    }
+    .slider-val {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan);
+      font-weight: 700;
+    }
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+      background: var(--border);
+      border-radius: 4px;
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 10px var(--cyan);
+      cursor: pointer;
+    }
+
+    /* TCO Output Rows */
+    .tco-output-list { display: flex; flex-direction: column; gap: 10px; }
+    .tco-row {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .tco-row.winner {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: rgba(16, 185, 129, 0.05);
+    }
+    .cost-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #f87171;
+    }
+    .cost-val.green { color: var(--emerald); }
+    .savings-card {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .savings-num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--emerald);
+    }
+
+    @media (max-width: 1024px) {
+      aside.sidebar { position: absolute; top: 68px; bottom: 0; left: 0; }
+      .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .five-steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .tco-box { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 700px) {
+      .grid-2, .grid-3, .grid-4, .five-steps-grid { grid-template-columns: 1fr; }
+      main.content-view { padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Top Header -->
+  <header class="top-header">
+    <div class="brand-group">
+      <button class="sidebar-toggle-btn" onclick="toggleSidebar()" title="Toggle Navigation Sidebar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div class="brand-logo">C</div>
+      <div class="brand-title">
+        <h1>CICOD ECMS</h1>
+        <p>Commercial Workflow &amp; Content Services Intelligence</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <div class="status-badge">
+        <span class="dot"></span>
+        <span>Commercial Enterprise Benchmark</span>
+      </div>
+      <a href="capability_matrix_dashboard.html" class="btn-portal-back" style="color:var(--cyan); border-color:var(--cyan); font-weight:700;">
+        <span>🔍 Live Audit &amp; Use Cases Hub (1.5) ↗</span>
+      </a>
+      <a href="ECMS COMPETITOR ANALYSIS 1.5.xlsx" class="btn-portal-back" download title="Download Verified Excel 1.5">
+        <span>📥 Download Excel (1.5)</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- App Layout -->
+  <div class="app-layout">
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-section-title">Strategic Analysis Modules</div>
+      <ul class="sidebar-nav">
+        <li>
+          <button class="nav-tab-btn active" onclick="switchTab('tab-reality')">
+            <span class="tab-icon">⚙️</span>
+            <span>Product Reality &amp; Translation</span>
+            <span class="tab-badge">Core</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-tab-btn" onclick="switchTab('tab-buyers')">
+            <span class="tab-icon">🏢</span>
+            <span>Target Commercial Buyers</span>
+            <span class="tab-badge">ICPs</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-tab-btn" onclick="switchTab('tab-tiers')">
+            <span class="tab-icon">⚔️</span>
+            <span>4-Tier Competitive Set</span>
+            <span class="tab-badge">4 Tiers</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-tab-btn" onclick="switchTab('tab-matrix')">
+            <span class="tab-icon">📊</span>
+            <span>12-Axis Scored Benchmark</span>
+            <span class="tab-badge">Scored</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-tab-btn" onclick="switchTab('tab-moats')">
+            <span class="tab-icon">🛡️</span>
+            <span>Structural Moats vs. Gaps</span>
+            <span class="tab-badge">Reality</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-tab-btn" onclick="switchTab('tab-tco')">
+            <span class="tab-icon">💰</span>
+            <span>Naira TCO &amp; Bundling Modeler</span>
+            <span class="tab-badge">₦ Calc</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-tab-btn" onclick="switchTab('tab-gtm')">
+            <span class="tab-icon">🎯</span>
+            <span>Commercial GTM Playbook</span>
+            <span class="tab-badge">Sales</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-section-title" style="margin-top: auto;">Deployment Posture</div>
+      <div style="padding: 0 16px 20px; font-size: 0.74rem; color: var(--text-dim); line-height: 1.5;">
+        Local Nigerian Data Hosting &bull; Zero FX Volatility (₦ Billing) &bull; NDPA 2023 Compliant
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-view">
+
+      <!-- TAB 1: Product Reality & Private Workspace Translation -->
+      <div class="tab-pane active" id="tab-reality">
+        <div class="pane-header">
+          <div class="pane-tag">Module 01 &bull; Technical &amp; Operational Reality</div>
+          <h2 class="pane-title">What CICOD ECMS Actually Is</h2>
+          <p class="pane-desc">
+            Despite the "ECMS" (Enterprise Content Management System) naming convention, CICOD ECMS is fundamentally a <strong>naira-priced, locally hosted low-code workflow automation and document workflow platform for paper-heavy operations</strong> with secure document repository storage (cDrive) and e-signature natively bundled.
+          </p>
+        </div>
+
+        <!-- The 5-Step Core Builder -->
+        <div class="card card-highlight">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #fff;">The Core Operating Engine: The 5-Step Builder</h3>
+            <span class="badge badge-blue">Foundational Core</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">
+            The entire platform orbits around this central 5-step operational loop. Everything else (dashboards, audit trails, and document custody) serves this workflow engine:
+          </p>
+
+          <div class="five-steps-grid">
+            <div class="five-step-box">
+              <span class="step-num-tag">STEP 01</span>
+              <h4>1. Define Process</h4>
+              <p>Standardize operational activities, routing sequences, and business rules.</p>
+            </div>
+            <div class="five-step-box">
+              <span class="step-num-tag">STEP 02</span>
+              <h4>2. Assign Team</h4>
+              <p>Map roles, department queues, and organizational organograms to tasks.</p>
+            </div>
+            <div class="five-step-box">
+              <span class="step-num-tag">STEP 03</span>
+              <h4>3. Build Forms</h4>
+              <p>Drag-and-drop custom intake forms for both internal staff and external clients.</p>
+            </div>
+            <div class="five-step-box">
+              <span class="step-num-tag">STEP 04</span>
+              <h4>4. Set Approvals</h4>
+              <p>Enforce line-manager sign-offs, financial limits, and mobile e-signatures.</p>
+            </div>
+            <div class="five-step-box">
+              <span class="step-num-tag">STEP 05</span>
+              <h4>5. Escalations</h4>
+              <p>Automate 48h/96h notifications and re-route overdue stalled tasks to directors.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Translation Table: Stripped of Gov Language -->
+        <div class="pane-header" style="margin-top: 40px; margin-bottom: 20px;">
+          <h3 style="font-size: 1.4rem; font-weight: 800; color: #fff;">Translating Stated Features into the Commercial Workspace</h3>
+          <p class="pane-desc">
+            Stripped of public administration framing, here is the exact 1:1 translation of the platform's capabilities into the commercial B2B enterprise workspace:
+          </p>
+        </div>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Stated Platform Feature</th>
+                <th class="col-ecms" style="width: 45%;">Commercial Enterprise Equivalent</th>
+                <th style="width: 30%;">Operational Impact &amp; Target Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Ministries / Departments (MDAs)</strong></td>
+                <td class="col-ecms"><strong>Corporate Departments, Business Units &amp; Subsidiaries</strong></td>
+                <td>Multi-entity organization hierarchy with isolated departmental queues and permissions.</td>
+              </tr>
+              <tr>
+                <td><strong>Civil Service Paperwork</strong></td>
+                <td class="col-ecms"><strong>Back-Office Ops: Approvals, Memos &amp; Requisitions</strong></td>
+                <td>Replaces lost paper file jackets and messy email threads with digital chronological dossiers.</td>
+              </tr>
+              <tr>
+                <td><strong>Inter-MDA Forms</strong></td>
+                <td class="col-ecms"><strong>Inter-Company &amp; Shared-Services Routing / Partner Intake</strong></td>
+                <td>Tokenized cross-subsidiary requisitions (e.g. branch CapEx to Group Treasury, vendor intake).</td>
+              </tr>
+              <tr>
+                <td><strong>Citizen Services</strong></td>
+                <td class="col-ecms"><strong>Customer, Client or Vendor Self-Service Portal</strong></td>
+                <td>External web portal for client loan applications, claim submissions, and supplier quotes.</td>
+              </tr>
+              <tr>
+                <td><strong>Public Ingestion Forms</strong></td>
+                <td class="col-ecms"><strong>External Intake: Applications, Claims &amp; Onboarding</strong></td>
+                <td>Structured digital intake capturing KYC documents, contracts, and payment proofs.</td>
+              </tr>
+              <tr>
+                <td><strong>Gov Drive / Custody</strong></td>
+                <td class="col-ecms"><strong>Secure Document Repository (cDrive Vault)</strong></td>
+                <td>Integrated document storage right inside ticket dockets with zero external cloud storage bills.</td>
+              </tr>
+              <tr>
+                <td><strong>KPI Dashboard for Oversight</strong></td>
+                <td class="col-ecms"><strong>Operational SLA and Cycle-Time Reporting</strong></td>
+                <td>Real-time bottleneck heatmaps and Turnaround Time (TAT) metrics for C-suite operations.</td>
+              </tr>
+              <tr>
+                <td><strong>Integrated e-Signature</strong></td>
+                <td class="col-ecms"><strong>Contract Execution &amp; Client / Vendor Sign-Off</strong></td>
+                <td>Multi-signer electronic signatures eliminating costly $25–$40/user/mo DocuSign point tools.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Reference & Source Validation -->
+        <div class="card" style="margin-top: 24px; background: rgba(6,9,19,0.55); border: 1px solid rgba(56,189,248,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Industry Research &amp; Architectural Validation</h4>
+            </div>
+            <span class="badge badge-blue">Verified Sources</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div>
+              <strong style="color: #fff;">Gartner Content Services Platforms (CSP) Category Definition:</strong> Validates categorizing ECMS as a modern CSP combining document repositories, visual orchestration, and metadata indexing rather than legacy ECM monoliths. <a href="https://www.gartner.com/en/information-technology/glossary/content-services-platform" target="_blank" style="color: var(--cyan); text-decoration: underline;">Gartner CSP Glossary ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">Forrester Wave — Digital Process Automation (DPA):</strong> Confirms the enterprise standard 5-step low-code model (process definition, role assignment, form generation, approval hierarchies, and SLA escalation) for rapid operational deployment. <a href="https://www.forrester.com/report/the-forrester-wave-digital-process-automation-software/" target="_blank" style="color: var(--cyan); text-decoration: underline;">Forrester DPA Benchmark ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: Target Commercial Buyers -->
+      <div class="tab-pane" id="tab-buyers">
+        <div class="pane-header">
+          <div class="pane-tag">Module 02 &bull; Customer Segment &amp; Core Pitch</div>
+          <h2 class="pane-title">Natural Commercial Buyers</h2>
+          <p class="pane-desc">
+            The ideal buyers for CICOD ECMS are paper-heavy, signature-heavy industries where lost documentation and sluggish cycle times create direct fiscal and compliance risk. 
+            <strong>The pitch that survives translation is cycle time and audit trail, not "go paperless."</strong>
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <span class="badge badge-green" style="margin-bottom: 12px;">High Priority ICP</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 6px;">Commercial Banks &amp; Fintechs</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
+              Account opening approvals, commercial loan credit files, KYC remediation, and cross-branch procurement requisitions.
+            </p>
+            <div style="font-size: 0.8rem; color: #cbd5e1; border-top: 1px solid var(--border); padding-top: 10px;">
+              <strong>Value Hook:</strong> Reduces loan approval cycle time from 10 days to 48 hours with tamper-proof audit trails for Central Bank examinations.
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-green" style="margin-bottom: 12px;">High Priority ICP</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 6px;">Insurance Providers</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
+              Claims processing, policy underwriting dossiers, loss adjuster verification, and customer payout authorizations.
+            </p>
+            <div style="font-size: 0.8rem; color: #cbd5e1; border-top: 1px solid var(--border); padding-top: 10px;">
+              <strong>Value Hook:</strong> Eliminates lost physical claim jackets; enforces 96-hour statutory escalation to meet insurance regulatory TAT standards.
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-blue" style="margin-bottom: 12px;">Compliance ICP</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 6px;">Healthcare &amp; Hospitals</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
+              Patient admission files, HMO pre-authorization requests, diagnostic sign-offs, and pharmacy inventory release approvals.
+            </p>
+            <div style="font-size: 0.8rem; color: #cbd5e1; border-top: 1px solid var(--border); padding-top: 10px;">
+              <strong>Value Hook:</strong> Streamlines multi-doctor clinical reviews with in-country local data hosting compliant with NDPA health data mandates.
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-blue" style="margin-bottom: 12px;">High Volume ICP</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 6px;">Universities &amp; Institutions</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
+              Transcript clearance workflows, academic senate memorandums, faculty research grants, and student matriculation dockets.
+            </p>
+            <div style="font-size: 0.8rem; color: #cbd5e1; border-top: 1px solid var(--border); padding-top: 10px;">
+              <strong>Value Hook:</strong> Replaces missing student folders with tokenized public tracking IDs so students can monitor transcript progress online.
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-purple" style="margin-bottom: 12px;">Contract ICP</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 6px;">Law &amp; Professional Firms</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
+              Partner contract execution, multi-party legal briefs, client onboarding KYC, and billable document retention.
+            </p>
+            <div style="font-size: 0.8rem; color: #cbd5e1; border-top: 1px solid var(--border); padding-top: 10px;">
+              <strong>Value Hook:</strong> Integrated e-signature with multi-signer collaboration eliminates separate $40/user/mo Adobe Sign/DocuSign invoices.
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-amber" style="margin-bottom: 12px;">Multi-Site ICP</span>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #fff; margin-bottom: 6px;">Logistics &amp; Multi-Branch Retail</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 14px;">
+              Waybill sign-offs, branch facilities maintenance, fleet breakdown dispatch, and warehouse supplier delivery receipts.
+            </p>
+            <div style="font-size: 0.8rem; color: #cbd5e1; border-top: 1px solid var(--border); padding-top: 10px;">
+              <strong>Value Hook:</strong> Connects headquarters memo approvals directly to field mobile checklists and technician shift rosters.
+            </div>
+          </div>
+        </div>
+
+        <!-- Reference & Source Validation -->
+        <div class="card" style="margin-top: 24px; background: rgba(6,9,19,0.55); border: 1px solid rgba(56,189,248,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Statutory Guidelines &amp; Sector Compliance Sources</h4>
+            </div>
+            <span class="badge badge-blue">Statutory Mandates</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div>
+              <strong style="color: #fff;">Central Bank of Nigeria (CBN) CRMS Regulations:</strong> Mandates pre-disbursement verification and BVN/TIN tagging for all commercial credit files, establishing documentation compliance as the primary credit origination bottleneck. <a href="https://www.cbn.gov.ng" target="_blank" style="color: var(--cyan); text-decoration: underline;">CBN Regulatory Circulars ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">Nigeria Insurance Industry Reform Act (NIIRA) 2025 Section 210:</strong> Legally compels insurers to settle admitted claims within <strong>60 days</strong>, imposing a <strong>₦500,000 fine</strong> plus compound monthly interest for delays, with NAICOM publicly benchmarking turnaround times. <a href="https://naicom.gov.ng" target="_blank" style="color: var(--cyan); text-decoration: underline;">NAICOM Claims Mandate ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">Nigeria Data Protection Act (NDPA) 2023 &amp; CBN In-Country Mandate:</strong> Health and financial records are classified as sensitive personal data, penalizing unauthorized cross-border transfers up to ₦10M or 2% gross annual revenue, with CBN mandating local processing/storage by January 1, 2027. <a href="https://ndpc.gov.ng" target="_blank" style="color: var(--cyan); text-decoration: underline;">NDPC Regulatory Framework ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: 4-Tier Competitive Set -->
+      <div class="tab-pane" id="tab-tiers">
+        <div class="pane-header">
+          <div class="pane-tag">Module 03 &bull; Structured Market Analysis</div>
+          <h2 class="pane-title">The 4-Tier Competitive Set</h2>
+          <p class="pane-desc">
+            Rather than a flat competitor list, commercial rivals attack from four distinct structural vectors: bundle incumbents, price-aggressive suites, specialist ECM/BPM monoliths, and local integrators.
+          </p>
+        </div>
+
+        <!-- Tier 1: The Bundle Incumbents -->
+        <div class="card" style="border-left: 4px solid #38bdf8;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <div>
+              <span class="badge badge-blue">TIER 1 &bull; THE REAL THREAT</span>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 4px;">The Bundle Incumbents</h3>
+            </div>
+            <span style="font-family: 'JetBrains Mono'; font-size: 0.8rem; color: var(--cyan);">Microsoft 365 &amp; Google Workspace</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            <strong>Competitors:</strong> Microsoft 365 (SharePoint, Power Automate, Power Apps); Google Workspace (AppSheet).<br>
+            <strong>The Threat:</strong> Because enterprises already pay for corporate email (Exchange/Gmail), basic workflow automation is perceived as <em>effectively free at the margin</em>.
+          </p>
+          <div style="background: rgba(6,9,19,0.6); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px;">
+            <h4 style="color: var(--cyan); font-size: 0.92rem; font-weight: 700; margin-bottom: 6px;">The "Why Not Just Use Power Automate?" Battlecard Answer:</h4>
+            <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-bottom: 0;">
+              Power Automate is a developer toolbox, not a turnkey operations solution. Building a complete dossier workflow requires stitching together 4 separate tools (SharePoint for files, Dataverse for tables, Power Apps for screens, Power Automate for logic). As soon as document volumes grow, <strong>Dataverse capacity costs ($40/GB/month)</strong> and <strong>Premium Connector licenses ($20/user/month)</strong> create severe licensing traps. CICOD ECMS is turnkey, requires zero custom coding, and includes drive storage at a flat naira rate.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tier 2: Price-Aggressive Suites -->
+        <div class="card" style="border-left: 4px solid #10b981;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <div>
+              <span class="badge badge-green">TIER 2 &bull; SME VOLUME</span>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 4px;">Price-Aggressive Business Suites</h3>
+            </div>
+            <span style="font-family: 'JetBrains Mono'; font-size: 0.8rem; color: var(--emerald);">Zoho One, Odoo, Kissflow, Creatio, Pipefy</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+            <strong>Competitors:</strong> Zoho One / Zoho Creator / Zoho Sign, Odoo Enterprise, Kissflow, Creatio, Pipefy.<br>
+            <strong>Traction:</strong> Very high brand recall among Nigerian mid-market firms and SMEs due to low initial price points ($15–$45/user/mo) and wide application breadth.
+          </p>
+          <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5;">
+            <strong>Why ECMS Outperforms Them:</strong> Zoho and Odoo suffer from severe application fragmentation. Tasks live in one app, forms in another, and files in a third. Tying them together requires complex custom coding (Deluge/Python). Furthermore, they lack formal corporate minuting dossiers, legal-grade dual-authorization chains, and verified technician shift rostering.
+          </div>
+        </div>
+
+        <!-- Tier 3: Specialist ECM & BPM -->
+        <div class="card" style="border-left: 4px solid #a855f7;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <div>
+              <span class="badge badge-purple">TIER 3 &bull; HIGH-END MONOLITHS</span>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 4px;">Specialist ECM &amp; Heavy BPM</h3>
+            </div>
+            <span style="font-family: 'JetBrains Mono'; font-size: 0.8rem; color: var(--purple);">Laserfiche, ServiceNow, Box, Hyland OnBase</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+            <strong>Competitors:</strong> Laserfiche, M-Files, OpenText, DocuWare, Alfresco; Appian, Nintex, Pega, Camunda 8; ServiceNow App Engine, Box Content Cloud, Hyland OnBase.<br>
+            <strong>Positioning:</strong> Out-feature CICOD ECMS on deep DoD-certified records retention, AI indexing, and complex enterprise compliance.
+          </p>
+          <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5;">
+            <strong>Why ECMS Wins:</strong> Cost and deployment friction. These tools require 6-figure USD license commitments, USD-denominated maintenance, and 6–12 months of high-priced systems integrator consulting. CICOD ECMS provides the essential 80% of workflow automation in naira at 15% of the total cost in weeks.
+          </div>
+        </div>
+
+        <!-- Tier 4: Local & Regional Integrators -->
+        <div class="card" style="border-left: 4px solid #f59e0b;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+            <div>
+              <span class="badge badge-amber">TIER 4 &bull; REGIONAL INCUMBENTS</span>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 4px;">Local Integrators &amp; Custom Builders</h3>
+            </div>
+            <span style="font-family: 'JetBrains Mono'; font-size: 0.8rem; color: var(--amber);">SystemSpecs, Interswitch, CWG, Seamfix</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+            <strong>Competitors:</strong> SystemSpecs (Remita/HumanManager), Interswitch, CWG (Computer Warehouse Group), Sidmach, Tenece, Seamfix.<br>
+            <strong>Advantage:</strong> Closest on price, local currency billing, in-country physical support culture, and trusted institutional relationships.
+          </p>
+          <div style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5;">
+            <strong>Strategic Reality:</strong> Most local integrators sell either rigid payroll/fintech point tools or bespoke custom software projects that suffer from extreme technical debt after handover. CICOD ECMS delivers a true multi-tenant, continuously updated SaaS platform with zero client maintenance overhead.
+          </div>
+        </div>
+
+        <!-- Standalone Line Item: E-Sign -->
+        <div class="card" style="border: 1px dashed var(--border); margin-bottom: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <h4 style="font-size: 1.05rem; font-weight: 800; color: #fff;">The Standalone E-Sign Bundling Advantage</h4>
+            <span class="badge badge-green">$25 - $40 / User / Mo Saved</span>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+            Standalone e-sign tools (DocuSign, Adobe Acrobat Sign, Dropbox Sign) charge $25 to $40 per user per month for simple signature collection. CICOD ECMS bundles legal-grade cryptographic e-signatures and multi-signer collaboration natively inside every workflow docket, representing an immediate 100% cost avoidance for enterprise contracts.
+          </p>
+        </div>
+
+        <!-- Section: Granular Competitor Teardowns -->
+        <div style="margin-top: 10px; margin-bottom: 24px;">
+          <div class="pane-tag" style="margin-bottom: 6px;">Granular Competitor Teardowns</div>
+          <h3 style="font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 6px;">What Each Competitor Does &amp; Core Feature Profiles</h3>
+          <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0;">
+            Exhaustive capability decomposition of the 21 primary enterprise contenders across the 4 market tiers and standalone e-sign, detailing their primary operational function, core technical feature sets, licensing models, and the exact friction points where CICOD ECMS prevails.
+          </p>
+        </div>
+
+        <!-- Tier 1 Deep Dive -->
+        <div style="margin-bottom: 28px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span class="badge badge-blue">TIER 1 TEARDOWNS</span>
+            <span style="font-size: 0.95rem; font-weight: 700; color: #fff;">The Bundle Incumbents</span>
+          </div>
+          <div class="grid-2">
+            <!-- Microsoft 365 -->
+            <div class="card" style="border-top: 3px solid #38bdf8; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Microsoft 365</h4>
+                    <span style="font-size: 0.76rem; color: var(--cyan); font-family: 'JetBrains Mono';">SharePoint + Power Automate + Power Apps</span>
+                  </div>
+                  <span class="badge badge-blue">Bundle Giant</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Enterprise office productivity and collaboration suite that leverages ubiquitous corporate email (Exchange) and Teams chat to offer low-code internal workflow automation and file collaboration.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Power Automate:</strong> Event-triggered cloud flows, scheduled batch routines, and desktop Robotic Process Automation (RPA).</li>
+                    <li><strong>SharePoint Online:</strong> File libraries, list databases, metadata indexing, version history, and folder-level permissions.</li>
+                    <li><strong>Power Apps:</strong> Canvas and model-driven web/mobile UI builder for custom internal screens.</li>
+                    <li><strong>Microsoft Dataverse:</strong> Managed relational cloud database supporting row-level security and relational logic.</li>
+                    <li><strong>In-App Approvals:</strong> Interactive actionable cards rendered directly within Outlook emails and Microsoft Teams chat.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">Bundled in M365 ($22–$38/u/mo). Requires <strong>$15–$20/u/mo Premium Connectors</strong> and <strong>$40/GB/mo Dataverse capacity fees</strong> for heavy document volumes.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> Turnkey 5-step operational builder with zero multi-app stitching; includes flat naira document storage with zero Dataverse penalty fees.
+              </div>
+            </div>
+
+            <!-- Google Workspace -->
+            <div class="card" style="border-top: 3px solid #38bdf8; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Google Workspace</h4>
+                    <span style="font-size: 0.76rem; color: var(--cyan); font-family: 'JetBrains Mono';">AppSheet + Google Drive + Google Forms</span>
+                  </div>
+                  <span class="badge badge-blue">No-Code Cloud</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Cloud-native real-time collaboration suite utilizing AppSheet to generate mobile and web apps directly from Google Sheets, databases, and Drive repositories for field operations.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>AppSheet No-Code:</strong> Generates mobile/tablet interfaces with offline caching, GPS logging, and barcode scanning.</li>
+                    <li><strong>Google Drive &amp; Docs:</strong> Real-time simultaneous document collaboration, version history, and cloud file sharing.</li>
+                    <li><strong>Google Forms:</strong> Simple web survey and inquiry intake that pipes responses directly into spreadsheet rows.</li>
+                    <li><strong>Document Approvals:</strong> Basic sequential document review and sign-off functionality inside Docs and Sheets.</li>
+                    <li><strong>Cloud Identity:</strong> Centralized OAuth 2.0 authentication, 2-step verification, and mobile device administration.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">$6–$18/user/mo for Workspace. AppSheet Core requires an additional <strong>$5–$10/user/mo add-on</strong>. USD denominated.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> Complete corporate governance: executive minuting dossiers, legal-grade e-signatures, and structured multi-stage approvals absent in Google Sheets.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 2 Deep Dive -->
+        <div style="margin-bottom: 28px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span class="badge badge-green">TIER 2 TEARDOWNS</span>
+            <span style="font-size: 0.95rem; font-weight: 700; color: #fff;">Price-Aggressive Business Suites</span>
+          </div>
+          <div class="grid-3">
+            <!-- Zoho Suite -->
+            <div class="card" style="border-top: 3px solid #10b981; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Zoho Suite</h4>
+                    <span style="font-size: 0.74rem; color: var(--emerald); font-family: 'JetBrains Mono';">Creator + Sign + Forms + One</span>
+                  </div>
+                  <span class="badge badge-green">45+ Apps</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    Comprehensive Indian SaaS suite popular in Nigerian SMEs offering over 45 applications spanning CRM, HR, low-code apps, and electronic signatures.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Zoho Creator:</strong> Low-code application builder powered by proprietary Deluge scripting logic.</li>
+                    <li><strong>Zoho Sign:</strong> Digital signatures, signer workflows, audit trails, and document template locks.</li>
+                    <li><strong>Zoho Forms:</strong> Web forms with conditional branching, payment gateway links, and alerts.</li>
+                    <li><strong>Zoho WorkDrive:</strong> Granular document storage and team folder permissions.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">Zoho One: $37–$45/user/mo (All-Employee) or $90/user/mo flexible. Billed in USD.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> Zero app fragmentation. Unifies form, files, tickets, and e-signatures into a single native docket without requiring Deluge programmers.
+              </div>
+            </div>
+
+            <!-- Odoo Enterprise -->
+            <div class="card" style="border-top: 3px solid #10b981; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Odoo Enterprise</h4>
+                    <span style="font-size: 0.74rem; color: var(--emerald); font-family: 'JetBrains Mono';">Studio + Documents + Sign</span>
+                  </div>
+                  <span class="badge badge-green">Modular ERP</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    Open-source and commercial modular ERP suite unifying enterprise accounting, inventory, CRM, and custom operational approval chains.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Odoo Studio:</strong> Visual designer to customize models, views, Kanban boards, and automated actions.</li>
+                    <li><strong>Odoo Documents:</strong> Document custody, automatic PDF splitting, OCR text extraction, and workspace tagging.</li>
+                    <li><strong>Odoo Sign:</strong> Drag-and-drop document signature collection with cryptographic timestamps.</li>
+                    <li><strong>Approvals Module:</strong> Standard employee request routing for CapEx, procurement, and expenses.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">$24.90–$37.40/user/mo. Requires $10,000–$30,000+ custom Python implementation consulting.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> Standalone agility. Organizations deploy CICOD ECMS in 3 weeks without paying for or configuring massive ERP database overhead.
+              </div>
+            </div>
+
+            <!-- Kissflow -->
+            <div class="card" style="border-top: 3px solid #10b981; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Kissflow</h4>
+                    <span style="font-size: 0.74rem; color: var(--emerald); font-family: 'JetBrains Mono';">Low-Code Digital Workplace</span>
+                  </div>
+                  <span class="badge badge-green">Workflow SaaS</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    Low-code cloud workflow platform enabling business operations managers to model process pipelines, digital forms, and board-based project tracking.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Process Modeler:</strong> Visual drag-and-drop workflow designer with parallel approvals and SLA escalations.</li>
+                    <li><strong>Form Designer:</strong> 20+ field types, calculated values, lookup tables, and conditional field displays.</li>
+                    <li><strong>Case Management:</strong> Ad-hoc ticket and exception tracking boards for non-linear operations.</li>
+                    <li><strong>Process Metrics:</strong> Cycle time reporting, bottleneck identification, and team throughput dashboards.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">Base entry starts at <strong>$1,500/month</strong> billed annually in USD. Extremely steep for Nigerian mid-market.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> Includes bundled cryptographic e-signature and cDrive custody; billed in predictable Naira with local NDPA residency.
+              </div>
+            </div>
+
+            <!-- Creatio -->
+            <div class="card" style="border-top: 3px solid #10b981; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Creatio</h4>
+                    <span style="font-size: 0.74rem; color: var(--emerald); font-family: 'JetBrains Mono';">Studio + CRM + BPM Engine</span>
+                  </div>
+                  <span class="badge badge-green">Gartner Visionary</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    No-code/low-code CRM and business process automation platform (formerly bpm&#39;online) blending case management, BPMN process orchestration, and a unified data model.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Studio Freedom UI:</strong> Drag-and-drop BPMN process designer with case/free-flow hybrid routing.</li>
+                    <li><strong>Unified Data Core:</strong> Single object model spanning CRM, service, and custom operational apps.</li>
+                    <li><strong>Marketing/Sales/Service Suites:</strong> Bundled modules beyond pure workflow (lead-to-cash, ticketing).</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">Quote-based, USD per-user subscription (no published list price); requires a sales-led calculator/demo cycle to price.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> No sales-gated pricing or CRM-bundle tax. ECMS deploys a pure operations/workflow use case without buying an entire CRM stack around it.
+              </div>
+            </div>
+
+            <!-- Pipefy -->
+            <div class="card" style="border-top: 3px solid #10b981; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Pipefy</h4>
+                    <span style="font-size: 0.74rem; color: var(--emerald); font-family: 'JetBrains Mono';">No-Code Workflow &amp; Process Automation</span>
+                  </div>
+                  <span class="badge badge-green">Process SaaS</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    Kanban-style no-code process automation platform for HR, procurement, and finance ops pipelines, positioned as an AI-assisted process builder for business teams.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Pipe Builder:</strong> Kanban-phase process modeling with conditional gates and automation "jobs".</li>
+                    <li><strong>Database Connections:</strong> Linked master-record tables across multiple pipes (vendors, contracts, assets).</li>
+                    <li><strong>Portal Forms:</strong> External requester intake forms feeding directly into internal pipe phases.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">Business: $25/user/mo (300 automation jobs cap). Enterprise: custom-quoted, reported $30&ndash;$65/user/mo for SSO and unlimited automation.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> No per-pipe automation-job metering or SSO paywall; e-signature and document custody ship in the base tier, not gated behind Enterprise.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 3 Deep Dive -->
+        <div style="margin-bottom: 28px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span class="badge badge-purple">TIER 3 TEARDOWNS</span>
+            <span style="font-size: 0.95rem; font-weight: 700; color: #fff;">Specialist ECM &amp; Heavy BPM Monoliths</span>
+          </div>
+          <div class="grid-2">
+            <!-- Laserfiche & Heavy ECM -->
+            <div class="card" style="border-top: 3px solid #a855f7; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Laserfiche &amp; Specialist ECM</h4>
+                    <span style="font-size: 0.76rem; color: var(--purple); font-family: 'JetBrains Mono';">Laserfiche &bull; OpenText &bull; M-Files &bull; DocuWare</span>
+                  </div>
+                  <span class="badge badge-purple">Records Standard</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Enterprise Content Management (ECM) monoliths delivering military-grade records retention, legal archiving, and high-volume document ingestion for tier-1 banks, healthcare, and heavily regulated institutions.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>DoD 5015.02 Records Management:</strong> Automated lifecycle retention schedules, immutable WORM archives, and legal discovery holds.</li>
+                    <li><strong>High-Speed Batch Capture &amp; OCR:</strong> Production-level scanner indexing, barcode separation, and automated metadata extraction.</li>
+                    <li><strong>Metadata-Driven Architecture (M-Files):</strong> Universal folderless repositories connecting SharePoint, network drives, and ERPs.</li>
+                    <li><strong>Granular Security:</strong> Dynamic document redaction, field-level access control, and complete document view/export audit trails.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">6-figure USD multi-year commitments ($45–$85/user/month plus $100k+ implementation and system integration fees).</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> 85% lower TCO. Delivers the core 80% of workflow automation in predictable Naira in 3 weeks, eliminating the multi-month consulting burden.
+              </div>
+            </div>
+
+            <!-- Heavy BPM: Appian, Camunda, Nintex -->
+            <div class="card" style="border-top: 3px solid #a855f7; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Heavy BPM &amp; Orchestration</h4>
+                    <span style="font-size: 0.76rem; color: var(--purple); font-family: 'JetBrains Mono';">Appian &bull; Camunda 8 &bull; Pega &bull; Nintex</span>
+                  </div>
+                  <span class="badge badge-purple">Mission-Critical BPM</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Enterprise-grade process orchestration suites designed to automate complex, high-throughput financial transactions, credit underwriting, and microservice business logic.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>BPMN 2.0 &amp; DMN Engines:</strong> Visual process modeling with decision tables for automated credit and algorithmic approvals.</li>
+                    <li><strong>Enterprise Data Fabric (Appian):</strong> Unified virtual data layer accessing legacy mainframes, SAP, and SQL without data replication.</li>
+                    <li><strong>High-Throughput State Engines (Camunda):</strong> Microservice orchestration capable of processing tens of thousands of tasks per second.</li>
+                    <li><strong>Case Management:</strong> Dynamic casework interfaces with SLA tracking, dynamic task allocation, and audit trees.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">Enterprise tier starts at $60,000–$150,000+/year in USD; requires specialized certified BPM developers.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> Accessible low-code. Business operations leaders configure full approval and escalation workflows via the 5-step wizard with zero developer reliance.
+              </div>
+            </div>
+
+            <!-- ServiceNow App Engine -->
+            <div class="card" style="border-top: 3px solid #a855f7; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">ServiceNow App Engine</h4>
+                    <span style="font-size: 0.76rem; color: var(--purple); font-family: 'JetBrains Mono';">Now Platform &bull; Creator/Builder/User Seats</span>
+                  </div>
+                  <span class="badge badge-purple">ITSM Heavyweight</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Custom application license on the Now Platform for building internal workflow apps outside ServiceNow's core ITSM/HRSD/CSM products &mdash; often the entry point large enterprises use to justify buying the whole platform.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>App Engine Studio:</strong> Low-code app builder with AI-assisted flow generation on the Now Platform data model.</li>
+                    <li><strong>Custom Table Allowance:</strong> Every order form gates a specific number of custom tables before pricing tiers change.</li>
+                    <li><strong>Flow Designer &amp; IntegrationHub:</strong> Visual workflow automation with deep pre-built connectors to core enterprise systems.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">Standard/Plus tiers, per user/year, three user types (Creator/Builder/User) &mdash; entirely quote-only; no published list price, and the custom-table allowance is the line item buyers most often overbuy.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> Transparent, fixed Naira pricing with no custom-table gating or seat-type taxonomy. No enterprise ever needs a quote to know what a workflow app will cost.
+              </div>
+            </div>
+
+            <!-- Box Content Cloud -->
+            <div class="card" style="border-top: 3px solid #a855f7; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Box Content Cloud</h4>
+                    <span style="font-size: 0.76rem; color: var(--purple); font-family: 'JetBrains Mono';">Box Enterprise &bull; Box Sign &bull; Box AI</span>
+                  </div>
+                  <span class="badge badge-purple">Content Cloud</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Cloud content management platform competing directly with cDrive on secure document custody, external sharing, and eDiscovery for regulated enterprises &mdash; but unbundles e-signature and AI as paid add-ons.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Box Governance &amp; Shield:</strong> Retention policies, legal holds, and classification-based access control.</li>
+                    <li><strong>Box Sign (add-on):</strong> E-signature capture billed separately from core storage/collaboration.</li>
+                    <li><strong>Box AI (metered add-on):</strong> AI Units-based document Q&amp;A and summarization, since October 2025.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">Enterprise: ~$33/user/mo (annual) or $40/mo (monthly). Box Sign adds ~$8&ndash;$12/user/mo; Box AI adds ~$10&ndash;$15/user/mo &mdash; a fully-loaded seat runs well past $50/user/mo.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> Storage, e-signature, and workflow ship as one Naira-billed product. Box customers stack three separate USD line items to match what ECMS bundles by default.
+              </div>
+            </div>
+
+            <!-- Hyland OnBase -->
+            <div class="card" style="border-top: 3px solid #a855f7; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Hyland OnBase</h4>
+                    <span style="font-size: 0.76rem; color: var(--purple); font-family: 'JetBrains Mono';">Banking &amp; Insurance ECM Incumbent</span>
+                  </div>
+                  <span class="badge badge-purple">Regulated-Industry ECM</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Enterprise content services platform deeply entrenched in financial services, insurance, healthcare, and government &mdash; the direct incumbent CICOD ECMS will meet inside commercial banks and insurers evaluated in Module 02.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Workflow &amp; Case Management:</strong> AP automation, claims processing, and employee-file lifecycle routing.</li>
+                    <li><strong>Records Retention &amp; Legal Hold:</strong> Purpose-built for statutory audit and regulatory examination trails.</li>
+                    <li><strong>Perpetual + Module Licensing:</strong> Base software license, separately-purchased module licenses, and annual maintenance.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">Quote-only; AWS Marketplace lists $333,750 for a 36-month contract covering up to 50 standard users &mdash; before implementation-partner fees and on-prem infrastructure.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> No perpetual-license-plus-maintenance stack or on-prem infrastructure bill. A comparable Nigerian bank/insurer deployment lands in weeks at a fraction of a $333k+ multi-year commitment.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 4 Deep Dive -->
+        <div style="margin-bottom: 28px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span class="badge badge-amber">TIER 4 TEARDOWNS</span>
+            <span style="font-size: 0.95rem; font-weight: 700; color: #fff;">Local &amp; Regional Integrators (Nigeria / West Africa)</span>
+          </div>
+          <div class="grid-3">
+            <!-- SystemSpecs -->
+            <div class="card" style="border-top: 3px solid #f59e0b; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">SystemSpecs</h4>
+                    <span style="font-size: 0.74rem; color: var(--amber); font-family: 'JetBrains Mono';">Remita &amp; HumanManager</span>
+                  </div>
+                  <span class="badge badge-amber">Fintech / HR</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    Pioneering Nigerian financial technology and human capital software vendor, dominating federal treasury collections (TSA) and corporate payroll.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Remita Payments:</strong> Multi-bank corporate mandates, direct debits, e-invoicing, and payment gateway collections.</li>
+                    <li><strong>HumanManager:</strong> Enterprise payroll calculation, statutory tax/pension compliance, and employee records.</li>
+                    <li><strong>Direct Clearing:</strong> Deep integration with Central Bank of Nigeria (CBN) payment switches.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">Transaction fees for Remita; monthly per-employee SaaS fee for HumanManager in Naira.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> General workflow vs. payment point tools. SystemSpecs lacks general low-code form builders, task ticketing queues, and multi-party document sign-offs.
+              </div>
+            </div>
+
+            <!-- Interswitch & CWG -->
+            <div class="card" style="border-top: 3px solid #f59e0b; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Interswitch &amp; CWG</h4>
+                    <span style="font-size: 0.74rem; color: var(--amber); font-family: 'JetBrains Mono';">Switching &amp; Systems Integration</span>
+                  </div>
+                  <span class="badge badge-amber">Infrastructure</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    Enterprise transaction switching (Interswitch) and heavyweight IT systems integration / Finacle core-banking implementations (CWG) across tier-1 institutions.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>Interswitch Switching:</strong> Card processing, payment settlement, and government/banking verification APIs (BVN, NIN).</li>
+                    <li><strong>CWG Infrastructure:</strong> Data center provisioning, cloud hosting, and implementation of third-party core banking systems.</li>
+                    <li><strong>Bespoke Portals:</strong> Custom integration middleware and tailored corporate collection interfaces.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">Bespoke multi-million Naira enterprise contracts, transaction interchange, and hardware SLAs.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> Agile multi-tenant SaaS vs. bespoke custom projects that suffer from technical debt after handover. Deploys instantly with zero custom code.
+              </div>
+            </div>
+
+            <!-- Seamfix & Sidmach -->
+            <div class="card" style="border-top: 3px solid #f59e0b; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Seamfix &amp; Sidmach</h4>
+                    <span style="font-size: 0.74rem; color: var(--amber); font-family: 'JetBrains Mono';">BioRegistra &bull; Authezy &bull; SmartEDMS</span>
+                  </div>
+                  <span class="badge badge-amber">KYC &amp; Archiving</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.8rem; color: #cbd5e1; line-height: 1.45; margin-top: 3px; margin-bottom: 10px;">
+                    Identity verification, field biometric enrollment, and legacy document scanning platforms used by telcos, examination boards, and banks for onboarding.
+                  </p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; padding-left: 16px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>BioRegistra:</strong> Offline mobile biometric capture, fingerprint scanning, and field form intake.</li>
+                    <li><strong>Authezy / Verified.ng:</strong> Real-time identity validation against government registries (NIN, BVN, CAC).</li>
+                    <li><strong>Sidmach SmartEDMS:</strong> Institutional document scanning, indexing, and examination result records archiving.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 10px;">
+                  <span style="font-size: 0.68rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 2px;">Pricing</span>
+                  <span style="font-size: 0.75rem; color: #cbd5e1;">Per-verification API billing (₦50–₦200/lookup) and customized scanning contracts.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 8px; font-size: 0.76rem; color: var(--emerald);">
+                <strong>ECMS Edge:</strong> Complete operational lifecycle. While Seamfix captures KYC at onboarding, CICOD ECMS manages the ongoing multi-departmental approval and dossier lifecycle.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standalone E-Sign Deep Dive -->
+        <div style="margin-bottom: 28px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <span class="badge badge-red">STANDALONE E-SIGN TEARDOWNS</span>
+            <span style="font-size: 0.95rem; font-weight: 700; color: #fff;">Point-Tool Signature Platforms</span>
+          </div>
+          <div class="grid-2">
+            <!-- DocuSign -->
+            <div class="card" style="border-top: 3px solid #fb7185; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">DocuSign</h4>
+                    <span style="font-size: 0.76rem; color: #fb7185; font-family: 'JetBrains Mono';">eSignature &amp; Agreement Cloud</span>
+                  </div>
+                  <span class="badge badge-red">Signature King</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Global market leader for electronic signatures and contract lifecycle management (CLM), facilitating legally binding agreement execution across enterprise enterprises.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>eSignature Engine:</strong> Cryptographically sealed signatures, certificate of completion, and eIDAS/ESIGN compliant audit logs.</li>
+                    <li><strong>Drag-and-Drop Tagging:</strong> Visual placement of signature, initial, date, and conditional text fields on PDF agreements.</li>
+                    <li><strong>PowerForms:</strong> Self-service digital links for standardized public document signing.</li>
+                    <li><strong>Multi-Signer Routing:</strong> Automated sequential signing orders with SMS/email reminders.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">$25–$40/user/month in USD, or per-envelope fees with strict annual limits and steep overage fees.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> Native bundling. DocuSign charges $300+/year just to sign a file; ECMS includes legal-grade e-signatures inside the workflow docket at zero extra cost.
+              </div>
+            </div>
+
+            <!-- Adobe Acrobat Sign -->
+            <div class="card" style="border-top: 3px solid #fb7185; display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                  <div>
+                    <h4 style="font-size: 1.15rem; font-weight: 800; color: #fff;">Adobe Acrobat Sign</h4>
+                    <span style="font-size: 0.76rem; color: #fb7185; font-family: 'JetBrains Mono';">Adobe Document Cloud</span>
+                  </div>
+                  <span class="badge badge-red">PDF Native</span>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">What They Do</span>
+                  <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.5; margin-top: 3px; margin-bottom: 12px;">
+                    Enterprise digital signature platform deeply integrated within the Adobe PDF ecosystem and Adobe Experience Cloud for corporate document execution.
+                  </p>
+                </div>
+                <div style="margin-bottom: 12px;">
+                  <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.05em;">Core Features</span>
+                  <ul style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px; margin-top: 4px; margin-bottom: 0;">
+                    <li><strong>PDF Form Field Authoring:</strong> Native PDF field detection, automated form conversion, and digital signature placement.</li>
+                    <li><strong>Enterprise Integrations:</strong> Pre-built plug-ins for Microsoft 365, Teams, Dynamics, and Salesforce.</li>
+                    <li><strong>Multi-Party Tracking:</strong> Live status dashboards tracking recipient views, signing progress, and audit trail generation.</li>
+                    <li><strong>Compliance Seals:</strong> Certified PDF tamper seals complying with global cryptographic signature standards.</li>
+                  </ul>
+                </div>
+                <div style="background: rgba(6,9,19,0.5); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;">
+                  <span style="font-size: 0.7rem; font-weight: 700; color: var(--amber); text-transform: uppercase; display: block; margin-bottom: 3px;">Pricing &amp; Licensing Model</span>
+                  <span style="font-size: 0.78rem; color: #cbd5e1;">$21–$35/user/month in USD as an add-on license to Adobe Document Cloud for enterprise.</span>
+                </div>
+              </div>
+              <div style="border-top: 1px solid var(--border); padding-top: 10px; font-size: 0.78rem; color: var(--emerald);">
+                <strong>CICOD ECMS Advantage:</strong> Operates as a process, not a file. Signing is just one milestone within an operational workflow (intake → review → e-sign → dispatch) rather than an isolated PDF event.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reference & Source Validation -->
+        <div class="card" style="margin-top: 24px; background: rgba(6,9,19,0.55); border: 1px solid rgba(56,189,248,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Competitor Pricing &amp; Capability Documentation</h4>
+            </div>
+            <span class="badge badge-blue">Verified Pricing</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div>
+              <strong style="color: #fff;">Microsoft Power Platform &amp; Dataverse:</strong> Confirms Dataverse database capacity costs of ~$40–$48/GB/month and Power Automate Premium licenses at $15/user/month. <a href="https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing" target="_blank" style="color: var(--cyan); text-decoration: underline;">Microsoft Official Pricing ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">Zoho One &amp; Kissflow Pricing:</strong> Confirms Zoho One All-Employee model ($37–$45/user/mo) vs. Flexible ($90/user/mo), and Kissflow baseline pricing starting at $1,500/month. <a href="https://www.zoho.com/one/pricing/" target="_blank" style="color: var(--cyan); text-decoration: underline;">Zoho One Plans ↗</a> | <a href="https://kissflow.com/pricing/" target="_blank" style="color: var(--cyan); text-decoration: underline;">Kissflow Pricing ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">DocuSign Quota &amp; Add-on Traps:</strong> Standard ($25/u/mo) and Business Pro ($40/u/mo) enforce a strict 100-envelope per user annual cap with steep overages. <a href="https://www.docusign.com/products-and-pricing" target="_blank" style="color: var(--cyan); text-decoration: underline;">DocuSign Pricing ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: 12-Axis Scored Benchmark Matrix -->
+      <div class="tab-pane" id="tab-matrix">
+        <div class="pane-header">
+          <div class="pane-tag">Module 04 &bull; Rigorous Scoring</div>
+          <h2 class="pane-title">12-Axis Enterprise Benchmark Matrix</h2>
+          <p class="pane-desc">
+            Scoring CICOD ECMS against the 4 competitor tiers across the exact technical, fiscal, and regulatory axes that commercial enterprise buyers evaluate.
+          </p>
+        </div>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width: 22%;">Evaluation Axis</th>
+                <th class="col-ecms" style="width: 18%;">CICOD ECMS</th>
+                <th style="width: 15%;">Tier 1: MS 365 / Google</th>
+                <th style="width: 15%;">Tier 2: Zoho / Kissflow</th>
+                <th style="width: 15%;">Tier 3: Laserfiche / Appian</th>
+                <th style="width: 15%;">Tier 4: Local Integrators</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Total Cost &amp; FX Exposure</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Naira Leader</span><br><small>Flat ₦ billing; 0% FX risk</small></td>
+                <td><span class="badge badge-red">High / USD</span><br><small>M365 $ + add-on fees</small></td>
+                <td><span class="badge badge-amber">Moderate</span><br><small>USD-pegged billing</small></td>
+                <td><span class="badge badge-red">Exorbitant</span><br><small>6-figure USD licenses</small></td>
+                <td><span class="badge badge-green">Naira Billing</span><br><small>Custom billing terms</small></td>
+              </tr>
+              <tr>
+                <td><strong>2. Data Residency &amp; NDPA</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">In-Country</span><br><small>Local tier-3 cloud hosting</small></td>
+                <td><span class="badge badge-amber">Offshore / EU</span><br><small>South Africa / EU regions</small></td>
+                <td><span class="badge badge-red">Global Shared</span><br><small>US, EU, India DCs</small></td>
+                <td><span class="badge badge-amber">Hybrid / High $</span><br><small>Expensive on-prem cost</small></td>
+                <td><span class="badge badge-green">In-Country</span><br><small>Local data hosting</small></td>
+              </tr>
+              <tr>
+                <td><strong>3. Integration Depth (APIs/SSO)</strong></td>
+                <td class="col-ecms"><span class="badge badge-red">Structural Gap</span><br><small>Limited pre-built connectors</small></td>
+                <td><span class="badge badge-green">Dominant</span><br><small>Thousands of connectors</small></td>
+                <td><span class="badge badge-green">Extensive</span><br><small>Zoho Flow &amp; webhooks</small></td>
+                <td><span class="badge badge-green">Enterprise</span><br><small>Deep legacy connectors</small></td>
+                <td><span class="badge badge-amber">Bespoke</span><br><small>Custom API builds</small></td>
+              </tr>
+              <tr>
+                <td><strong>4. Extensibility &amp; Low-Code</strong></td>
+                <td class="col-ecms"><span class="badge badge-amber">Moderate</span><br><small>5-step visual process engine</small></td>
+                <td><span class="badge badge-green">High Ceiling</span><br><small>Full developer extensibility</small></td>
+                <td><span class="badge badge-green">Flexible</span><br><small>Deluge scripting</small></td>
+                <td><span class="badge badge-green">Deep BPMN</span><br><small>Industry standard BPMN 2.0</small></td>
+                <td><span class="badge badge-red">Rigid / Hardcoded</span><br><small>Requires vendor dev team</small></td>
+              </tr>
+              <tr>
+                <td><strong>5. Records Retention &amp; Audit</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Cryptographic</span><br><small>Immutable minute audit log</small></td>
+                <td><span class="badge badge-amber">Moderate</span><br><small>Requires Purview compliance</small></td>
+                <td><span class="badge badge-amber">Basic Logs</span><br><small>Standard SaaS activity logs</small></td>
+                <td><span class="badge badge-green">Gold Standard</span><br><small>DoD 5015.02 certified</small></td>
+                <td><span class="badge badge-amber">Basic Database</span><br><small>Standard DB audit tables</small></td>
+              </tr>
+              <tr>
+                <td><strong>6. E-Sign Included in Base</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Bundled</span><br><small>Zero extra per-user cost</small></td>
+                <td><span class="badge badge-red">Add-On Required</span><br><small>Requires Adobe/DocuSign</small></td>
+                <td><span class="badge badge-amber">Partial</span><br><small>Zoho Sign quota limits</small></td>
+                <td><span class="badge badge-red">Third-Party Add-on</span><br><small>Integrated connector cost</small></td>
+                <td><span class="badge badge-amber">Variable</span><br><small>Custom signature pad</small></td>
+              </tr>
+              <tr>
+                <td><strong>7. Mobile &amp; Offline Field</strong></td>
+                <td class="col-ecms"><span class="badge badge-amber">Online Mobile</span><br><small>Responsive mobile view</small></td>
+                <td><span class="badge badge-green">Power Apps Native</span><br><small>Strong mobile app shell</small></td>
+                <td><span class="badge badge-green">Mature Apps</span><br><small>Dedicated mobile apps</small></td>
+                <td><span class="badge badge-amber">Desktop Centric</span><br><small>Heavy client legacy</small></td>
+                <td><span class="badge badge-red">Web Only</span><br><small>Responsive browser only</small></td>
+              </tr>
+              <tr>
+                <td><strong>8. AI Capability</strong></td>
+                <td class="col-ecms"><span class="badge badge-red">Zero AI</span><br><small>Current roadmap gap</small></td>
+                <td><span class="badge badge-green">Copilot Leader</span><br><small>M365 Copilot &amp; Gemini</small></td>
+                <td><span class="badge badge-amber">Zia Assistant</span><br><small>Basic AI form helpers</small></td>
+                <td><span class="badge badge-green">Smart OCR</span><br><small>Advanced document AI</small></td>
+                <td><span class="badge badge-red">Zero AI</span><br><small>Rule-based legacy</small></td>
+              </tr>
+              <tr>
+                <td><strong>9. Implementation Velocity</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">2 to 4 Weeks</span><br><small>Turnkey setup &amp; training</small></td>
+                <td><span class="badge badge-amber">2 to 4 Months</span><br><small>Complex app assembly</small></td>
+                <td><span class="badge badge-green">3 to 6 Weeks</span><br><small>Self-serve SaaS</small></td>
+                <td><span class="badge badge-red">6 to 18 Months</span><br><small>Protracted SI projects</small></td>
+                <td><span class="badge badge-red">3 to 9 Months</span><br><small>Custom code build</small></td>
+              </tr>
+              <tr>
+                <td><strong>10. Local In-Country Support</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Direct Nigerian</span><br><small>Dedicated local SLA team</small></td>
+                <td><span class="badge badge-red">Global Ticket</span><br><small>Offshore call centers</small></td>
+                <td><span class="badge badge-red">Email / Global</span><br><small>No local engineering office</small></td>
+                <td><span class="badge badge-amber">Partner Only</span><br><small>Dependent on local partner</small></td>
+                <td><span class="badge badge-green">Direct Nigerian</span><br><small>On-site engineers</small></td>
+              </tr>
+              <tr>
+                <td><strong>11. Ecosystem / Marketplace</strong></td>
+                <td class="col-ecms"><span class="badge badge-red">No Marketplace</span><br><small>Closed ecosystem</small></td>
+                <td><span class="badge badge-green">Massive</span><br><small>AppSource &amp; thousands of apps</small></td>
+                <td><span class="badge badge-green">Zoho Marketplace</span><br><small>Thousands of extensions</small></td>
+                <td><span class="badge badge-green">Mature Network</span><br><small>Certified partner modules</small></td>
+                <td><span class="badge badge-red">Proprietary</span><br><small>No external ecosystem</small></td>
+              </tr>
+              <tr>
+                <td><strong>12. Procurement &amp; Billing Fit</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Enterprise Naira</span><br><small>Local invoices with VAT/WHT</small></td>
+                <td><span class="badge badge-amber">USD Credit Card</span><br><small>FX card limits bottleneck</small></td>
+                <td><span class="badge badge-amber">USD Online</span><br><small>FX card payments required</small></td>
+                <td><span class="badge badge-red">Enterprise USD</span><br><small>Complex import licensing</small></td>
+                <td><span class="badge badge-green">Local Invoicing</span><br><small>Familiar local procurement</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Reference & Source Validation -->
+        <div class="card" style="margin-top: 24px; background: rgba(6,9,19,0.55); border: 1px solid rgba(56,189,248,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Enterprise Benchmarking &amp; TCO References</h4>
+            </div>
+            <span class="badge badge-blue">Enterprise Benchmarks</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div>
+              <strong style="color: #fff;">ServiceNow ITSM &amp; Implementation Multiples:</strong> Industry benchmarks confirm ServiceNow fulfiller licenses range from $70 to $200+/user/month, with first-year system integration costs typically reaching 50% to 150% of the software subscription value. <a href="https://www.servicenow.com" target="_blank" style="color: var(--cyan); text-decoration: underline;">ServiceNow ITSM ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">Appian Enterprise Floor:</strong> Validates enterprise minimum commitments of $100,000+/year and 1.5x–3x professional implementation multiples for custom BPMN deployments. <a href="https://www.appian.com" target="_blank" style="color: var(--cyan); text-decoration: underline;">Appian Low-Code Platform ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extended Named-Vendor Scorecard -->
+        <div class="pane-header" style="margin-top: 44px; margin-bottom: 20px;">
+          <div class="pane-tag">Module 04b &bull; Named-Vendor Scorecard</div>
+          <h2 style="font-size: 1.7rem; font-weight: 800; letter-spacing: -0.02em; color: #fff; margin-bottom: 10px;">Extended Enterprise Contender Benchmark</h2>
+          <p class="pane-desc">
+            Five additional named enterprise contenders &mdash; sourced directly against CICOD ECMS rather than folded into tier averages &mdash; scored on the axes that decide a real enterprise shortlist: total cost, records/content depth, workflow depth, e-signature bundling, AI, and time-to-value.
+          </p>
+        </div>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width: 18%;">Evaluation Axis</th>
+                <th class="col-ecms" style="width: 16%;">CICOD ECMS</th>
+                <th style="width: 13.2%;">ServiceNow<br><small style="font-weight:400;">App Engine</small></th>
+                <th style="width: 13.2%;">Box<br><small style="font-weight:400;">Content Cloud</small></th>
+                <th style="width: 13.2%;">Hyland<br><small style="font-weight:400;">OnBase</small></th>
+                <th style="width: 13.2%;">Creatio</th>
+                <th style="width: 13.2%;">Pipefy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Published Pricing Transparency</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Fixed &amp; Public</span></td>
+                <td><span class="badge badge-red">Quote-Only</span></td>
+                <td><span class="badge badge-green">Public List</span></td>
+                <td><span class="badge badge-red">Quote-Only</span></td>
+                <td><span class="badge badge-red">Quote-Only</span></td>
+                <td><span class="badge badge-amber">Partial</span></td>
+              </tr>
+              <tr>
+                <td><strong>Effective Fully-Loaded Cost</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Naira Flat</span><br><small>Workflow + e-sign + storage bundled</small></td>
+                <td><span class="badge badge-red">Highest</span><br><small>Custom-table gating, ITSM upsell path</small></td>
+                <td><span class="badge badge-amber">$33&ndash;$65+/user/mo</span><br><small>Storage + Sign + AI stack separately</small></td>
+                <td><span class="badge badge-red">6-Figure Floor</span><br><small>$333,750 / 50 users / 36mo (AWS listing)</small></td>
+                <td><span class="badge badge-amber">Moderate</span><br><small>CRM-bundle tax on a pure workflow need</small></td>
+                <td><span class="badge badge-amber">$25&ndash;$65/user/mo</span><br><small>SSO &amp; unlimited automation Enterprise-gated</small></td>
+              </tr>
+              <tr>
+                <td><strong>Content/Records Depth</strong></td>
+                <td class="col-ecms"><span class="badge badge-amber">Solid (cDrive)</span></td>
+                <td><span class="badge badge-amber">Add-on Modules</span></td>
+                <td><span class="badge badge-green">Strong</span><br><small>Governance, Shield, eDiscovery</small></td>
+                <td><span class="badge badge-green">Regulated-Industry Standard</span><br><small>Banking/insurance retention &amp; legal hold</small></td>
+                <td><span class="badge badge-amber">Basic</span><br><small>CRM-attachment model, not a vault</small></td>
+                <td><span class="badge badge-red">Minimal</span><br><small>File attachments on cards only</small></td>
+              </tr>
+              <tr>
+                <td><strong>Workflow/BPM Depth</strong></td>
+                <td class="col-ecms"><span class="badge badge-amber">5-Step Visual</span></td>
+                <td><span class="badge badge-green">Deep</span><br><small>Flow Designer + IntegrationHub</small></td>
+                <td><span class="badge badge-red">Thin</span><br><small>Not a process engine</small></td>
+                <td><span class="badge badge-amber">Case-Management Grade</span></td>
+                <td><span class="badge badge-green">Deep BPMN</span><br><small>Freedom UI hybrid case/BPMN</small></td>
+                <td><span class="badge badge-amber">Kanban-Phase</span><br><small>Lighter than true BPMN</small></td>
+              </tr>
+              <tr>
+                <td><strong>E-Signature Bundled in Base</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">Yes, Native</span></td>
+                <td><span class="badge badge-red">No</span></td>
+                <td><span class="badge badge-red">No &bull; Box Sign Add-on</span></td>
+                <td><span class="badge badge-red">No &bull; Connector Required</span></td>
+                <td><span class="badge badge-red">No</span></td>
+                <td><span class="badge badge-red">No</span></td>
+              </tr>
+              <tr>
+                <td><strong>AI Capability</strong></td>
+                <td class="col-ecms"><span class="badge badge-red">Zero AI</span></td>
+                <td><span class="badge badge-green">AI-Assisted Flow Gen</span></td>
+                <td><span class="badge badge-amber">Metered Add-on</span><br><small>Box AI Units, since Oct 2025</small></td>
+                <td><span class="badge badge-amber">Partner-Dependent</span></td>
+                <td><span class="badge badge-amber">Emerging</span></td>
+                <td><span class="badge badge-amber">AI-Assisted Builder</span></td>
+              </tr>
+              <tr>
+                <td><strong>Time-to-Value</strong></td>
+                <td class="col-ecms"><span class="badge badge-green">2 to 4 Weeks</span></td>
+                <td><span class="badge badge-red">Months</span><br><small>Table-allowance planning + SI involvement</small></td>
+                <td><span class="badge badge-green">Days</span><br><small>Fast for pure storage; slow once workflow is bolted on</small></td>
+                <td><span class="badge badge-red">6+ Months</span><br><small>Module selection + on-prem/partner rollout</small></td>
+                <td><span class="badge badge-amber">4 to 8 Weeks</span></td>
+                <td><span class="badge badge-green">2 to 3 Weeks</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card" style="margin-top: 8px; background: rgba(6,9,19,0.55); border: 1px solid rgba(168,85,247,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Extended Contender Pricing &amp; Positioning Sources</h4>
+            </div>
+            <span class="badge badge-purple">Verified Sept 2026</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div><strong style="color: #fff;">ServiceNow App Engine:</strong> Standard/Plus tiers priced per user/year across Creator/Builder/User seat types; as of July 2026 every tier remains fully quote-gated with a custom-table allowance driving overbuying. <a href="https://www.servicenow.com/products/now-platform-app-engine/pricing.html" target="_blank" style="color: var(--cyan); text-decoration: underline;">ServiceNow App Engine Pricing ↗</a> &bull; <a href="https://redresscompliance.com/servicenow-app-engine-licensing-explained" target="_blank" style="color: var(--cyan); text-decoration: underline;">App Engine Licensing Guide ↗</a></div>
+            <div><strong style="color: #fff;">Box Content Cloud:</strong> Enterprise list price ~$33/user/mo (annual) or $40/mo (monthly); Box Sign and Box AI (metered AI Units since Oct 20, 2025) are separate paid add-ons. <a href="https://costbench.com/software/document-management/box/" target="_blank" style="color: var(--cyan); text-decoration: underline;">Box Pricing Breakdown ↗</a> &bull; <a href="https://www.vendr.com/marketplace/box" target="_blank" style="color: var(--cyan); text-decoration: underline;">Box Vendr Benchmark ↗</a></div>
+            <div><strong style="color: #fff;">Hyland OnBase:</strong> No published price list; AWS Marketplace lists a 36-month contract at $333,750 for up to 50 standard users under perpetual + module + maintenance licensing, targeted at regulated industries. <a href="https://aws.amazon.com/marketplace/pp/prodview-pt2svfcpfgiga" target="_blank" style="color: var(--cyan); text-decoration: underline;">OnBase AWS Marketplace Listing ↗</a> &bull; <a href="https://factura.ai/hyland-onbase-pricing/" target="_blank" style="color: var(--cyan); text-decoration: underline;">OnBase Pricing Review ↗</a></div>
+            <div><strong style="color: #fff;">Creatio:</strong> Subscription per-user pricing disclosed only via an on-site calculator/demo cycle; recognized as a Visionary in Gartner's 2023 Magic Quadrant for Enterprise Low-Code Application Platforms and again as the sole Visionary in the 2026 Magic Quadrant for CRM Sales Platforms. <a href="https://www.creatio.com/company/news/22396" target="_blank" style="color: var(--cyan); text-decoration: underline;">2023 Gartner MQ Low-Code ↗</a> &bull; <a href="https://www.creatio.com/company/news/24955" target="_blank" style="color: var(--cyan); text-decoration: underline;">2026 Gartner MQ CRM Sales ↗</a></div>
+            <div><strong style="color: #fff;">Pipefy:</strong> Business plan $25/user/mo capped at 300 automation jobs; Enterprise is custom-quoted, with reported street pricing of $30&ndash;$65/user/mo once SSO and unlimited automation are required. <a href="https://thedigitalprojectmanager.com/tools/pipefy-pricing/" target="_blank" style="color: var(--cyan); text-decoration: underline;">Pipefy Pricing Tiers ↗</a> &bull; <a href="https://www.capterra.com/p/144848/Pipefy/pricing/" target="_blank" style="color: var(--cyan); text-decoration: underline;">Pipefy Capterra Pricing ↗</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 5: Structural Moats vs. Structural Gaps -->
+      <div class="tab-pane" id="tab-moats">
+        <div class="pane-header">
+          <div class="pane-tag">Module 05 &bull; Honest Strategic Reality</div>
+          <h2 class="pane-title">Where the Story Lives: Moats vs. Vulnerabilities</h2>
+          <p class="pane-desc">
+            A balanced, unvarnished competitive appraisal highlighting the core moats that win commercial enterprise deals alongside the candid technical vulnerabilities that must be addressed on the roadmap.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Structural Advantages -->
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--emerald); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+              <span>✓ The 4 Structural Advantages</span>
+            </h3>
+
+            <div class="card" style="border-left: 4px solid var(--emerald); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">1. Local Hosting &amp; Zero FX Exposure</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                All data resides on in-country tier-3 server infrastructure, satisfying strict NDPA data residency requirements. Predictable naira-denominated contracts insulate corporate CFOs from foreign currency devaluations.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--emerald); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">2. Native Drive &amp; E-Sign Bundling</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                Unlike competitors who treat storage (SharePoint/AWS S3) and e-signature (DocuSign/Adobe) as costly third-party add-ons, CICOD ECMS bundles sovereign repository storage and cryptographic signing at zero extra margin.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--emerald); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">3. Direct In-Country Support Culture</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                Clients have access to on-the-ground engineering support and local account managers, avoiding offshore call centers and overseas ticket queues during business-critical downtime.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--emerald); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">4. Regulatory &amp; Government Adjacency</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                For commercial banks, contractors, and regulated utilities that interact continuously with federal/state regulators, operating on an aligned compliance docket provides friction-free audit hand-offs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Structural Gaps -->
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--rose); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+              <span>⚠️ The 5 Structural Vulnerabilities</span>
+            </h3>
+
+            <div class="card" style="border-left: 4px solid var(--rose); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">1. Missing Integration Layer</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                Lack of pre-built connectors (Zapier, Microsoft Power Automate gateway, SAP/Oracle ERP hooks). Integrating with existing core banking or accounting systems currently requires custom API work.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--rose); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">2. Zero AI Capability</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                No generative document summarization, automated OCR data extraction from uploaded receipts, or smart routing recommendations. M365 Copilot and Appian AI represent a major marketing differentiator.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--rose); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">3. Deficit of Private-Sector Social Proof</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                Marketing materials and public references have historically skewed toward civil service and federal agencies. Private enterprise buyers demand commercial bank and corporate case studies before signing.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--rose); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">4. Absence of Developer Ecosystem / Marketplace</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                Competitors like Atlassian and Zoho have vibrant developer communities building plug-ins. CICOD ECMS is currently a closed architecture with no third-party app store.
+              </p>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--rose); margin-bottom: 16px;">
+              <h4 style="font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px;">5. Enterprise Sales Motion Friction</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0;">
+                The historic sales motion has been high-touch enterprise tender contracts. Reaching commercial mid-market and SME firms requires product-led onboarding and self-serve trial provisioning.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reference & Source Validation -->
+        <div class="card" style="margin-top: 24px; background: rgba(6,9,19,0.55); border: 1px solid rgba(56,189,248,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Data Sovereignty &amp; Regulatory Moat Citations</h4>
+            </div>
+            <span class="badge badge-blue">Sovereignty Validation</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div>
+              <strong style="color: #fff;">NDPA 2023 Cross-Border Restrictions:</strong> Prohibits unverified offshore data transit, establishing local tier-3 cloud hosting (e.g. Rack Centre, MDXi, Galaxy Backbone) as a primary institutional compliance defense. <a href="https://ndpc.gov.ng" target="_blank" style="color: var(--cyan); text-decoration: underline;">NDPC Statutory Guidelines ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">CBN 2027 In-Country Financial Data Processing Mandate:</strong> Directs all financial institutions and payment handlers to process and store customer transaction records exclusively within Nigerian territory. <a href="https://www.cbn.gov.ng" target="_blank" style="color: var(--cyan); text-decoration: underline;">Central Bank Data Sovereignty Directives ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 6: Naira TCO & Bundling Modeler -->
+      <div class="tab-pane" id="tab-tco">
+        <div class="pane-header">
+          <div class="pane-tag">Module 06 &bull; Fiscal Modeler</div>
+          <h2 class="pane-title">Naira Total Cost of Ownership (TCO) Calculator</h2>
+          <p class="pane-desc">
+            Model the direct financial impact of bundling workflow, repository storage (cDrive), and e-signatures into a single local-currency subscription vs. multi-tool US dollar stacks.
+          </p>
+        </div>
+
+        <div class="tco-box">
+          <div>
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Active Licensed Users</span>
+                <span class="slider-val" id="usersVal">150 Users</span>
+              </div>
+              <input type="range" id="usersSlider" min="25" max="1500" step="25" value="150" oninput="recalcTcoNaira()">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Parallel E-Sign Tool Displaced</span>
+                <span class="slider-val" id="esignVal">DocuSign / Adobe ($30/mo)</span>
+              </div>
+              <input type="range" id="esignSlider" min="0" max="1" step="1" value="1" oninput="recalcTcoNaira()">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>USD to Naira (₦) Exchange Rate Benchmark</span>
+                <span class="slider-val" id="fxVal">₦ 1,500 / $1.00</span>
+              </div>
+              <input type="range" id="fxSlider" min="1200" max="1800" step="50" value="1500" oninput="recalcTcoNaira()">
+            </div>
+
+            <p style="font-size: 0.78rem; color: var(--text-dim); line-height: 1.5; margin-top: 14px;">
+              * CICOD ECMS local commercial rate modeled at ₦22,000/user/month (including workflow, cDrive storage, and e-signatures). Competitor stacks modeled in USD with foreign exchange volatility.
+            </p>
+          </div>
+
+          <div class="tco-output-list">
+            <div class="tco-row">
+              <div>
+                <strong style="color: #fff; display: block; font-size: 0.88rem;">Microsoft 365 + DocuSign Stack</strong>
+                <small style="color: var(--text-dim);">M365 E3 + Power Automate + Dataverse + E-Sign</small>
+              </div>
+              <span class="cost-val" id="outM365">₦ 175.5M / yr</span>
+            </div>
+
+            <div class="tco-row">
+              <div>
+                <strong style="color: #fff; display: block; font-size: 0.88rem;">Zoho One / Creator Suite</strong>
+                <small style="color: var(--text-dim);">$45/user/mo + Zoho Sign quota upgrades</small>
+              </div>
+              <span class="cost-val" id="outZoho">₦ 121.5M / yr</span>
+            </div>
+
+            <div class="tco-row winner">
+              <div>
+                <strong style="color: var(--cyan); display: block; font-size: 0.88rem;">✓ CICOD ECMS (cFlow)</strong>
+                <small style="color: var(--emerald);">Unified Workflow + cDrive + E-Sign</small>
+              </div>
+              <span class="cost-val green" id="outEcms">₦ 39.6M / yr</span>
+            </div>
+
+            <div class="savings-card">
+              <div class="savings-num" id="outSavings">₦ 135.9 Million</div>
+              <div style="font-size: 0.76rem; text-transform: uppercase; color: var(--text-muted); margin-top: 2px;">
+                Annual Hard-Currency Cost Avoidance (77% Savings)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reference & Source Validation -->
+        <div class="card" style="margin-top: 24px; background: rgba(6,9,19,0.55); border: 1px solid rgba(56,189,248,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Foreign Exchange &amp; Macroeconomic Financial Data</h4>
+            </div>
+            <span class="badge badge-blue">Macroeconomic Corroboration</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div>
+              <strong style="color: #fff;">BusinessDay &amp; TechCabal Devaluation Reports:</strong> Repeated Naira devaluations have inflated USD SaaS software expenditures by 200–300% in local currency terms, forcing Nigerian CIOs and CFOs into aggressive license audits and local currency repatriation. <a href="https://businessday.ng" target="_blank" style="color: var(--cyan); text-decoration: underline;">BusinessDay Corporate IT Spend Analysis ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">Enterprise FinOps Benchmark:</strong> Bundling workflow automation, secure document vaulting, and legal e-signatures into a single local contract generates an average of 70%–80% verified TCO avoidance compared to fragmented dollar-denominated multi-SaaS stacks. <a href="https://www.finops.org" target="_blank" style="color: var(--cyan); text-decoration: underline;">FinOps Foundation SaaS Optimization ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 7: Commercial GTM Playbook -->
+      <div class="tab-pane" id="tab-gtm">
+        <div class="pane-header">
+          <div class="pane-tag">Module 07 &bull; Commercial Execution</div>
+          <h2 class="pane-title">Commercial Go-To-Market Playbook</h2>
+          <p class="pane-desc">
+            How to win commercial private-sector enterprise deals by leaning into audit compliance and cycle-time velocity while bypassing public-sector brand perceptions.
+          </p>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 28px;">
+          <div class="card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">1. Rename &amp; Re-Position</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted);">
+              Lead exclusively with <strong>CICOD ECMS (cFlow Operations OS)</strong>. Never present civil service terminology (MDAs, minutes) to corporate COOs—frame capabilities as <em>Delegation of Authority (DOA), Dual-Authorization, and Cross-Subsidiary Requisitions</em>.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">2. Target the Loan &amp; Claims Niche</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted);">
+              Enter commercial accounts via high-pain paper bottlenecks: <strong>Loan Credit Files</strong> in micro-finance and commercial banks, or <strong>Claims Processing</strong> in insurance. Once the audit trail is proven, expand to all operational memos.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 8px;">3. The FX Shield Closing Pitch</h3>
+            <p style="font-size: 0.84rem; color: var(--text-muted);">
+              In an era of volatile foreign exchange, enterprise CFOs are under strict executive orders to cut dollar-denominated software licenses. Pitching an all-inclusive naira contract provides an immediate commercial win.
+            </p>
+          </div>
+        </div>
+
+        <!-- Objection Handling Matrix -->
+        <div class="card">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: #fff; margin-bottom: 16px;">Enterprise Objection Handling</h3>
+          
+          <div style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--border);">
+            <strong style="color: var(--rose); font-size: 0.9rem;">Objection: "We already have Microsoft 365, so Power Automate is free for us."</strong>
+            <p style="font-size: 0.84rem; color: #cbd5e1; margin-top: 4px; margin-bottom: 0;">
+              <em>Response:</em> "Power Automate is free only for basic personal alerts. To build a multi-stage approval with PDF dossier generation, document vault storage, and external contractor intake, Microsoft requires Power Apps per-user licenses ($20/mo) and Dataverse capacity ($40/GB). ECMS provides this out of the box in naira with zero development delay."
+            </p>
+          </div>
+
+          <div style="margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--border);">
+            <strong style="color: var(--rose); font-size: 0.9rem;">Objection: "Can it integrate with our core banking or SAP ERP system?"</strong>
+            <p style="font-size: 0.84rem; color: #cbd5e1; margin-top: 4px; margin-bottom: 0;">
+              <em>Response:</em> "ECMS acts as the front-end human orchestration and approval gateway before financial posting occurs. It captures the audit trail, supervisor signatures, and invoice files, then transmits the approved payload to your core ledger via REST API or structured webhook."
+            </p>
+          </div>
+
+          <div>
+            <strong style="color: var(--rose); font-size: 0.9rem;">Objection: "Why not use DocuSign for our executive approvals?"</strong>
+            <p style="font-size: 0.84rem; color: #cbd5e1; margin-top: 4px; margin-bottom: 0;">
+              <em>Response:</em> "DocuSign only handles the final signature on a static PDF—it does not manage the multi-department review process, shift capacity, or SLA escalation leading up to the decision. ECMS unifies the entire workflow and includes e-signature at no extra charge."
+            </p>
+          </div>
+        </div>
+
+        <!-- Reference & Source Validation -->
+        <div class="card" style="margin-top: 24px; background: rgba(6,9,19,0.55); border: 1px solid rgba(56,189,248,0.25); padding: 18px 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem;">📚</span>
+              <h4 style="font-size: 0.9rem; font-weight: 700; color: #fff; margin: 0;">Commercial Strategy &amp; GTM Playbook Citations</h4>
+            </div>
+            <span class="badge badge-blue">GTM Corroboration</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+            <div>
+              <strong style="color: #fff;">SaaS Pricing Strategy — Packaging Power:</strong> Demonstrates that entering enterprise accounts via acute operational bottlenecks (e.g. loan approval committees or claims processing) achieves 3x higher expansion velocity than generic "paperless office" pitches. <a href="https://www.mckinsey.com" target="_blank" style="color: var(--cyan); text-decoration: underline;">McKinsey B2B SaaS Land-and-Expand Playbook ↗</a>
+            </div>
+            <div>
+              <strong style="color: #fff;">Power Automate Hidden Cost Audit:</strong> Case studies confirm that organizations attempting to build full dossier custody on Microsoft 365 encounter unexpected $40/GB/month Dataverse storage and premium connector costs within 6 to 9 months of deployment.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // 1. Sidebar Toggle
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('collapsed');
+    }
+
+    // 2. Tab Navigation
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(pane => {
+        pane.classList.remove('active');
+      });
+      document.querySelectorAll('.nav-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      const activePane = document.getElementById(tabId);
+      if (activePane) activePane.classList.add('active');
+
+      const activeBtn = Array.from(document.querySelectorAll('.nav-tab-btn')).find(b => 
+        b.getAttribute('onclick') && b.getAttribute('onclick').includes(tabId)
+      );
+      if (activeBtn) activeBtn.classList.add('active');
+
+      // Update URL hash without jumping
+      history.replaceState(null, null, '#' + tabId);
+
+      // On mobile, collapse sidebar after selection
+      if (window.innerWidth <= 1024) {
+        document.getElementById('sidebar').classList.add('collapsed');
+      }
+    }
+
+    // 3. Naira TCO Modeler Calculation
+    function recalcTcoNaira() {
+      const users = parseInt(document.getElementById('usersSlider').value);
+      const esign = parseInt(document.getElementById('esignSlider').value);
+      const fx = parseInt(document.getElementById('fxSlider').value);
+
+      document.getElementById('usersVal').innerText = `${users.toLocaleString()} Users`;
+      document.getElementById('esignVal').innerText = esign === 1 ? 'DocuSign / Adobe ($30/mo)' : 'No Dedicated E-Sign';
+      document.getElementById('fxVal').innerText = `₦ ${fx.toLocaleString()} / $1.00`;
+
+      // CICOD ECMS: ₦22,000 per user per month
+      const ecmsAnnualNaira = users * 22000 * 12;
+
+      // Microsoft 365 Stack: Base $36/mo (M365 E3 + Power Apps) + ($30/mo E-Sign if selected)
+      const m365MonthlyUsd = users * (36 + (esign === 1 ? 30 : 0)) + 600; // +$600/mo Dataverse storage buffer
+      const m365AnnualNaira = m365MonthlyUsd * 12 * fx;
+
+      // Zoho One Stack: $45/mo + storage overage
+      const zohoMonthlyUsd = users * (45 + (esign === 1 ? 10 : 0));
+      const zohoAnnualNaira = zohoMonthlyUsd * 12 * fx;
+
+      // Render Outputs
+      document.getElementById('outEcms').innerText = `₦ ${(ecmsAnnualNaira / 1000000).toFixed(1)}M / yr`;
+      document.getElementById('outM365').innerText = `₦ ${(m365AnnualNaira / 1000000).toFixed(1)}M / yr`;
+      document.getElementById('outZoho').innerText = `₦ ${(zohoAnnualNaira / 1000000).toFixed(1)}M / yr`;
+
+      const savingsNaira = m365AnnualNaira - ecmsAnnualNaira;
+      const pct = Math.round((savingsNaira / m365AnnualNaira) * 100);
+      document.getElementById('outSavings').innerText = `₦ ${(savingsNaira / 1000000).toFixed(1)} Million`;
+      document.querySelector('.savings-card div:last-child').innerText = `Annual Hard-Currency Cost Avoidance (${pct}% Savings)`;
+    }
+
+    // 4. On Page Load Handler
+    window.addEventListener('DOMContentLoaded', () => {
+      recalcTcoNaira();
+      const hash = window.location.hash.replace('#', '');
+      if (hash && document.getElementById(hash)) {
+        switchTab(hash);
+      }
+    });
+  </script>
+</body>
+</html>
