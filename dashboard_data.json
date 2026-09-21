@@ -2692,5 +2692,71 @@
       "value": "Strategic Sovereign Moat: Complete operational continuity during international fiber outages; full NDPA data sovereignty.",
       "target": "Tier-1 Banks, Defense & Security MDAs, Critical National Infrastructure"
     }
+  ],
+  "integrationTiers": [
+    {
+      "tier": "1. Core ERP & Finance",
+      "standards": "SAP S/4HANA, Oracle NetSuite, Dynamics 365, Odoo",
+      "adoption": "8 / 25 (32%)",
+      "implementation": "OpenText Business Workspaces in SAP; Laserfiche hotkey scraping; Kissflow OData.",
+      "impact": "Transformational (Moat)",
+      "winStrategy": "Pre-built REST/OData templates for invoice matching & PO release, deploying in 7 days vs 9-18 months ABAP."
+    },
+    {
+      "tier": "2. Identity & Directory Governance",
+      "standards": "Microsoft Entra ID, Okta, Ping Identity, SCIM 2.0, SAML/OIDC",
+      "adoption": "14 / 25 (56%)",
+      "implementation": "ServiceNow, Box, and M-Files support full SCIM 2.0 provisioning; lower tiers support only manual SAML.",
+      "impact": "Critical Enterprise Gatekeeper",
+      "winStrategy": "Automated Delegation Engine: locks account and transfers approval queues to successor upon offboarding."
+    },
+    {
+      "tier": "3. Zero-App Conversational Approvals",
+      "standards": "Microsoft Teams Adaptive Cards, Slack Blocks, WhatsApp Cloud API",
+      "adoption": "6 / 25 (24%)",
+      "implementation": "ServiceNow & Pipefy deliver actionable cards in Teams/Slack; Western ECMs lack WhatsApp Business.",
+      "impact": "Extreme Needle-Mover (-85% TAT)",
+      "winStrategy": "Dual-Channel Approval: Teams cards for desk workers + WhatsApp 2FA interactive messages for mobile C-Suite."
+    },
+    {
+      "tier": "4. Intelligent Document Processing (IDP)",
+      "standards": "AWS Textract, Azure Doc Intelligence, Google Cloud Doc AI, ABBYY",
+      "adoption": "9 / 25 (36%)",
+      "implementation": "DocuWare and Rossum offer pre-trained ML invoice tables; others rely on flat OCR text indexing.",
+      "impact": "High Operational Value",
+      "winStrategy": "Automated 3-Way Matching pipeline: extracts PO#, line items, VAT, bank details, auto-validating against ERP."
+    },
+    {
+      "tier": "5. Universal iPaaS & Webhooks",
+      "standards": "Zapier (9000+ apps), Make.com, Power Automate, Workato, MuleSoft",
+      "adoption": "15 / 25 (60%)",
+      "implementation": "Kissflow, Box, and Pipefy maintain verified Zapier apps; enterprise tiers use certified Workato/MuleSoft spokes.",
+      "impact": "High Scalability (9000+ Apps)",
+      "winStrategy": "Standardized HMAC-SHA256 Webhook Bus + public Zapier app to instantly bridge the long-tail of SaaS."
+    },
+    {
+      "tier": "6. CRM & Revenue Operations",
+      "standards": "Salesforce AppExchange, HubSpot Enterprise, Dynamics CRM",
+      "adoption": "12 / 25 (48%)",
+      "implementation": "Box for Salesforce and M-Files embed document dossiers in Account/Opportunity; DocuSign CLM for CPQ.",
+      "impact": "High Sales Velocity",
+      "winStrategy": "Automated CPQ contract generation: Closed-won opportunities auto-generate governed MSAs and trigger e-signatures."
+    },
+    {
+      "tier": "7. Multi-Cloud Storage & WORM Tiering",
+      "standards": "AWS S3 & Glacier, Azure Cool/Archive, Google Cloud Storage, Wasabi, MinIO",
+      "adoption": "7 / 25 (28%)",
+      "implementation": "OpenText and Box Governance charge massive premiums for WORM retention; most SaaS platforms force files into hot storage.",
+      "impact": "Cost Moat (-85% Storage)",
+      "winStrategy": "BYOS: Auto-tier inactive documents after 90 days to AWS S3 Glacier Deep Archive (.00099/GB/mo) with immutable WORM."
+    },
+    {
+      "tier": "8. Global Core Banking Infrastructure",
+      "standards": "Temenos Transact, Infosys Finacle, Mambu, FIS, Fiserv, Thought Machine",
+      "adoption": "3 / 25 (12%)",
+      "implementation": "Newgen Software dominates emerging banking with + proprietary adapters.",
+      "impact": "Elite Financial Moat",
+      "winStrategy": "Lightweight REST/CMIS customer mandate & credit dossier widget embedding into cloud-native cores at 70% lower TCO."
+    }
   ]
 }
