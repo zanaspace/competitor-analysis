@@ -13,7 +13,10 @@
     "ctaMotion": "Sales-Led (Demo)",
     "targetPersona": "CIO, IT Operations, Records Managers, Municipal Directors",
     "valueHook": "Eliminate paper archives and automate municipal/financial form workflows with certified records governance.",
-    "gtmAngle": "Heavily targeted at public sector, higher education, and regulated mid-to-large enterprise through an extensive reseller/VAR network."
+    "gtmAngle": "Heavily targeted at public sector, higher education, and regulated mid-to-large enterprise through an extensive reseller/VAR network.",
+    "targetMarket": "State & Municipal Public Sector, Higher Education, Regulated Mid-Market, Wealth Management",
+    "globalFootprint": "North America (75%+), UK & Europe (15%), Middle East (10%). Negligible direct presence in Sub-Saharan Africa.",
+    "ecmsAdvantagePlay": "African & Emerging-Market Public Sector MDAs & Regulated Finance. Laserfiche is prohibitively expensive ($79+/user/mo + high VAR consulting fees) with FX exposure and foreign cloud hosting. ECMS wins on in-country sovereign cloud compliance, local currency pricing, built-in regional territory routing, and offline field inspection."
   },
   {
     "name": "OpenText",
@@ -29,7 +32,10 @@
     "ctaMotion": "Sales-Led (Enterprise RFPs)",
     "targetPersona": "Enterprise CIO, Chief Compliance Officer, Head of Enterprise Architecture",
     "valueHook": "Single global vendor for high-compliance Fortune 500 archival and deep SAP S/4HANA & Salesforce embedded content.",
-    "gtmAngle": "Top-down enterprise sales motion co-sold directly through SAP and Global System Integrators (Deloitte, Accenture, PwC)."
+    "gtmAngle": "Top-down enterprise sales motion co-sold directly through SAP and Global System Integrators (Deloitte, Accenture, PwC).",
+    "targetMarket": "Global Fortune 500, Tier-1 Conglomerates, Global Banking, Oil & Gas, Complex SAP S/4HANA Enterprises",
+    "globalFootprint": "North America (55%), Western Europe / DACH / UK (35%), APAC (10%). Multi-national global presence locked into mega-budgets.",
+    "ecmsAdvantagePlay": "National Banks, Regional Insurers, and Tier-2 Mid-Market Enterprises. OpenText requires 12–18 month multi-million-dollar consulting deployments (Deloitte/Accenture) and charges extra for Content Aviator. ECMS deploys in 7 days at 15% of OpenText's annual cost with zero foreign consulting dependency."
   },
   {
     "name": "Hyland OnBase",
@@ -45,7 +51,10 @@
     "ctaMotion": "Sales-Led (Consultative)",
     "targetPersona": "Healthcare EHR Directors (Epic/Cerner), State/Local Govt CIOs, Financial Services VPs",
     "valueHook": "Deep industry-tailored transactional content and patient/citizen dossier management.",
-    "gtmAngle": "Industry-verticalized direct sales teams, OEM partnerships with healthcare software giants, and government contract schedules."
+    "gtmAngle": "Industry-verticalized direct sales teams, OEM partnerships with healthcare software giants, and government contract schedules.",
+    "targetMarket": "US Healthcare Systems & Hospital Networks (Epic/Cerner), State & Local Government, Commercial Insurance Payers",
+    "globalFootprint": "North America (80%+), Western Europe (15%), APAC/LATAM (5%). Extremely low penetration across Africa.",
+    "ecmsAdvantagePlay": "Emerging-Market Healthcare Networks, HMOs, and State Parastatals. Hyland's hospital pricing is astronomical and tied to US hospital EHR systems. ECMS delivers turnkey HMO pre-authorization, patient dossier tracking, and 15-minute SLA turnaround at predictable domestic rates."
   },
   {
     "name": "M-Files",
@@ -61,7 +70,10 @@
     "ctaMotion": "Product-Led / Inside Sales Hybrid",
     "targetPersona": "Head of Knowledge Management, Legal Operations, Compliance Directors, Mid-Market IT",
     "valueHook": "Never lose a file again: search by 'what it is' rather than 'where it is stored', embedding natively into M365.",
-    "gtmAngle": "Positioned as the agile modern alternative to legacy folder-tree ECMs, partnering closely with Microsoft as a Preferred Co-Sell Partner."
+    "gtmAngle": "Positioned as the agile modern alternative to legacy folder-tree ECMs, partnering closely with Microsoft as a Preferred Co-Sell Partner.",
+    "targetMarket": "European & US Mid-Market Professional Services (Legal Firms, Accounting, AEC), Compliance-Heavy European Firms",
+    "globalFootprint": "Nordics & Western Europe (50%), North America (40%), APAC (10%). Limited direct footprint in emerging markets.",
+    "ecmsAdvantagePlay": "Fast-Growth Commercial Enterprises, Legal Chambers & Regional Financial Firms. M-Files requires rigid metadata schema configuration and separate Microsoft 365 licensing. ECMS provides an all-in-one out-of-the-box solution (workflows + forms + document drive + e-signatures) without requiring M365 E5 or metadata consulting."
   },
   {
     "name": "Newgen Software",
@@ -77,7 +89,10 @@
     "ctaMotion": "Sales-Led (Banking Solutions)",
     "targetPersona": "Tier-1 Bank CIOs, Head of Retail Lending, Chief Risk Officers, Insurance Chief Underwriters",
     "valueHook": "End-to-end loan origination and customer onboarding dockets tying directly into Finacle and Temenos.",
-    "gtmAngle": "Dominant regional penetration across Africa, Middle East, and Asia with high-touch domain sales specialists."
+    "gtmAngle": "Dominant regional penetration across Africa, Middle East, and Asia with high-touch domain sales specialists.",
+    "targetMarket": "Tier-1 & Tier-2 Commercial Banks, Large NBFCs, Insurance Underwriting, Regional Governments",
+    "globalFootprint": "India & South Asia (40%), Middle East & Africa (35%), North America / APAC (25%). Active installed base in Nigerian banking.",
+    "ecmsAdvantagePlay": "Challenger Banks, Microfinance Banks, FinTechs, State MDAs, and Commercial Procurement. Newgen is powerful but notoriously rigid, expensive, and slow to customize (months-long change requests for new workflows). ECMS gives business ops teams a 15-minute no-code workflow builder, zero per-transaction loan fees, and built-in field verification dispatch."
   },
   {
     "name": "DocuWare",
@@ -93,7 +108,10 @@
     "ctaMotion": "Hybrid (Free Trial + Reseller Network)",
     "targetPersona": "Finance Director, Controller, Accounts Payable Manager, HR Operations",
     "valueHook": "Touchless accounts payable processing: scan, match PO, approve, and push to ERP in under 60 seconds.",
-    "gtmAngle": "Channel-first strategy powered by Ricoh's global dealer network, selling pre-packaged cloud solution bundles."
+    "gtmAngle": "Channel-first strategy powered by Ricoh's global dealer network, selling pre-packaged cloud solution bundles.",
+    "targetMarket": "Mid-Market Finance & Accounts Payable Departments, Manufacturing, Wholesale Distribution, Automotive Dealers",
+    "globalFootprint": "Europe / DACH (55%), North America (35%), APAC & LATAM (10%). Weak direct channel in Africa.",
+    "ecmsAdvantagePlay": "Commercial Procurement, Corporate Logistics, and Mid-Market Enterprise AP. DocuWare caps invoice volume allowances and charges heavy add-on fees for workflow expansion. ECMS offers unlimited workflow runs, native vendor management, and unified document custody without printer-dealer middleman markups."
   },
   {
     "name": "FileHold",
@@ -109,7 +127,10 @@
     "ctaMotion": "Velocity Inside Sales (Trial/Tour)",
     "targetPersona": "IT Managers, Compliance Officers, Records Administrators in manufacturing & engineering",
     "valueHook": "No-nonsense, turnkey document governance and regulatory audit logging without 6-figure price tags.",
-    "gtmAngle": "Inbound SEO marketing and fast, fixed-price remote deployment packages targeting mid-market IT departments."
+    "gtmAngle": "Inbound SEO marketing and fast, fixed-price remote deployment packages targeting mid-market IT departments.",
+    "targetMarket": "Small-to-Mid Manufacturing, Engineering, Nuclear/Defense Contractors, Traditional Corporate IT",
+    "globalFootprint": "North America (Canada/USA 80%), Western Europe (15%). Virtual absence in Africa and South America.",
+    "ecmsAdvantagePlay": "Regional Public Sector & Modern Mobile Enterprises. FileHold has an antiquated desktop client UI, lacks modern visual forms, and provides zero mobile field dispatch. ECMS wins with modern web/mobile UX, dynamic web forms, and real-time AmCharts dashboards."
   },
   {
     "name": "Alfresco",
@@ -125,7 +146,10 @@
     "ctaMotion": "Developer-First / Enterprise Upsell",
     "targetPersona": "Lead Software Architects, Chief Technology Officers (CTO), Java Enterprise Developers",
     "valueHook": "Complete developer control, open CMIS standards, and microservices architecture without proprietary vendor lock-in.",
-    "gtmAngle": "Open-source Community Edition creates massive global developer adoption, which Hyland sales reps convert into paid enterprise contracts."
+    "gtmAngle": "Open-source Community Edition creates massive global developer adoption, which Hyland sales reps convert into paid enterprise contracts.",
+    "targetMarket": "Enterprise IT Architects, Government Defense Agencies, Large Financial Institutions with In-House Dev Teams",
+    "globalFootprint": "Western Europe (45%), North America (40%), APAC (15%). Global open-source developer presence.",
+    "ecmsAdvantagePlay": "Enterprises without In-House Java Engineering Teams. Alfresco provides APIs and raw frameworks, but no ready-to-run business user workflows. ECMS delivers turnkey, instant no-code wizard workflows usable by non-technical administrative teams on day one."
   },
   {
     "name": "Nuxeo",
@@ -141,7 +165,10 @@
     "ctaMotion": "Technical Enterprise Sales",
     "targetPersona": "Chief Digital Officer, Media Operations Director, Head of Asset Management",
     "valueHook": "Scale to billions of complex media assets and unstructured product records with sub-second API retrieval.",
-    "gtmAngle": "Technical positioning targeting Fortune 500 media, consumer brands, and financial institutions on AWS and Azure marketplaces."
+    "gtmAngle": "Technical positioning targeting Fortune 500 media, consumer brands, and financial institutions on AWS and Azure marketplaces.",
+    "targetMarket": "Fortune 500 Media & Entertainment (EA, Fox), Luxury Retail, Global Consumer Brands, High-Volume Asset Repositories",
+    "globalFootprint": "North America (60%), Western Europe (35%), APAC (5%). Cloud marketplace deployments.",
+    "ecmsAdvantagePlay": "Transactional Document Workflows & Administrative Operations. Nuxeo is over-engineered for multi-gigabyte video/3D assets. ECMS is purpose-built for document governance, regulatory SLA countdowns, and administrative docket execution at 90% lower cost."
   },
   {
     "name": "ServiceNow",
@@ -157,7 +184,10 @@
     "ctaMotion": "Enterprise C-Suite Sales",
     "targetPersona": "Enterprise CIO, Chief Information Security Officer (CISO), VP of HR/IT Operations",
     "valueHook": "Single platform to automate all internal cross-departmental employee requests and enterprise IT service delivery.",
-    "gtmAngle": "High-touch C-suite relationship sales, expanding land-and-expand footprint into multi-million-dollar annual enterprise contracts."
+    "gtmAngle": "High-touch C-suite relationship sales, expanding land-and-expand footprint into multi-million-dollar annual enterprise contracts.",
+    "targetMarket": "Global Fortune 2000 IT, Global Enterprise Service Management (ITSM, HRSD, Customer Service Management)",
+    "globalFootprint": "North America (65%), Western Europe (25%), APAC (10%). Dominated by Global System Integrators.",
+    "ecmsAdvantagePlay": "Mid-Market Enterprise Operations, Emerging Market Public Services, and Document-Centric Workflows. ServiceNow starts at $100k+/year and treats document storage as an afterthought (requiring Box/SharePoint attachments). ECMS offers native immutable document vault custody, e-signatures, and workflow automation for a fraction of the cost."
   },
   {
     "name": "Appian",
@@ -173,7 +203,10 @@
     "ctaMotion": "High-Ticket Consultative Sales",
     "targetPersona": "VP of Digital Transformation, Head of Enterprise Applications, Chief Operating Officer (COO)",
     "valueHook": "Query and automate across disconnected databases without writing complex ETL data pipelines.",
-    "gtmAngle": "Premium enterprise pricing ($100k+ annual floor) positioned as the gold-standard platform for mission-critical banking and defense."
+    "gtmAngle": "Premium enterprise pricing ($100k+ annual floor) positioned as the gold-standard platform for mission-critical banking and defense.",
+    "targetMarket": "Tier-1 Investment Banking, US Federal & Defense, Life Sciences, Mega-Infrastructure",
+    "globalFootprint": "North America (70%), Europe (20%), Middle East & APAC (10%). Focused on elite enterprise accounts.",
+    "ecmsAdvantagePlay": "Agile Domestic Enterprises & Regional Financial Services. Appian has a minimum $100k-$250k entry barrier and steep developer certification curve. ECMS provides straight-through loan/claims approval workflows without enterprise license gatekeeping."
   },
   {
     "name": "Nintex",
@@ -189,7 +222,10 @@
     "ctaMotion": "Product-Led / Inside Sales",
     "targetPersona": "Business Analysts, Citizen Developers, Departmental Operations Managers",
     "valueHook": "Visual drag-and-drop workflow designer paired with automated document generation (DocGen) without code.",
-    "gtmAngle": "Historically tied to the Microsoft SharePoint ecosystem, now promoted as an independent cloud process orchestration engine."
+    "gtmAngle": "Historically tied to the Microsoft SharePoint ecosystem, now promoted as an independent cloud process orchestration engine.",
+    "targetMarket": "Mid-to-Large Enterprises heavily invested in Microsoft SharePoint / M365 seeking visual form and workflow extensions",
+    "globalFootprint": "North America (60%), Australia/APAC (20%), Europe (20%). Strong Microsoft partner ecosystem presence.",
+    "ecmsAdvantagePlay": "Non-SharePoint Enterprises, Sovereign Government Portals, and Standalone Document Systems. Nintex charges per-workflow / per-process fees ($25k+/yr base) and requires Microsoft infrastructure. ECMS is completely standalone with native document repository and zero add-on charges."
   },
   {
     "name": "Kissflow",
@@ -205,7 +241,10 @@
     "ctaMotion": "Product-Led Self-Serve",
     "targetPersona": "Head of Procurement, Operations Directors, HR Managers, SMB IT Leads",
     "valueHook": "Business users build forms and approval workflows in 15 minutes without waiting months for IT.",
-    "gtmAngle": "Inbound content marketing, transparent pricing tiers, and aggressive SEO capturing 'workflow automation' searches."
+    "gtmAngle": "Inbound content marketing, transparent pricing tiers, and aggressive SEO capturing 'workflow automation' searches.",
+    "targetMarket": "Fast-growing SMBs, Mid-Market Shared Services, Tech-Forward Companies needing quick departmental approval apps",
+    "globalFootprint": "India & APAC (35%), North America (35%), Middle East (15%), Europe (15%). Strong self-serve global presence.",
+    "ecmsAdvantagePlay": "Regulated Industries Requiring Defensible Legal Custody. Kissflow is a workflow engine with superficial file attachments—it lacks certified records retention, tamper-proof audit trails, and cryptographic e-signatures. ECMS combines Kissflow's workflow speed with enterprise-grade document custody."
   },
   {
     "name": "Pipefy",
@@ -221,7 +260,10 @@
     "ctaMotion": "Freemium Viral Bottom-Up",
     "targetPersona": "Shared Services Heads, Procurement/HR Specialists, Departmental Ops Managers",
     "valueHook": "Card-based visual Kanban boards that make request pipelines as easy to manage as Trello, but with enterprise rules.",
-    "gtmAngle": "Freemium self-serve bottom-up adoption inside departmental teams, expanding into enterprise shared-service centers."
+    "gtmAngle": "Freemium self-serve bottom-up adoption inside departmental teams, expanding into enterprise shared-service centers.",
+    "targetMarket": "Departmental Operations (HR, Procurement, Customer Support), Agile SMBs and Scale-ups in Americas",
+    "globalFootprint": "Latin America (Brazil 40%), North America (40%), Europe (15%). Viral bottoms-up self-serve traction.",
+    "ecmsAdvantagePlay": "Formal Enterprise Governance & Regulated Public Institutions. Pipefy's Kanban cards are ideal for tech startups but fail statutory compliance requirements for banks and governments. ECMS provides multi-tier regulatory approval matrices, territorial routing, and legal evidence archiving."
   },
   {
     "name": "Creatio",
@@ -237,7 +279,10 @@
     "ctaMotion": "Product-Led with Mid-Market Sales",
     "targetPersona": "Chief Commercial Officer, Head of Sales Ops, VP of Customer Experience",
     "valueHook": "Unify front-office customer relationship management with back-office operational process execution.",
-    "gtmAngle": "Evangelizes 'Composable Architecture' and 'No-Code Freedom', winning strong accolades in Gartner Magic Quadrants."
+    "gtmAngle": "Evangelizes 'Composable Architecture' and 'No-Code Freedom', winning strong accolades in Gartner Magic Quadrants.",
+    "targetMarket": "Mid-Market to Enterprise looking for unified CRM + Business Process Management without Salesforce price tags",
+    "globalFootprint": "Eastern & Western Europe (45%), North America (40%), Middle East (15%). Gartner Magic Quadrant leader.",
+    "ecmsAdvantagePlay": "Back-Office Administrative & Government Case Management. Creatio is front-office CRM-first. ECMS specializes in back-office docket routing, confidential file archiving, and multi-MDA inter-agency correspondence."
   },
   {
     "name": "Pegasystems",
@@ -253,7 +298,10 @@
     "ctaMotion": "Large-Scale Strategic Enterprise",
     "targetPersona": "Fortune 500 Chief Customer Officers, Chief Digital Officers, Telco/Banking SVPs",
     "valueHook": "Real-time AI next-best-action engine powering billions of automated decisions across global consumer banks.",
-    "gtmAngle": "High-ticket strategic enterprise licensing targeting the world's largest telecom, insurance, and banking conglomerates."
+    "gtmAngle": "High-ticket strategic enterprise licensing targeting the world's largest telecom, insurance, and banking conglomerates.",
+    "targetMarket": "Mega-Cap Financial Institutions, Global Telcos, National Healthcare Payers requiring real-time automated decisioning",
+    "globalFootprint": "North America (60%), Western Europe (25%), APAC/Australia (15%). High-ticket strategic enterprise contracts.",
+    "ecmsAdvantagePlay": "Mid-Sized Financial Institutions and Regional Public Agencies. Pega's multi-million dollar pricing and complex Java rules engine are out of reach for 98% of businesses in Africa and emerging markets. ECMS offers instant SLA automation without millions in infrastructure overhead."
   },
   {
     "name": "Camunda",
@@ -269,7 +317,10 @@
     "ctaMotion": "Developer-First / Community-Led",
     "targetPersona": "Software Engineers, Enterprise Architects, DevOps Leads, VP of Engineering",
     "valueHook": "Execute standards-compliant BPMN diagrams directly as code across distributed microservices.",
-    "gtmAngle": "Developer advocacy, open-source community edition, technical hackathons, and transparent SaaS cloud pricing."
+    "gtmAngle": "Developer advocacy, open-source community edition, technical hackathons, and transparent SaaS cloud pricing.",
+    "targetMarket": "Enterprise Software Engineering Teams, DevOps Architects, FinTechs requiring code-driven BPMN 2.0 orchestration",
+    "globalFootprint": "DACH Region & Europe (50%), North America (35%), APAC (15%). Strong developer community worldwide.",
+    "ecmsAdvantagePlay": "Business-User Driven Administration. Camunda requires professional software engineers to write code and wire microservices. ECMS allows non-technical business managers, HR officers, and registry clerks to deploy workflows with zero coding."
   },
   {
     "name": "Filetra",
@@ -285,7 +336,10 @@
     "ctaMotion": "Direct Niche Enterprise Sales",
     "targetPersona": "Records Managers, Facility Directors, Legal Archival Heads",
     "valueHook": "Never lose a physical legal file box again: barcode scanning and RFID tracking from warehouse to desk.",
-    "gtmAngle": "Direct consultative sales targeting law firms, government courts, and archive warehouses with massive physical vaults."
+    "gtmAngle": "Direct consultative sales targeting law firms, government courts, and archive warehouses with massive physical vaults.",
+    "targetMarket": "Legal Archival Firms, Government Courts, Off-Site Record Storage Facilities tracking physical paper boxes",
+    "globalFootprint": "North America & UK (80%), select Commonwealth jurisdictions (20%). Niche physical records market.",
+    "ecmsAdvantagePlay": "Hybrid Physical-to-Digital Transformation. Filetra excels at warehouse box barcodes but has primitive digital cloud workflows. ECMS digitizes the entire physical-to-cloud lifecycle with automated webforms, online e-signing, and regional territory dispatch."
   },
   {
     "name": "Microsoft 365",
@@ -301,7 +355,10 @@
     "ctaMotion": "Ubiquitous Enterprise Agreements (EA)",
     "targetPersona": "Head of IT Infrastructure, Chief Information Officer, VP of Procurement",
     "valueHook": "Ubiquitous default suite: documents, chat, video, spreadsheets, and automations under a single identity login.",
-    "gtmAngle": "Packaged into corporate EA/M365 contracts; virtually every enterprise already pays for it and defaults to SharePoint."
+    "gtmAngle": "Packaged into corporate EA/M365 contracts; virtually every enterprise already pays for it and defaults to SharePoint.",
+    "targetMarket": "Global Ubiquitous Enterprise Desktop & Cloud Collaboration across all industry verticals and public sectors",
+    "globalFootprint": "Global Dominance: North America (45%), Europe (35%), APAC (15%), LATAM/MEA (5%). Installed base in 90%+ Fortune 500.",
+    "ecmsAdvantagePlay": "Turnkey Regulated Case Automation & Field Workflows. M365 is generic storage. Building structured loan origination or insurance claims requires expensive Power Automate Premium licenses, Dataverse database capacity overages ($40/GB/mo), and DocuSign integrations. ECMS delivers a pre-built, unified suite with zero hidden capacity penalties and native field dispatch."
   },
   {
     "name": "Google Workspace",
@@ -317,7 +374,10 @@
     "ctaMotion": "Product-Led Self-Serve Subscription",
     "targetPersona": "Modern Business Founders, IT Directors, Chief Digital Officers in tech/agile firms",
     "valueHook": "Frictionless real-time document co-authoring and cloud storage that just works on any device.",
-    "gtmAngle": "Self-service digital onboarding with monthly per-user pricing, aggressively bundling Gemini AI."
+    "gtmAngle": "Self-service digital onboarding with monthly per-user pricing, aggressively bundling Gemini AI.",
+    "targetMarket": "Tech Startups, Education Institutions, Agile SMBs, Digital-Native Teams & Scale-ups worldwide",
+    "globalFootprint": "North America (45%), Latin America (20%), Europe (20%), APAC (15%). Universal digital penetration.",
+    "ecmsAdvantagePlay": "Formal Enterprise Records Governance. Google Drive allows users to easily share, delete, or lose files without strict records custody or multi-tier approval chains. ECMS provides hierarchical folder permissions, tamper-evident audit logs, and mandatory approval workflows."
   },
   {
     "name": "Box",
@@ -333,7 +393,10 @@
     "ctaMotion": "Product-Led / Enterprise Sales",
     "targetPersona": "VP of Information Security, Chief Risk Officer, Enterprise Collaboration Lead",
     "valueHook": "Bank-grade cloud security and compliance (Box Shield) paired with native e-signatures (Box Sign).",
-    "gtmAngle": "Targeting enterprise CISOs demanding tighter security and governance than generic Dropbox or Google Drive."
+    "gtmAngle": "Targeting enterprise CISOs demanding tighter security and governance than generic Dropbox or Google Drive.",
+    "targetMarket": "Fortune 500 Enterprises requiring secure cloud content management, Life Sciences, Box Shield data governance",
+    "globalFootprint": "North America (65%), Western Europe & Japan (30%). Negligible Africa presence.",
+    "ecmsAdvantagePlay": "Complete Operational Workflows with E-Signatures Included. Box charges separately for Box Sign and Box AI on top of high monthly enterprise fees. ECMS bundles unlimited workflows, forms, e-signatures, and document drive into a single affordable subscription with local data compliance."
   },
   {
     "name": "Odoo Enterprise",
@@ -349,7 +412,10 @@
     "ctaMotion": "Freemium Product-Led",
     "targetPersona": "Small-to-Medium Enterprise CEOs, Operations Directors, Managing Partners",
     "valueHook": "Replace 10 different SaaS subscriptions with one modular platform at a flat, affordable cost.",
-    "gtmAngle": "Aggressive cost disruption: 'One app free forever', transparent pricing, and vibrant open-source ecosystem."
+    "gtmAngle": "Aggressive cost disruption: 'One app free forever', transparent pricing, and vibrant open-source ecosystem.",
+    "targetMarket": "Small to Mid-Sized Businesses looking for an all-in-one ERP to replace disparate SaaS tools",
+    "globalFootprint": "Europe (45%), North America (25%), Latin America & Africa (20%), APAC (10%). Rapidly expanding partner network.",
+    "ecmsAdvantagePlay": "Large-Scale Enterprise Document Security & Government Case Complexity. Odoo's document module is a basic file repository inside an ERP. It lacks strict regulatory audit controls, multi-region geographic territory routing, and institutional compliance standards."
   },
   {
     "name": "Zoho One",
@@ -365,7 +431,10 @@
     "ctaMotion": "Product-Led Self-Serve",
     "targetPersona": "SME business owners, Chief Operating Officers, Departmental Heads",
     "valueHook": "Every tool your business will ever need (CRM, Docs, Sign, Finance) for under $40/user/month.",
-    "gtmAngle": "Bootstrapped privacy-first brand authority offering extreme pricing leverage against Salesforce and Microsoft."
+    "gtmAngle": "Bootstrapped privacy-first brand authority offering extreme pricing leverage against Salesforce and Microsoft.",
+    "targetMarket": "Solopreneurs, SMBs, Mid-Market looking for affordable multi-app cloud software suites",
+    "globalFootprint": "India (30%), North America (35%), Europe (20%), Middle East & Africa (15%). High-volume global SaaS subscription base.",
+    "ecmsAdvantagePlay": "Enterprise High-Volume Transactional Records & Sovereign Control. Zoho's 45+ apps are loosely integrated and host data in foreign server farms (India, US, EU). ECMS provides tight, purpose-built document governance and in-country sovereign cloud hosting compliance."
   },
   {
     "name": "DocuSign",
@@ -381,7 +450,10 @@
     "ctaMotion": "Self-Serve Land & Expand into Enterprise",
     "targetPersona": "General Counsel, Head of Legal Ops, VP of Sales, VP of Procurement",
     "valueHook": "The universally trusted global standard for signing legally enforceable agreements instantly.",
-    "gtmAngle": "Universal brand recognition for e-signatures, expanding up-market into Intelligent Agreement Management (IAM) and CLM."
+    "gtmAngle": "Universal brand recognition for e-signatures, expanding up-market into Intelligent Agreement Management (IAM) and CLM.",
+    "targetMarket": "Global Enterprise Legal, Sales, and Procurement Teams needing legally binding e-signatures",
+    "globalFootprint": "North America (65%), Europe (25%), APAC (10%). Universal global brand recognition.",
+    "ecmsAdvantagePlay": "End-to-End Workflow & Document Vault (Beyond Just Signing). DocuSign charges aggressive per-envelope fees ($40/user/mo capped at 100 envelopes/year) and only handles the signing moment. ECMS includes unlimited cryptographic e-signatures as a native built-in feature inside full end-to-end operational workflows."
   },
   {
     "name": "Adobe Acrobat Sign",
@@ -397,6 +469,9 @@
     "ctaMotion": "Document Cloud Ecosystem Bundling",
     "targetPersona": "Enterprise Legal, Corporate Procurement, HR Operations",
     "valueHook": "Native integration with the world's standard PDF engine (Adobe Acrobat) and eIDAS qualified signatures.",
-    "gtmAngle": "Bundled directly with Adobe Acrobat Creative/Document Cloud enterprise agreements, co-marketed with Microsoft."
+    "gtmAngle": "Bundled directly with Adobe Acrobat Creative/Document Cloud enterprise agreements, co-marketed with Microsoft.",
+    "targetMarket": "Enterprise Creative, Legal, and HR Departments bundled into Adobe Document Cloud agreements",
+    "globalFootprint": "North America (55%), Western Europe (30%), APAC (15%). Global footprint via Adobe Acrobat install base.",
+    "ecmsAdvantagePlay": "Turnkey Enterprise Case Automation. Adobe Sign is a PDF signature tool. It does not provide case queues, task assignment, regional dispatch, or webform ingestion. ECMS provides the full end-to-end operational engine."
   }
 ]
