@@ -2227,30 +2227,134 @@
       
 
       <!-- =============================================================== -->
-      <!-- TAB 8: COMPETITOR COMPARISON MATRIX (SHEET 1) -->
+      <!-- =============================================================== -->
+      <!-- TAB 8: COMPETITOR COMPARISON MATRIX & CATEGORIZATION (SHEET 1) -->
       <!-- =============================================================== -->
       <div class="tab-pane" id="tab-competitors">
         <div class="pane-header">
-          <div class="pane-tag">Master Workbook Sheet 1 &bull; 27 Platforms Benchmarked</div>
-          <h2 class="pane-title">Competitor Comparison Matrix (Verified)</h2>
+          <div class="pane-tag">Master Benchmark &bull; 25 Competitors Categorized</div>
+          <h2 class="pane-title">Competitor Comparison Matrix (Direct &bull; Indirect &bull; Adjacent)</h2>
           <p class="pane-desc">
-            Full 55-feature capability matrix comparing CICOD ECMS against 25 global and regional enterprise software suites, enhanced with the live staging verification column.
+            Empirical 55-feature capability benchmark categorizing all 25 competitors into <strong>Direct ECM</strong>, <strong>Indirect BPM</strong>, and <strong>Adjacent Platforms</strong>. Click the tier cards or category filter pills below to instantly filter columns or inspect official competitor websites.
           </p>
         </div>
 
-        <div class="filter-toolbar">
-          <div class="search-box">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="matrix-search" placeholder="Search feature name (e.g., OCR, Workflow, Audit Log, E-Signature)..." oninput="filterMatrix()">
+        <!-- 3 Interactive Competitor Tier Cards -->
+        <div class="kpi-row" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 24px;">
+          <!-- Direct Competitors Card -->
+          <div class="kpi-card" id="tier-card-direct" style="border-top: 3px solid var(--cyan); cursor: pointer;" onclick="filterCompetitorTier('DIRECT')" title="Click to filter matrix to 9 Direct ECM Competitors">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 8px;">
+              <div class="kpi-title" style="color:var(--cyan); font-weight:800;">🎯 DIRECT COMPETITORS</div>
+              <span class="badge badge-blue">9 RIVALS (36%)</span>
+            </div>
+            <div class="kpi-val" style="color:var(--cyan); font-size:1.45rem; margin-bottom:6px;">Core ECM &amp; Document Custody</div>
+            <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.45; margin-bottom:12px;">
+              Direct architectural rivals competing for the master Document Repository, Records Governance, Folder Hierarchies, and Document-Centric Approvals.
+            </p>
+            <div style="font-size:0.74rem; color:var(--text-dim); margin-bottom:12px; line-height:1.5;">
+              <strong style="color:var(--text-heading);">Platforms:</strong> Laserfiche, OpenText, Hyland OnBase, M-Files, Newgen, DocuWare, FileHold, Alfresco, Nuxeo.
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
+              <span style="font-size:0.72rem; color:var(--emerald); font-weight:700;">ECMS Edge: 70% Lower TCO &amp; Turnkey Setup</span>
+              <span class="badge badge-blue" style="font-size:0.7rem;">Filter Matrix (9) &rarr;</span>
+            </div>
           </div>
-          <div class="filter-pills">
-            <button class="filter-pill active" onclick="filterMatrixCategory('ALL')">All Features (55)</button>
-            <button class="filter-pill" onclick="filterMatrixCategory('WORKFLOW')">Workflows &amp; Tasks</button>
-            <button class="filter-pill" onclick="filterMatrixCategory('DOCUMENT')">Drive &amp; Docs</button>
-            <button class="filter-pill" onclick="filterMatrixCategory('SIGN')">E-Signature</button>
-            <button class="filter-pill" onclick="filterMatrixCategory('RESOURCE')">Resource Mgmt</button>
+
+          <!-- Indirect Competitors Card -->
+          <div class="kpi-card" id="tier-card-indirect" style="border-top: 3px solid var(--amber); cursor: pointer;" onclick="filterCompetitorTier('INDIRECT')" title="Click to filter matrix to 9 Indirect BPM Competitors">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 8px;">
+              <div class="kpi-title" style="color:var(--amber); font-weight:800;">⚡ INDIRECT COMPETITORS</div>
+              <span class="badge badge-warn">9 RIVALS (36%)</span>
+            </div>
+            <div class="kpi-val" style="color:var(--amber); font-size:1.45rem; margin-bottom:6px;">Low-Code BPM &amp; Workflows</div>
+            <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.45; margin-bottom:12px;">
+              Process automation and ticketing engines with visual form designers and approval routing, but lacking full-lifecycle records custody and native legally-binding e-sign.
+            </p>
+            <div style="font-size:0.74rem; color:var(--text-dim); margin-bottom:12px; line-height:1.5;">
+              <strong style="color:var(--text-heading);">Platforms:</strong> ServiceNow, Appian, Nintex, Kissflow, Pipefy, Creatio, Pega, Camunda, Filetra.
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
+              <span style="font-size:0.72rem; color:var(--cyan); font-weight:700;">ECMS Edge: Native CDE Drive + Regional Ops</span>
+              <span class="badge badge-warn" style="font-size:0.7rem;">Filter Matrix (9) &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Adjacent Competitors Card -->
+          <div class="kpi-card" id="tier-card-adjacent" style="border-top: 3px solid var(--purple); cursor: pointer;" onclick="filterCompetitorTier('ADJACENT')" title="Click to filter matrix to 7 Adjacent Platforms">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 8px;">
+              <div class="kpi-title" style="color:var(--purple); font-weight:800;">🌐 ADJACENT PLATFORMS</div>
+              <span class="badge badge-purple">7 RIVALS (28%)</span>
+            </div>
+            <div class="kpi-val" style="color:var(--purple); font-size:1.45rem; margin-bottom:6px;">Cloud Suites, ERPs &amp; E-Sign</div>
+            <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.45; margin-bottom:12px;">
+              Incumbent enterprise fixtures (M365, Google), all-in-one business ERP suites (Odoo, Zoho), or specialized agreement clouds (DocuSign, Adobe Sign).
+            </p>
+            <div style="font-size:0.74rem; color:var(--text-dim); margin-bottom:12px; line-height:1.5;">
+              <strong style="color:var(--text-heading);">Platforms:</strong> Microsoft 365, Google Workspace, Box, Odoo, Zoho One, DocuSign, Adobe Acrobat Sign.
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
+              <span style="font-size:0.72rem; color:var(--emerald); font-weight:700;">ECMS Edge: Unified Case + Docs + Sign</span>
+              <span class="badge badge-purple" style="font-size:0.7rem;">Filter Matrix (7) &rarr;</span>
+            </div>
           </div>
         </div>
+
+        <!-- Filter Toolbar -->
+        <div class="filter-toolbar" style="flex-direction:column; align-items:stretch; gap:12px; margin-bottom:20px;">
+          <!-- Row 1: Competitor Tier Selector -->
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <span style="font-family:'JetBrains Mono'; font-size:0.74rem; font-weight:700; color:var(--text-muted); text-transform:uppercase;">Competitor Category:</span>
+              <div class="filter-pills" id="tier-filter-pills">
+                <button class="filter-pill active" id="pill-tier-ALL" onclick="filterCompetitorTier('ALL')">All Rivals (25)</button>
+                <button class="filter-pill" id="pill-tier-DIRECT" onclick="filterCompetitorTier('DIRECT')" style="color:var(--cyan); border-color:rgba(56,189,248,0.35);">🎯 Direct ECM Rivals (9)</button>
+                <button class="filter-pill" id="pill-tier-INDIRECT" onclick="filterCompetitorTier('INDIRECT')" style="color:var(--amber); border-color:rgba(245,158,11,0.35);">⚡ Indirect BPM Rivals (9)</button>
+                <button class="filter-pill" id="pill-tier-ADJACENT" onclick="filterCompetitorTier('ADJACENT')" style="color:var(--purple); border-color:rgba(168,85,247,0.35);">🌐 Adjacent Platforms (7)</button>
+              </div>
+            </div>
+            <div style="font-size:0.74rem; font-family:'JetBrains Mono'; color:var(--text-dim);" id="tier-counter-status">
+              Showing: <strong style="color:var(--cyan);">25 Platforms</strong> (All Tiers)
+            </div>
+          </div>
+
+          <!-- Row 2: Feature Search & Capability Filter -->
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+            <div class="search-box" style="flex:1; max-width:420px;">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="matrix-search" placeholder="Search feature name (e.g., OCR, Workflow, Audit Log, E-Signature)..." oninput="filterMatrix()">
+            </div>
+            <div class="filter-pills">
+              <button class="filter-pill active" onclick="filterMatrixCategory('ALL')">All Features (55)</button>
+              <button class="filter-pill" onclick="filterMatrixCategory('WORKFLOW')">Workflows &amp; Tasks</button>
+              <button class="filter-pill" onclick="filterMatrixCategory('DOCUMENT')">Drive &amp; Docs</button>
+              <button class="filter-pill" onclick="filterMatrixCategory('SIGN')">E-Signature</button>
+              <button class="filter-pill" onclick="filterMatrixCategory('RESOURCE')">Resource Mgmt</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Competitor Classification Directory Accordion -->
+        <details class="card" style="margin-bottom: 24px; padding: 18px 22px; cursor: pointer; border: 1px solid var(--border-light);">
+          <summary style="font-size: 0.88rem; font-weight: 700; color: var(--cyan); display: flex; align-items: center; justify-content: space-between; user-select: none;">
+            <span>📖 Competitor Classification Directory &amp; Strategic Positioning Guide (25 Official Websites &amp; Playbooks)</span>
+            <span style="font-size: 0.72rem; font-family: 'JetBrains Mono'; color: var(--text-dim);">Click to Expand / Collapse Directory</span>
+          </summary>
+          <div style="margin-top: 18px; overflow-x: auto;">
+            <table class="data-table" style="font-size:0.8rem;">
+              <thead>
+                <tr>
+                  <th style="min-width:140px;">Competitor Platform</th>
+                  <th style="min-width:110px;">Category</th>
+                  <th style="min-width:140px;">Primary Archetype</th>
+                  <th style="min-width:260px;">Operational Focus &amp; Official Website</th>
+                  <th style="min-width:240px;">Threat Profile vs. ECMS</th>
+                  <th style="min-width:240px;">How ECMS Wins (Strategic Wedge)</th>
+                </tr>
+              </thead>
+              <tbody id="directory-tbody"></tbody>
+            </table>
+          </div>
+        </details>
 
         <div class="table-container" style="max-height: 65vh;">
           <table class="data-table" id="matrix-table">
@@ -2861,20 +2965,349 @@
     }
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
-    // Render Competitor Matrix
+    // 25 Competitor Classification Metadata (Direct, Indirect, Adjacent)
+    const COMPETITOR_METADATA = {
+      "LASER FICHE": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Enterprise Content Management & Forms", 
+        badge: "badge-blue", 
+        site: "https://www.laserfiche.com", 
+        focus: "Enterprise document management, web forms, workflow automation & case management", 
+        threat: "Direct 1:1 functional alternative in municipal government, education, and finance",
+        winStrategy: "70% lower TCO, turnkey cloud deployment in days vs months, native WhatsApp/email zero-app approvals"
+      },
+      "NUXEO": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Cloud-Native Content Services (Hyland)", 
+        badge: "badge-blue", 
+        site: "https://www.nuxeo.com", 
+        focus: "Cloud-native content services, digital asset management (DAM) & complex metadata hierarchies", 
+        threat: "Chosen by enterprise developers seeking highly custom API-first content repositories",
+        winStrategy: "Pre-built business process workflows and native e-signatures that do not require custom development"
+      },
+      "FILEHOLD": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Mid-Market Document Management", 
+        badge: "badge-blue", 
+        site: "https://www.filehold.com", 
+        focus: "Document custody, fast on-prem/cloud deployment, version control & review workflows", 
+        threat: "Competes for mid-market document management and basic approval routing",
+        winStrategy: "Far superior modern UI, built-in dynamic forms builder, and integrated mobile field operations"
+      },
+      "NEWGEN": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Banking ECM & Case Management", 
+        badge: "badge-blue", 
+        site: "https://newgensoft.com", 
+        focus: "OmniDocs ECM & OmniFlow BPM; dominates African and Asian banking and public sector", 
+        threat: "Incumbent vendor in Tier-1 commercial banks for loan origination and customer dossiers",
+        winStrategy: "Agile no-code configuration, rapid SaaS onboarding, and disruptive pricing without multimillion consulting fees"
+      },
+      "OPENTEXT": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Global Heavyweight Content Services", 
+        badge: "badge-blue", 
+        site: "https://www.opentext.com", 
+        focus: "Extended ECM, Core Content, Documentum, SAP S/4HANA Fiori integration & Content Aviator AI", 
+        threat: "Default enterprise standard for Fortune 500 records governance and compliance archival",
+        winStrategy: "Massive cost advantage (fraction of OpenText's 6-figure entry license) and frictionless deployment"
+      },
+      "M-FILES": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Metadata-Driven Information Management", 
+        badge: "badge-blue", 
+        site: "https://www.m-files.com", 
+        focus: "Metadata-driven repository-neutral content management, M365 SharePoint integration & CRM sync", 
+        threat: "Modern user favorite for eliminating folder chaos through automated metadata tagging",
+        winStrategy: "Integrated operational case management with regional field task dispatch and native multi-party e-signing"
+      },
+      "DOCUWARE": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Cloud Document & Invoice Automation", 
+        badge: "badge-blue", 
+        site: "https://www.docuware.com", 
+        focus: "Cloud document management, accounts payable invoice capture, and pre-configured ERP matching", 
+        threat: "Popular mid-market choice for finance teams automating invoice approvals and archiving",
+        winStrategy: "Broader cross-departmental scope (HR, Public Sector, Education) beyond back-office AP accounting"
+      },
+      "ALFRESCO": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Open-Source Content Services (Hyland)", 
+        badge: "badge-blue", 
+        site: "https://www.alfresco.com", 
+        focus: "Open-source enterprise content platform, customizable Java/CMIS repository & developer REST APIs", 
+        threat: "Technical IT choice for organizations demanding full source code control and on-prem hosting",
+        winStrategy: "Zero-code departmental empowerment; business users configure workflows without Java engineers"
+      },
+      "HYLAND ONBASE": { 
+        tier: "DIRECT", 
+        label: "DIRECT ECM", 
+        archetype: "Healthcare & Public Sector Enterprise ECM", 
+        badge: "badge-blue", 
+        site: "https://www.hyland.com/en/products/onbase", 
+        focus: "Enterprise content platform, EHR healthcare (Epic/Cerner) integration & public sector case management", 
+        threat: "Strong incumbent in large hospitals, healthcare systems, and government administrative bodies",
+        winStrategy: "Modern responsive web architecture, rapid SaaS deployment, and lower operational overhead"
+      },
+
+      "FILETRA": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "Records Management & Tracking", 
+        badge: "badge-warn", 
+        site: "https://www.filetra.com", 
+        focus: "Physical and digital records tracking, RFID document tracking & barcode-assisted workflow routing", 
+        threat: "Appeals to legacy organizations managing massive warehouses of paper records",
+        winStrategy: "Comprehensive digital-first workflow lifecycle with integrated cloud Drive and digital signing"
+      },
+      "KISSFLOW": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "Low-Code Digital Workplace", 
+        badge: "badge-warn", 
+        site: "https://kissflow.com", 
+        focus: "Low-code process automation, internal procurement requests, ticket queues & Zapier integrations", 
+        threat: "High adoption among business teams needing fast internal approval routing without IT involvement",
+        winStrategy: "Full enterprise document repository (CICOD Drive) with version control, which Kissflow lacks"
+      },
+      "CREATIO": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "No-Code Composable CRM & BPM", 
+        badge: "badge-warn", 
+        site: "https://www.creatio.com", 
+        focus: "No-code composable CRM, lead-to-order automation, and business process management (Studio Creatio)", 
+        threat: "Competes when organizations seek CRM and process management unified in one platform",
+        winStrategy: "Dedicated document custody, sovereign data residency, and heavy operational case routing"
+      },
+      "PIPEFY": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "No-Code Kanban Workflow Management", 
+        badge: "badge-warn", 
+        site: "https://www.pipefy.com", 
+        focus: "No-code process orchestration, Kanban boards, Slack/Teams conversational approvals & service desks", 
+        threat: "Great UX for departmental operations (HR requests, expense approvals, marketing requests)",
+        winStrategy: "Enterprise compliance, audit-proof records management, and sovereign cloud infrastructure"
+      },
+      "APPIAN": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "Enterprise Low-Code Automation & Data Fabric", 
+        badge: "badge-warn", 
+        site: "https://appian.com", 
+        focus: "High-end low-code process automation, unified data fabric & complex case management", 
+        threat: "De-facto choice for massive enterprise digital transformation and mission-critical case workflows",
+        winStrategy: "80% lower total cost of ownership; Appian has a $100k+ annual floor and high implementation overhead"
+      },
+      "NINTEX": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "Visual Process Automation & DocGen", 
+        badge: "badge-warn", 
+        site: "https://www.nintex.com", 
+        focus: "Drag-and-drop workflow routing, automated document generation (DocGen) & AssureSign e-signatures", 
+        threat: "Widely used alongside SharePoint to build visual departmental approval pipelines",
+        winStrategy: "Integrated standalone platform without needing underlying Microsoft 365 enterprise licenses"
+      },
+      "PEGA": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "Enterprise Decisioning & AI Case Management", 
+        badge: "badge-warn", 
+        site: "https://www.pega.com", 
+        focus: "Pega Infinity, predictive AI decisioning, customer journey automation & high-volume case routing", 
+        threat: "Dominates Tier-1 multinational banks and telecom operators for real-time customer decisioning",
+        winStrategy: "Designed for rapid deployment and accessibility; Pega is notoriously complex, slow, and expensive"
+      },
+      "CAMUNDA": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "Developer BPMN 2.0 Orchestration Engine", 
+        badge: "badge-warn", 
+        site: "https://camunda.com", 
+        focus: "Developer-friendly BPMN 2.0 process orchestration for microservices, human tasks & API endpoints", 
+        threat: "Chosen by software engineering teams wanting a headless workflow engine embedded in custom code",
+        winStrategy: "Complete turnkey business application: zero programming required for business managers to design forms"
+      },
+      "SERVICENOW": { 
+        tier: "INDIRECT", 
+        label: "INDIRECT BPM", 
+        archetype: "Enterprise Digital Workflows & ESM", 
+        badge: "badge-warn", 
+        site: "https://www.servicenow.com", 
+        focus: "Now Platform, IT Service Management (ITSM), HR Service Delivery, and IntegrationHub spokes", 
+        threat: "Dominates corporate enterprise IT and employee service portals with multi-system ticketing",
+        winStrategy: "Native document vault custody and e-signing; ServiceNow is a ticketing engine, not a certified ECM"
+      },
+
+      "MICROSOFT 365": { 
+        tier: "ADJACENT", 
+        label: "ADJACENT", 
+        archetype: "Ubiquitous Cloud Office & SharePoint", 
+        badge: "badge-purple", 
+        site: "https://www.microsoft.com/en-us/microsoft-365", 
+        focus: "SharePoint document libraries, OneDrive storage, Power Automate workflows & Microsoft Teams", 
+        threat: "Almost every enterprise already pays for M365 and defaults to SharePoint for basic storage",
+        winStrategy: "Structured SLA countdowns, public citizen form ingestion, and regional field operations dispatch"
+      },
+      "GOOGLE WORKSPACE": { 
+        tier: "ADJACENT", 
+        label: "ADJACENT", 
+        archetype: "Cloud Collaboration & Office Suite", 
+        badge: "badge-purple", 
+        site: "https://workspace.google.com", 
+        focus: "Google Drive cloud storage, Google Docs/Sheets, Google Forms & AppSheet no-code mobile apps", 
+        threat: "Default cloud collaboration tool for startups, SMBs, and modern distributed organizations",
+        winStrategy: "True enterprise document archival, audit certificates, multi-tier approval escalations & legal e-sign"
+      },
+      "ZOHO ONE": { 
+        tier: "ADJACENT", 
+        label: "ADJACENT", 
+        archetype: "Integrated SMB Business Operating System", 
+        badge: "badge-purple", 
+        site: "https://www.zoho.com/one/", 
+        focus: "45+ integrated SaaS applications including Zoho Sign, Zoho WorkDrive, Zoho Creator & CRM", 
+        threat: "Extremely cost-effective all-in-one suite for growing small-to-midsize businesses",
+        winStrategy: "Tailored public sector MDAs and enterprise compliance with sovereign data hosting and SLA timers"
+      },
+      "ODOO ENTERPRISE": { 
+        tier: "ADJACENT", 
+        label: "ADJACENT", 
+        archetype: "Modular Open-Source ERP Suite", 
+        badge: "badge-purple", 
+        site: "https://www.odoo.com", 
+        focus: "Open-source ERP with integrated Documents app, split-screen PDF invoice approval & Odoo Sign", 
+        threat: "Direct competitor when organizations want an ERP that already has built-in document and sign features",
+        winStrategy: "Superior dedicated workflow orchestration, citizen web forms, and regional geographic territory routing"
+      },
+      "BOX": { 
+        tier: "ADJACENT", 
+        label: "ADJACENT", 
+        archetype: "Cloud Content Cloud & E-Sign", 
+        badge: "badge-purple", 
+        site: "https://www.box.com", 
+        focus: "Enterprise cloud content management, Box Relay workflow automation, Box Sign & Box AI", 
+        threat: "Competes directly against CICOD Drive and E-Sign with top-tier security and Salesforce integrations",
+        winStrategy: "End-to-end operational ticketing, case escalation timers, and field workforce management"
+      },
+      "DOCUSIGN": { 
+        tier: "ADJACENT", 
+        label: "ADJACENT", 
+        archetype: "Dedicated Agreement Cloud & E-Signature", 
+        badge: "badge-purple", 
+        site: "https://www.docusign.com", 
+        focus: "Global standard in electronic signatures, Intelligent Agreement Management (IAM) & CLM", 
+        threat: "Dominates legal and procurement departments for standalone electronic signature execution",
+        winStrategy: "Native e-signing included in core platform subscription with zero envelope limits or add-on penalties"
+      },
+      "ADOBE ACROBAT SIGN": { 
+        tier: "ADJACENT", 
+        label: "ADJACENT", 
+        archetype: "Enterprise PDF & Digital Signatures", 
+        badge: "badge-purple", 
+        site: "https://www.adobe.com/sign.html", 
+        focus: "Enterprise PDF manipulation, Adobe Document Cloud, legal digital certificate signatures & Workday sync", 
+        threat: "De-facto brand in PDF document handling and international certified digital signatures",
+        winStrategy: "Full operational case workflows and unified document management without paying separate PDF licenses"
+      }
+    };
+
+    // Global Filter States
+    let activeCompetitorTier = 'ALL';
+    let activeMatrixCategory = 'ALL';
+
+    // Filter by Competitor Tier (Direct, Indirect, Adjacent)
+    function filterCompetitorTier(tier) {
+      activeCompetitorTier = tier;
+      document.querySelectorAll('#tier-filter-pills .filter-pill').forEach(p => p.classList.remove('active'));
+      const activePill = document.getElementById('pill-tier-' + tier);
+      if (activePill) activePill.classList.add('active');
+
+      const counter = document.getElementById('tier-counter-status');
+      if (tier === 'ALL') {
+        if (counter) counter.innerHTML = 'Showing: <strong style="color:var(--cyan);">25 Platforms</strong> (All Tiers)';
+      } else if (tier === 'DIRECT') {
+        if (counter) counter.innerHTML = 'Showing: <strong style="color:var(--cyan);">9 Platforms</strong> (Direct ECM Rivals)';
+      } else if (tier === 'INDIRECT') {
+        if (counter) counter.innerHTML = 'Showing: <strong style="color:var(--amber);">9 Platforms</strong> (Indirect BPM Rivals)';
+      } else if (tier === 'ADJACENT') {
+        if (counter) counter.innerHTML = 'Showing: <strong style="color:var(--purple);">7 Platforms</strong> (Adjacent Suites & E-Sign)';
+      }
+
+      renderMatrix();
+      renderDirectoryTable();
+    }
+
+    // Render Competitor Classification Directory Table
+    function renderDirectoryTable() {
+      const tbody = document.getElementById('directory-tbody');
+      if (!tbody) return;
+
+      tbody.innerHTML = BUNDLE.competitorNames.map(name => {
+        const meta = COMPETITOR_METADATA[name] || { tier: 'INDIRECT', label: 'Other', archetype: 'Enterprise Software', badge: 'badge-blue', site: '#', focus: '', threat: '', winStrategy: '' };
+        return `
+          <tr>
+            <td>
+              <div style="font-weight:800; color:var(--text-heading); font-size:0.84rem;">${name}</div>
+              <a href="${meta.site}" target="_blank" rel="noopener noreferrer" style="color:var(--cyan); text-decoration:none; font-size:0.73rem; font-family:'JetBrains Mono'; display:inline-flex; align-items:center; gap:4px; margin-top:3px;">
+                ${meta.site.replace('https://www.', '').replace('https://', '').split('/')[0]} ↗
+              </a>
+            </td>
+            <td><span class="badge ${meta.badge}">${meta.label}</span></td>
+            <td style="font-size:0.78rem; color:var(--text-muted); font-weight:600;">${meta.archetype}</td>
+            <td style="font-size:0.78rem; line-height:1.45;">${meta.focus}</td>
+            <td style="font-size:0.78rem; color:var(--rose); line-height:1.45;">${meta.threat}</td>
+            <td style="font-size:0.78rem; color:var(--emerald); line-height:1.45;">${meta.winStrategy}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Render Competitor Matrix with Dynamic Column Filtering
     function renderMatrix() {
       const thead = document.getElementById('matrix-thead-row');
-      thead.innerHTML = `
-        <th>Feature Name</th>
-        <th style="color:var(--emerald);">Gov ECMS (Original)</th>
-        <th style="color:var(--cyan); background:rgba(56,189,248,0.12);">Live Staging Audit (Verified)</th>
-      ` + BUNDLE.competitorNames.map(c => `<th>${c}</th>`).join('');
+      
+      const activeCompetitors = BUNDLE.competitorNames.map((name, index) => {
+        const meta = COMPETITOR_METADATA[name] || { tier: 'INDIRECT', label: 'Other', badge: 'badge-blue', site: '#', focus: '' };
+        return { name, index, ...meta };
+      }).filter(c => activeCompetitorTier === 'ALL' || c.tier === activeCompetitorTier);
 
-      renderMatrixRows(BUNDLE.matrixFeatures);
+      thead.innerHTML = `
+        <th style="min-width:240px;">Feature Name</th>
+        <th style="color:var(--emerald); min-width:140px; text-align:center;">Gov ECMS (Original)</th>
+        <th style="color:var(--cyan); background:rgba(56,189,248,0.12); min-width:170px; text-align:center;">Live Staging Audit (Verified)</th>
+      ` + activeCompetitors.map(c => `
+        <th style="min-width:160px; vertical-align:bottom;">
+          <div style="display:flex; flex-direction:column; gap:4px; align-items:flex-start;">
+            <span class="badge ${c.badge}" style="font-size:0.6rem; padding:1px 6px;">${c.label}</span>
+            <div style="display:flex; align-items:center; justify-content:space-between; width:100%; gap:6px;">
+              <span style="font-weight:800; font-size:0.78rem; color:var(--text-heading); white-space:normal; line-height:1.2;">${c.name}</span>
+              <a href="${c.site}" target="_blank" rel="noopener noreferrer" title="Visit ${c.name} official website (${c.site})" style="color:var(--cyan); text-decoration:none; font-size:0.78rem; padding:2px 5px; border-radius:3px; background:rgba(56,189,248,0.12);">↗</a>
+            </div>
+          </div>
+        </th>
+      `).join('');
+
+      applyMatrixFilters();
     }
 
     function renderMatrixRows(features) {
       const tbody = document.getElementById('matrix-tbody');
+      
+      const activeCompetitors = BUNDLE.competitorNames.map((name, index) => {
+        const meta = COMPETITOR_METADATA[name] || { tier: 'INDIRECT', label: 'Other', badge: 'badge-blue', site: '#', focus: '' };
+        return { name, index, ...meta };
+      }).filter(c => activeCompetitorTier === 'ALL' || c.tier === activeCompetitorTier);
+
       tbody.innerHTML = features.map(f => {
         const liveBadge = f.liveVerified.includes('✔') 
           ? `<span class="badge badge-pass">✔ CONFIRMED</span>` 
@@ -2887,27 +3320,39 @@
             <td class="feature-name-cell">${f.name}</td>
             <td style="text-align:center;">${f.govEcms === '✔' ? '<span class="check-yes">✔</span>' : '<span class="check-no">✗</span>'}</td>
             <td style="background:rgba(56,189,248,0.04); text-align:center;">${liveBadge}</td>
-            ${f.competitors.map(c => `<td style="text-align:center;">${c === '✔' ? '<span class="check-yes">✔</span>' : (c === '✗' ? '<span class="check-no">✗</span>' : `<span style="font-size:0.75rem;">${c || '-'}</span>`)}</td>`).join('')}
+            ${activeCompetitors.map(c => {
+              const val = f.competitors[c.index];
+              return `<td style="text-align:center;">${val === '✔' ? '<span class="check-yes">✔</span>' : (val === '✗' ? '<span class="check-no">✗</span>' : `<span style="font-size:0.74rem;">${val || '-'}</span>`)}</td>`;
+            }).join('')}
           </tr>
         `;
       }).join('');
     }
 
-    function filterMatrix() {
-      const q = document.getElementById('matrix-search').value.toLowerCase();
-      const filtered = BUNDLE.matrixFeatures.filter(f => f.name.toLowerCase().includes(q));
+    function applyMatrixFilters() {
+      const searchEl = document.getElementById('matrix-search');
+      const q = searchEl ? searchEl.value.toLowerCase() : '';
+      let filtered = BUNDLE.matrixFeatures;
+
+      if (activeMatrixCategory !== 'ALL') {
+        filtered = filtered.filter(f => f.name.toUpperCase().includes(activeMatrixCategory));
+      }
+      if (q) {
+        filtered = filtered.filter(f => f.name.toLowerCase().includes(q));
+      }
+
       renderMatrixRows(filtered);
     }
 
+    function filterMatrix() {
+      applyMatrixFilters();
+    }
+
     function filterMatrixCategory(cat) {
-      document.querySelectorAll('#tab-competitors .filter-pill').forEach(p => p.classList.remove('active'));
-      event.target.classList.add('active');
-      if (cat === 'ALL') {
-        renderMatrixRows(BUNDLE.matrixFeatures);
-      } else {
-        const filtered = BUNDLE.matrixFeatures.filter(f => f.name.toUpperCase().includes(cat));
-        renderMatrixRows(filtered);
-      }
+      activeMatrixCategory = cat;
+      document.querySelectorAll('#tab-competitors .filter-toolbar .filter-pills:last-child .filter-pill').forEach(p => p.classList.remove('active'));
+      if (event && event.target) event.target.classList.add('active');
+      applyMatrixFilters();
     }
 
     // Render Live Capability Audit
